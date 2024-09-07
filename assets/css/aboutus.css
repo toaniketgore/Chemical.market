@@ -1,0 +1,105 @@
+.about-us-container {
+    height: 75%;
+    width: 100%;
+    padding: 8vw 0;
+    background-color: #F4F4F4;
+}
+
+.about-us-container .main-about {
+    width: 90%;
+    height: 100%;;
+    margin: auto;
+    display: flex;
+}
+
+.main-about .about-image-container {
+    width: 50%;
+    border-right: 0.8px solid rgb(224, 224, 224);
+    height: 100%;
+    margin:auto;
+    padding-right:1vw;
+}
+.main-about .about-image-container img{
+    width:100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+
+
+.main-about .about-text-container {
+    padding-left: 2vw;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.main-about .about-text-container .container-head i {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.main-about .about-text-container .container-head span {
+    font-size: 20px;
+    color: #7a7a7a;
+    font-weight: bold;
+}
+
+.main-about .about-text-container .about-content {}
+
+.main-about .about-text-container .about-content h3 {
+    font-size: 36px;
+    line-height: 38px;
+    font-weight: 600;
+    color: var(--primary-color);
+    padding-bottom: 2vw;
+    ;
+    border-bottom: 0.8px solid rgb(224, 224, 224);
+    ;
+}
+
+.main-about .about-text-container .about-content p span {
+    font-weight: 500;
+}
+
+.main-about .about-text-container .about-content p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    color: rgb(rgb(33, 37, 41));
+    padding-top: 2vw;
+}
+
+@media (max-width:762px) {
+    .about-us-container{
+        height: 80%;
+        padding:1vw 0;
+    }
+    .main-about{
+        flex-direction: column;
+        width:100%;
+    }
+    .main-about .about-image-container{
+        width:100%;
+        height:45%;
+        border:none;
+
+    }
+    .main-about .about-text-container{
+        height:50%;
+        width:100%;
+        padding-left:1vw;
+        gap:4vw;
+    }
+    .main-about .about-text-container .about-content h3{
+        font-size: 25px;
+        line-height: 33px;
+
+    }
+
+
+}

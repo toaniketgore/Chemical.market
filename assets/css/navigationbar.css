@@ -1,0 +1,153 @@
+/* TOP BAR CSS */
+.navigation-bar {
+    height: 150px;
+    width: 100%;
+    /* background-color:#222; */
+}
+
+.navigation-bar .top-bar {
+    height: 25%;
+    width: 100%;
+    /* background-color: #Fff; */
+}
+
+.top-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.top-bar i {
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+.top-bar span {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 30.08px;
+    color: rgb(122, 122, 122)
+}
+
+
+
+
+
+nav {
+    padding: 0 2vw;
+    width: 100%;
+    display: flex;
+    height: 75%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav-logo {
+    width: 33%;
+
+}
+
+.nav-logo img {
+    width: 60%;
+
+
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    ;
+    gap: 2vw;
+    width: calc(100% - 66%)
+}
+
+.nav-links a {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30.08px;
+    color: #7A7A7A;
+    text-decoration: none;
+    /* color: rgb(253, 90, 15); */
+
+}
+
+.nav-links a:hover {
+    color: var(--primary-color)
+}
+
+.nav-button {
+    width: 33%;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2vw;
+}
+
+.nav-button a {
+    text-decoration: none;
+}
+
+.nav-button .contact-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    background: linear-gradient(to right, #fd5a0f, #b14d1f);
+    padding: 1vw 2vw;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.nav-button .contact-button i {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 0.5rem;
+}
+
+.nav-button span {
+    font-size: 20px;
+    color: #fff;
+}
+ 
+.navigation-bar .menu-icon{
+    display: none;
+} 
+
+/* MEDIA QUERIES FOR MOBILE */
+@media (max-width: 768px) {
+    .navigation-bar {
+        height: 100px;
+    }
+    .navigation-bar .menu-icon{
+        display: block;
+    } 
+    .navigation-bar .top-bar {
+        height: 30%;
+    }
+
+    .top-bar .phone,
+    .top-bar .address {
+        display: none;
+    }
+
+    .nav-links,.nav-button{
+        display: none;
+    }
+    .nav-logo{
+        width:70%;
+    }
+    .navigation-bar a{
+        text-decoration:none;
+    }
+    .menu-icon i{
+        font-size: 30px;
+        color:#000;
+        text-decoration: none;;
+    }
+    
+
+}

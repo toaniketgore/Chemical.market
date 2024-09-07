@@ -1,0 +1,16 @@
+:root {
+    --primary-color: #FD5A0F /* Example primary color */
+  }
+
+.page1,  .page3{
+    height: 100%;
+    width: 100%;
+    /* background: red; */
+}
+
+.page2{ 
+  height: 120%;;
+}
+.page3{
+  background-color: black;
+}
