@@ -103,6 +103,7 @@
     }
 
     .main-about .about-image-container img {
+        width: 82%;
         margin: 0;
         object-fit: contain;
     }
