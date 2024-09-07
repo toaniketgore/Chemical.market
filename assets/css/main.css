@@ -18,3 +18,9 @@
 #footer-page{
   height: 60%;
 }
+
+@media (max-width:768px){
+  #footer-page{
+    height: 110%;
+  }
+}

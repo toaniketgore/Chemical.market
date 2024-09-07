@@ -6,7 +6,7 @@
 
 .footer-container-wrapper {
     padding: 4vw 8vw;
-    height: 90%;
+    height: 100%;
     display: flex;
     border-bottom: 0.8px solid rgb(224, 224, 224);
     ;
@@ -28,7 +28,7 @@
     font-size: 24px;
     line-height: 22px;
     font-weight: 700;
-    color: rgb(rgb(84, 89, 95));
+    color: rgb(84, 89, 95);
 }
 
 .footer-container .footer-container-head span {
@@ -39,7 +39,7 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 28px;
-    color: rgb rgb(34, 34, 34)
+    color: rgb(34, 34, 34);
 }
 
 .footer-container .social-links {
@@ -119,4 +119,55 @@
 
 .footer-copyright p span {
     color: var(--primary-color)
+}
+
+@media(max-width:768px) {
+    .footer-container-wrapper {
+        flex-direction: column;
+        padding: 4vw 3vw;
+        gap: 7vw;
+    }
+
+    .footer-container-wrapper .footer-container {
+        width: 100%;
+    }
+
+    .footer-container .footer-container-head {
+        font-size: 20px;
+    }
+
+    .footer-container .footer-container-content {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .footer-container .social-links {
+        gap: 3.5vw
+    }
+
+    .footer-container .social-links i {
+        font-size: 32px;
+    }
+
+    .footer-copyright {
+        padding: 0 1vw;
+    }
+
+    .footer-copyright p {
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .footer-container .product-link a,
+    .mail-link a,
+    .phone-link a {
+        font-weight: 500;
+    }
+
+    .footer-container .product-link i {
+        color: rgb(34, 34, 34)
+    }
+
+
 }
