@@ -7,20 +7,29 @@
 
 .about-us-container .main-about {
     width: 90%;
-    height: 100%;;
+    height: 100%;
+    ;
+
     margin: auto;
     display: flex;
 }
 
 .main-about .about-image-container {
+
     width: 50%;
     border-right: 0.8px solid rgb(224, 224, 224);
     height: 100%;
-    padding-right:1vw;
+    padding-right: 1vw;
+    background-image: url("../../public/images/dot-grid.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
 }
-.main-about .about-image-container img{
-    width:100%;
-    height: 100%;
+
+.main-about .about-image-container img {
+    width: 80%;
+    height: 80%;
+    margin: auto;
     border-radius: 8px;
     object-fit: cover;
 }
@@ -28,6 +37,7 @@
 
 
 .main-about .about-text-container {
+
     padding-left: 2vw;
     height: 100%;
     width: 50%;
@@ -74,29 +84,37 @@
 }
 
 @media (max-width:762px) {
-    .about-us-container{
+    .about-us-container {
         height: 80%;
-        padding:8vw 0;
+        padding: 8vw 0;
     }
-    .main-about{
+
+    .main-about {
+
         flex-direction: column;
     }
-    .main-about .about-image-container{
-        width:100%;
-        height:40%;
-        border:none;
+
+    .main-about .about-image-container {
+
+        width: 100%;
+        height: 40%;
+        border: none;
 
     }
-    .main-about .about-image-container img{
+
+    .main-about .about-image-container img {
+        margin: 0;
         object-fit: contain;
     }
-    .main-about .about-text-container{
-        height:70%;
-        width:100%;
-        padding-left:1vw;
-        gap:4vw;
+
+    .main-about .about-text-container {
+        height: 70%;
+        width: 100%;
+        padding-left: 1vw;
+        gap: 4vw;
     }
-    .main-about .about-text-container .about-content h3{
+
+    .main-about .about-text-container .about-content h3 {
         font-size: 25px;
         line-height: 33px;
 
