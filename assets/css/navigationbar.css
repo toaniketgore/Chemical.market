@@ -221,6 +221,7 @@ nav {
 
     .navigation-bar .menu-icon {
         display: block;
+        margin-right: 1vw;
     }
 
     .navigation-bar .top-bar {
