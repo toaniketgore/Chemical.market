@@ -48,6 +48,5 @@ gsap.from(".owl-carousel", {
     start: "top 80%",
     end: "top 10%",
     scrub: true,
-    markers: true,
   },
 });
