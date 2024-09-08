@@ -66,13 +66,15 @@
     position: relative;
     width: 100%;
     height: 15%;
-    margin-bottom:1vw;
+    margin-bottom: 1vw;
     padding: 0 2vw;
     /* background-color: #6b5d5d; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 0.8px solid var(--border-color);
+    /* background-size: cover; */
+    
 
 }
 
@@ -83,13 +85,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../../public/images/selfcarehorizontalimage.jpg");
+    background-image: var(--bg-image); /* Use a CSS variable for flexibility */
     background-size: cover;
     background-position: center;
-    opacity: 0.2;
+    opacity: 0.2; /* Adjust this value for desired opacity */
+    z-index: -1; /* Ensure it stays behind the content */
     transition: opacity 0.3s ease;
-    z-index: -2;
-
 }
 
 .range-product:hover::before {
@@ -102,7 +103,7 @@
     border-radius: 0.5rem;
     left: 10%;
     width: fit-content;
-    height: 100%;
+    height: 120%;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     transform: scale(0.9);
@@ -110,7 +111,7 @@
 
 }
 
-.range-product:hover > .range-product-image {
+.range-product:hover>.range-product-image {
     opacity: 1;
     transform: scale(1);
 
@@ -167,60 +168,76 @@
     padding: 0.5vw 1vw;
 }
 
-@media(max-width:768px){
-    .range-of-products-page{
-        padding:4vw 0;
+@media(max-width:768px) {
+    .range-of-products-page {
+        padding: 4vw 0;
     }
-    .rangeproductwrapper{
+
+    .rangeproductwrapper {
         width: 90%;
         margin: 0 auto;
     }
-    .range-product-heading{
+
+    .range-product-heading {
         /* background-color: red; */
-        height:10%;
+        height: 10%;
     }
-    .range-product-heading .subheading i{
+
+    .range-product-heading .subheading i {
         font-size: 5.5vw;
     }
-    .range-product-heading .subheading h3{
+
+    .range-product-heading .subheading h3 {
         font-size: 4.5vw;
     }
-    .range-product-heading a{
+
+    .range-product-heading a {
         white-space: nowrap;
         padding: 1vw 2vw;
     }
-    .range-product-heading a span{
-        font-size:4vw;
-    }
 
-    .range-product-heading a i  {
+    .range-product-heading a span {
         font-size: 4vw;
     }
-    .range-product-heading a i:hover  {
-        color:#fff;
+
+    .range-product-heading a i {
+        font-size: 4vw;
     }
-    .range-product{
+
+    .range-product-heading a i:hover {
+        color: #fff;
+    }
+
+    .range-product {
         flex-direction: column;
         justify-content: center;
-        gap:5vw;
-        margin-bottom: 6vw;;
+        gap: 5vw;
+        margin-bottom: 6vw;
+        ;
     }
-    .range-product-head{
+
+    .range-product-head {
         flex-direction: row;
         align-items: center;
-        gap:2vw;
+        gap: 2vw;
     }
-    .range-product-head .number, .range-product-head .product-name{
-        font-size: 5vw;;
+
+    .range-product-head .number,
+    .range-product-head .product-name {
+        font-size: 5vw;
+        ;
     }
-    .range-product-desc{
-        width:100%;
+
+    .range-product-desc {
+        width: 100%;
         text-align: center;
-        font-size: 3.5vw;;
+        font-size: 3.5vw;
+        ;
     }
-    .range-product a i{
+
+    .range-product a i {
         font-size: 6vw;
-        padding:1vw 3vw;
+        padding: 1vw 3vw;
     }
 
 }
