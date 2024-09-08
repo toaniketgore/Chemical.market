@@ -1,7 +1,8 @@
 #contact-home-page {
-    width: 100%;
-    background-color: #F4F4F4;
-    margin-bottom: 2rem;
+    width: 80%;
+    background-color: #FAF9F6;
+    border:1px solid var(--border-color);
+    margin:0 auto 2rem auto;
 }
 
 .contact-container {
@@ -53,6 +54,7 @@
 
 .contact-container .contact-text-container .contact-info h3 {
     font-size: 3rem;
+    text-transform: capitalize;
     color: #7a7a7a;
 }
 

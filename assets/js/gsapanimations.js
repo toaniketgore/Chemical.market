@@ -16,6 +16,14 @@ if (window.innerWidth > 1024) {
     "-=0.5"
   );
 
+  gsap.from(".contact-container", {
+    opacity: 0,
+    y: 100,
+    scale:0.5,
+    duration: 1,
+    ease: "power1.out",
+    scrollTrigger: ".contact-container",
+  });
   const tl = gsap.timeline();
 
   tl.from(".video-container video", {

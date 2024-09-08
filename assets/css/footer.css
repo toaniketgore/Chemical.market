@@ -5,7 +5,7 @@
 }
 
 .footer-container-wrapper {
-    padding: 4vw 8vw;
+    padding: 4vw 2vw;
     height: 100%;
     display: flex;
     border-bottom: 0.8px solid rgb(224, 224, 224);
@@ -89,12 +89,12 @@
     font-size: 24px;
 
 }
-
-.footer-container .footer-gallery {
+/* below code is commented because it was misbehaving with layout of small laptops*/
+/* .footer-container .footer-gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 1vw;
-}
+} */
 
 .footer-container .footer-gallery img {
     height: 90px;
