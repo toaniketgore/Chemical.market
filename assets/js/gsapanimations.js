@@ -9,7 +9,7 @@ if (window.innerWidth > 1024) {
         scroller: "body",
         start: "top 70%",
         end: "top 30%",
-        markers: true,
+        markers: false,
         scrub: true,
       },
     },
