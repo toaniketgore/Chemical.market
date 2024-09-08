@@ -1,30 +1,44 @@
 :root {
-    --primary-color: #FD5A0F /* Example primary color */
-  }
-
-.page1,  .page3{
-    height: 100%;
-    width: 100%;
-    /* background: red; */
+  --primary-color: #FD5A0F;
+  --border-color: rgb(224, 224, 224);
+  /* Example primary color */
 }
 
-.page2{ 
-  height: 120%;;
+.page1,
+.page3 {
+  height: 100%;
+  width: 100%;
+  /* background: red; */
+}
+
+.page2 {
+  height: 120%;
+  ;
 }
 
 
-#footer-page{
+#footer-page {
   height: 60%;
 }
-#contact-home-page{
-  height:45%;
+
+#contact-home-page {
+  height: 45%;
 }
-@media (max-width:768px){
-  #footer-page{
+
+.range-of-products-page {
+  height: 180%;
+}
+
+@media (max-width:768px) {
+  #footer-page {
     height: 120%;
   }
-  #contact-home-page{
-    height:60%;
+
+  #contact-home-page {
+    height: 60%;
+  }
+  .range-of-products-page {
+    height: 140%;
   }
 
 }

@@ -74,8 +74,13 @@ nav {
     gap: 2vw;
     width: calc(100% - 66%)
 }
-
+.nav-links a i{
+    font-size: 35px;
+}
 .nav-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 20px;
     font-weight: 600;
     line-height: 30.08px;
