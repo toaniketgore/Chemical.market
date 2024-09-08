@@ -1,8 +1,8 @@
 gsap.from(".animated-image", {
   opacity: 0,
-  x: -200,
+  y: -300,
   //   duration:2,
-  rotate: -10,
+  // rotate: -10,
   scrollTrigger: {
     trigger: ".about-image-container",
     scroller: "body",
@@ -39,3 +39,15 @@ tl.from(".video-container video", {
     },
     "-=0.5"
   );
+
+gsap.from(".owl-carousel", {
+  x: 2900,
+  scrollTrigger: {
+    trigger: ".products-container",
+    scroller: "body",
+    start: "top 80%",
+    end: "top 10%",
+    scrub: true,
+    markers: true,
+  },
+});

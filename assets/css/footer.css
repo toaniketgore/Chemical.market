@@ -98,6 +98,7 @@
 
 .footer-container .footer-gallery img {
     height: 90px;
+    object-fit: cover;
     width: 90px;
 }
 

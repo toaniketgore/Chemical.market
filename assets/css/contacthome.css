@@ -79,7 +79,8 @@
     }
 
     .contact-text-container .contact-icon {
-        height: 80px;
+        height: 90px;
+        width: 100px;
     }
 
     .contact-text-container .contact-info {
