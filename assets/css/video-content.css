@@ -13,7 +13,7 @@
 
 
 .video-container .video-text-content {
-    width:100%;
+    width: 100%;
     position: absolute;
     top: 60%;
     left: 50%;
@@ -41,7 +41,8 @@
     top: 0;
     left: 0;
 }
-.video-text-content .video-text-button{
+
+.video-text-content .video-text-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,34 +53,49 @@
     transition: all 10s ease;
     cursor: pointer;
 }
-.video-text-button:hover{
-    background:linear-gradient(to right,#b14d1f,#fd5a0f);
+
+.video-text-button:hover {
+    background: linear-gradient(to right, #b14d1f, #fd5a0f);
 }
-.video-text-button i{
+
+.video-text-button i {
     font-size: 24px;
     margin-left: 4px;
 
 
 }
-.video-text-button a{
+
+.video-text-button a {
     text-decoration: none;
     font-size: 24px;
-    color:#fff;
+    color: #fff;
 }
 
-@media(max-width:762px){
-    .video-container .video-text-content{
-        gap:3vw;
+@media (min-width: 768px) and (max-width: 1300px) {
+
+    /* Styles for screen widths between 768px and 1300px */
+    .video-text-content .video-text-button {
+        width: 25%;
     }
-    .video-text-content h2{
+}
+
+
+@media(max-width:762px) {
+    .video-container .video-text-content {
+        gap: 3vw;
+    }
+
+    .video-text-content h2 {
         font-size: 2rem;
         white-space: wrap;
     }
-    .video-text-content .video-text-button{
+
+    .video-text-content .video-text-button {
         width: 60%;
-        padding:2vw 4vw;
+        padding: 2vw 4vw;
     }
-    .video-text-button a{
+
+    .video-text-button a {
         font-size: 20px;
     }
 }

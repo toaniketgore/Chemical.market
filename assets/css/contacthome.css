@@ -64,6 +64,9 @@
 }
 
 @media(max-width:768px) {
+    #contact-home-page{
+        width: 95%;
+    }
     .contact-container {
         flex-direction: column-reverse;
         gap: 12vw;
