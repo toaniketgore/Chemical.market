@@ -68,11 +68,26 @@
                         </a>
 
                     </div>
-                    <a href="" class="menu-icon">
+                    <a href="javascript:void(0)" class="menu-icon" id="menu-icon" onclick="toggleSidebar()">
                         <i class="ri-menu-fill"></i>
                     </a>
+                    <a href="javascript:void(0)" class="close-icon" id="close-icon"  onclick="toggleSidebar()">
+                        <i class="ri-close-line"></i>
+                    </a>
                 </nav>
-
+                <div class="sidebar" id="sidebar">
+                    <div class="sidebar-nav-links">
+                        <a href="/#">About Us</a>
+                        <a href="/#">Products <i class="ri-arrow-drop-down-line"></i></a>
+                        <a href="/#">Solutions</a>
+                    </div>
+                    <div class="sidebar-btn">
+                        <a href="#" class="sidebar-contact-button"></a>
+                        <i class="ri-phone-line"></i>
+                        <span>Contact Us</span>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="video-container">
                 <video src="./public/videos/mainvideocompressed.mp4" autoplay muted loop></video>
@@ -169,7 +184,7 @@
                     <a href="">
                         <i class="ri-arrow-right-double-line"></i>
                     </a>
-                    <img src= "./public/images/cosmeticindiangirl.png" alt="" class="range-product-image">
+                    <img src="./public/images/cosmeticindiangirl.png" alt="" class="range-product-image">
 
                 </div>
                 <div class="range-product">
@@ -185,7 +200,7 @@
                         <i class="ri-arrow-right-double-line"></i>
                     </a>
 
-                    <img src= "./public/images/exoticbutter.jpg" alt="" class="range-product-image">
+                    <img src="./public/images/exoticbutter.jpg" alt="" class="range-product-image">
                 </div>
                 <div class="range-product">
                     <div class="range-product-head">
@@ -199,23 +214,8 @@
                     <a href="">
                         <i class="ri-arrow-right-double-line"></i>
                     </a>
-                    <img src= "./public/images/cosmeticindiangirl.png" alt="" class="range-product-image">
+                    <img src="./public/images/cosmeticindiangirl.png" alt="" class="range-product-image">
 
-                </div>
-                <div class="range-product">
-                    <div class="range-product-head">
-                        <h3 class="number">01</h3>
-                        <h4 class="product-name">Animal Nutrition & Feed</h4>
-                    </div>
-                    <div class="range-product-desc">
-                        <p>Providing Innovative Solutions for healthier livestock and sustainable farming</p>
-                    </div>
-
-                    <a href="">
-                        <i class="ri-arrow-right-double-line"></i>
-                    </a>
-
-                    <img src= "./public/images/exoticbutter.jpg" alt="" class="range-product-image">
                 </div>
                 <div class="range-product">
                     <div class="range-product-head">
@@ -230,7 +230,22 @@
                         <i class="ri-arrow-right-double-line"></i>
                     </a>
 
-                    <img src= "./public/images/exoticbutter.jpg" alt="" class="range-product-image">
+                    <img src="./public/images/exoticbutter.jpg" alt="" class="range-product-image">
+                </div>
+                <div class="range-product">
+                    <div class="range-product-head">
+                        <h3 class="number">01</h3>
+                        <h4 class="product-name">Animal Nutrition & Feed</h4>
+                    </div>
+                    <div class="range-product-desc">
+                        <p>Providing Innovative Solutions for healthier livestock and sustainable farming</p>
+                    </div>
+
+                    <a href="">
+                        <i class="ri-arrow-right-double-line"></i>
+                    </a>
+
+                    <img src="./public/images/exoticbutter.jpg" alt="" class="range-product-image">
                 </div>
             </div>
 
@@ -404,6 +419,25 @@
         $('.stop').on('click', function () {
             owl.trigger('stop.owl.autoplay')
         })
+
+    </script>
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            var menuIcon = document.getElementById("menu-icon");
+            var closeIcon = document.getElementById("close-icon");
+
+            if (sidebar.style.left === '0%') {
+                sidebar.style.left = '-70%'; // Hide the sidebar
+                menuIcon.style.display = 'block'; // Show the menu icon
+                closeIcon.style.display = 'none'; // Hide the close icon
+            } else {
+                sidebar.style.left = '0%'; // Show the sidebar
+                menuIcon.style.display = 'none'; // Hide the menu icon
+                closeIcon.style.display = 'block'; // Show the close icon
+            }
+        }
+
 
     </script>
 </body>
