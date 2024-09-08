@@ -38,72 +38,85 @@
     color: rgb(122, 122, 122)
 }
 
-.sidebar{
-    display:none
+#sidebar,
+#close-icon {
+    display: none
 }
-@media(max-width:768px){
-    #close-icon{
+
+@media(max-width:768px) {
+    #close-icon {
         display: none;
         font-size: 30px;
-        color:#000;
+        color: #000;
     }
-    .sidebar{
+
+    .sidebar {
         transition: all 0.5s ease;
-        height:100vh;
-        background-color: #fff;;
+        height: 100vh;
+        background-color: #fff;
+        ;
         display: block;
-        width:70%;
-        padding:4vw 2vw;
+        width: 70%;
+        padding: 4vw 2vw;
         position: absolute;
-        left:-100%;
+        left: -100%;
     }
-    .sidebar .sidebar-nav-links{
+
+    .sidebar .sidebar-nav-links {
         /* background-color: red; */
         display: flex;
         flex-direction: column;
-        height:38%;
-        gap:5vw;
+        height: 38%;
+        gap: 5vw;
 
-        
+
     }
+
     .sidebar .sidebar-nav-links a {
         transition: all ease 0.3s;
         display: flex;
         align-items: center;
-        padding:4vw 0;
-        justify-content: center;;
-        width:100%;
+        padding: 4vw 0;
+        justify-content: center;
+        ;
+        width: 100%;
         font-size: 5vw;
         text-transform: uppercase;
         text-decoration: none;
-        color:#7a7a7a;
-        border:0.8px solid var(--border-color)
-        
+        color: #7a7a7a;
+        border: 0.8px solid var(--border-color)
     }
-    .sidebar .sidebar-nav-links a:hover{
+
+    .sidebar .sidebar-nav-links a:hover {
         background-color: var(--primary-color);
-        color:#fff;
+        color: #fff;
     }
-    .sidebar .sidebar-nav-links a i{
-        font-size: 10vw;;
+
+    .sidebar .sidebar-nav-links a i {
+        font-size: 10vw;
+        ;
     }
-    .sidebar-btn{
+
+    .sidebar-btn {
         display: flex;
         justify-content: center;
-        gap:2vw;
+        gap: 2vw;
         text-transform: uppercase;
         align-items: center;
-        padding:4vw  2vw; 
+        padding: 4vw 2vw;
         text-align: center;
-        color:#fff;
+        color: #fff;
         font-size: 5vw;
-        background-color:var(--primary-color);
+        background-color: var(--primary-color);
     }
-    .sidebar-btn i{
+
+    .sidebar-btn i {
         font-size: 7vw;
     }
+
     .sidebar .open {
-        left: 0; /* When open, the sidebar will be fully visible */
+        left: 0;
+        /* When open, the sidebar will be fully visible */
     }
 }
 
@@ -140,9 +153,11 @@ nav {
     gap: 2vw;
     width: calc(100% - 66%)
 }
-.nav-links a i{
+
+.nav-links a i {
     font-size: 35px;
 }
+
 .nav-links a {
     display: flex;
     justify-content: center;
