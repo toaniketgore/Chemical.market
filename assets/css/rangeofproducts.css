@@ -73,7 +73,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 0.8px solid var(--border-color);
-    /* background-size: cover; */
+    background-size: cover;
     
 
 }
@@ -103,7 +103,7 @@
     border-radius: 0.5rem;
     left: 10%;
     width: fit-content;
-    height: 120%;
+    height: 100%;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     transform: scale(0.9);
