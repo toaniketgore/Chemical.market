@@ -15,7 +15,7 @@
 }
 
 .main-about .about-image-container {
-
+    position: relative;
     width: 50%;
     border-right: 0.8px solid rgb(224, 224, 224);
     height: 100%;
@@ -24,6 +24,17 @@
     background-size: cover;
     display: flex;
     align-items: center;
+}
+
+
+.animated-image {
+    position: absolute;
+    top: 10%;
+    left: 12%;
+    z-index: 100;
+    width: 100%;
+    /* opacity: 0; */
+    /* Start hidden */
 }
 
 .main-about .about-image-container img {
@@ -119,6 +130,10 @@
         font-size: 25px;
         line-height: 33px;
 
+    }
+
+    .animated-image {
+        left: 0%;
     }
 
 
