@@ -40,13 +40,4 @@ tl.from(".video-container video", {
     "-=0.5"
   );
 
-gsap.from(".owl-carousel", {
-  x: 2900,
-  scrollTrigger: {
-    trigger: ".products-container",
-    scroller: "body",
-    start: "top 80%",
-    end: "top 10%",
-    scrub: true,
-  },
-});
+
