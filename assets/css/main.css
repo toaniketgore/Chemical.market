@@ -1,36 +1,37 @@
 :root {
-  --primary-color: #FD5A0F;
+  --primary-color: #fd5a0f;
   --border-color: rgb(224, 224, 224);
   /* Example primary color */
 }
 
-.page1,
-.page3 {
+.page1 {
   height: 100%;
   width: 100%;
   /* background: red; */
+}
+.page3 {
+  height: 120%;
 }
 
 .page2 {
   height: 120%;
 }
 
-
 #footer-page {
   height: 75%;
 }
 
 #contact-home-page {
-  height: 45%;
+  height: 50%;
 }
 
 .range-of-products-page {
   height: 180%;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   #footer-page {
-    height: 120%;
+    height: 128%;
   }
 
   #contact-home-page {
@@ -40,5 +41,13 @@
   .range-of-products-page {
     height: 140%;
   }
+  .page3 {
+    height: 100%;
+  }
+}
 
+@media (max-width: 1300px) {
+  .page3 {
+    height: 90%;
+  }
 }

@@ -86,7 +86,7 @@
     background-image: var(--bg-image); /* Use a CSS variable for flexibility */
     background-size: cover;
     background-position: center;
-    opacity: 0.2; /* Adjust this value for desired opacity */
+    opacity: 0.1; /* Adjust this value for desired opacity */
     z-index: -1; /* Ensure it stays behind the content */
     transition: opacity 0.3s ease;
 }
