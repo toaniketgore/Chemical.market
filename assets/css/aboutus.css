@@ -1,138 +1,124 @@
 .about-us-container {
-    height: 75%;
-    width: 100%;
-    padding: 8vw 0;
-    background-color: #F4F4F4;
+  height: 75%;
+  width: 100%;
+  padding: 8vw 0;
+  background-color: #f4f4f4;
 }
 
 .about-us-container .main-about {
-    width: 90%;
-    height: 100%;
-    margin: auto;
-    display: flex;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
 }
 
 .main-about .about-image-container {
-    position: relative;
-    width: 50%;
-    border-right: 0.8px solid rgb(224, 224, 224);
-    height: 100%;
-    padding-right: 1vw;
-    background-image: url("../../public/images/dot-grid.png");
-    background-size: cover;
-    display: flex;
-    align-items: center;
+  position: relative;
+  width: 50%;
+  border-right: 0.8px solid rgb(224, 224, 224);
+  height: 100%;
+  padding-right: 1vw;
+  background-image: url("../../public/images/dot-grid.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
 }
 
-
 .animated-image {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    z-index: 100;
-    width: 100%;
-    /* opacity: 0; */
-    /* Start hidden */
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 100;
+  width: 100%;
+  /* opacity: 0; */
+  /* Start hidden */
 }
 
 .main-about .about-image-container img {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    border-radius: 8px;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
-
-
 .main-about .about-text-container {
-
-    padding-left: 2vw;
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2vw;
+  padding-left: 2vw;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2vw;
 }
 
 .main-about .about-text-container .container-head i {
-    color: var(--primary-color);
-    font-size: 20px;
+  color: var(--primary-color);
+  font-size: 20px;
 }
 
 .main-about .about-text-container .container-head span {
-    font-size: 20px;
-    color: #7a7a7a;
-    font-weight: bold;
+  font-size: 20px;
+  color: #7a7a7a;
+  font-weight: bold;
 }
 
-.main-about .about-text-container .about-content {}
-
 .main-about .about-text-container .about-content h3 {
-    font-size: 36px;
-    line-height: 38px;
-    font-weight: 600;
-    color: var(--primary-color);
-    padding-bottom: 2vw;
-    ;
-    border-bottom: 0.8px solid rgb(224, 224, 224);
-    ;
+  font-size: 36px;
+  line-height: 38px;
+  font-weight: 600;
+  color: var(--primary-color);
+  padding-bottom: 2vw;
+  border-bottom: 0.8px solid rgb(224, 224, 224);
 }
 
 .main-about .about-text-container .about-content p span {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .main-about .about-text-container .about-content p {
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 30px;
-    color: rgb(rgb(33, 37, 41));
-    padding-top: 2vw;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  color: rgb(rgb(33, 37, 41));
+  padding-top: 2vw;
 }
 
-@media (max-width:762px) {
-    .about-us-container {
-        height: 80%;
-        padding: 8vw 0;
-    }
+@media (max-width: 762px) {
+  .about-us-container {
+    height: 80%;
+    padding: 8vw 0;
+  }
 
-    .main-about {
+  .main-about {
+    flex-direction: column;
+  }
 
-        flex-direction: column;
-    }
+  .main-about .about-image-container {
+    width: 100%;
+    height: 40%;
+    border: none;
+  }
 
-    .main-about .about-image-container {
+  .main-about .about-image-container img {
+    width: 82%;
+    margin: 0;
+    object-fit: contain;
+  }
 
-        width: 100%;
-        height: 40%;
-        border: none;
+  .main-about .about-text-container {
+    height: 70%;
+    width: 100%;
+    padding-left: 1vw;
+    gap: 4vw;
+  }
 
-    }
+  .main-about .about-text-container .about-content h3 {
+    font-size: 25px;
+    line-height: 33px;
+  }
 
-    .main-about .about-image-container img {
-        width: 82%;
-        margin: 0;
-        object-fit: contain;
-    }
-
-    .main-about .about-text-container {
-        height: 70%;
-        width: 100%;
-        padding-left: 1vw;
-        gap: 4vw;
-    }
-
-    .main-about .about-text-container .about-content h3 {
-        font-size: 25px;
-        line-height: 33px;
-
-    }
-
-    .animated-image {
-        left: 0%;
-    }
-
-
+  .animated-image {
+    left: 0%;
+  }
 }
