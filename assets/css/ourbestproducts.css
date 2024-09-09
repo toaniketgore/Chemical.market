@@ -1,71 +1,70 @@
 .products-container img {
-    height: 400px;
-    width: auto;
-    object-fit: cover;
+  height: 290px;
+  width: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+  object-fit: cover;
 }
 
 .item #overlay {
-    height: 50%;
-    width: 100%;
-    background: linear-gradient(transparent, #090e1e);
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    padding: 0 0 1rem 1rem;
+  height: 50%;
+  width: 100%;
+  background: linear-gradient(transparent, #090e1e);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0 0 1rem 1rem;
 }
 
 .item #overlay span {
-    font-size: 1.3rem;
-    color: #fff;
+  font-size: 1.3rem;
+  color: #fff;
 }
 
 .products-container {
-    padding: 4vw 0;
-    display: flex;
-    ;
-    flex-direction: column;
+  padding: 4vw 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .products-container h2 {
-    margin-bottom: 4vw;
-    font-size: 2.5rem;
-    color: #54595f;
-    /* margin-bottom: 0; */
-    text-align: center;
+  margin-bottom: 4vw;
+  font-size: 2.5rem;
+  color: #54595f;
+  /* margin-bottom: 0; */
+  text-align: center;
 }
 
 .products-container h2 span {
-    color: #fd5a0f;
+  color: #fd5a0f;
 }
 
 .products-container button {
-    font-size: 18px;
-    background-color: #fd5000;
-    transition-duration: 2s;
-    padding: 12px 24px 12px 24px;
-    border: none;
-    color: #fff;
-    margin: 2rem auto;
+  font-size: 18px;
+  background-color: #fd5000;
+  transition-duration: 2s;
+  padding: 12px 24px 12px 24px;
+  border: none;
+  color: #fff;
+  margin: 2rem auto;
 }
 
 .owl-dots {
-    display: none;
+  display: none;
 }
 
-@media(max-width:762px) {
-    .owl-carousel {
-        padding: 5vw;
-    }
+@media (max-width: 762px) {
+  .owl-carousel {
+    padding: 5vw;
+  }
 
-    .products-container h2 {
-        font-size: 2rem;
-        margin-bottom: 9vw;
-    }
+  .products-container h2 {
+    font-size: 2rem;
+    margin-bottom: 9vw;
+  }
 
-    .products-container {
-        padding: 8vw 0; 
-    }
-
+  .products-container {
+    padding: 8vw 0;
+  }
 }
