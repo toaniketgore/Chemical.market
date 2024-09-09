@@ -1,0 +1,143 @@
+.process-page {
+  height: 120%;
+  /* background-color: #ccc; */
+  width: 100%;
+  /* margin: 5vw 0; */
+}
+.process-page .subheading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:0.2vw;
+}
+.process-page .subheading i {
+  font-size: 1.3vw;
+}
+.process-page h2 {
+  text-align: center;
+  font-size: 3vw;
+  color: #5d6167;
+}
+.process-page h2 span {
+  color: var(--primary-color);
+}
+.processwrapper {
+  height: 85%;
+  width: 100%;
+  display: flex;
+  gap: 2vw;
+  justify-content: center;
+  align-items: center;
+}
+.process1,
+.process3 {
+  height: 80%;
+  width: 20%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+}
+.process2,
+.process4 {
+  height: 80%;
+  width: 20%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column-reverse;
+}
+.processcontent {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1vw;
+  color: #888888;
+  height: 50%;
+  width: 100%;
+  background-color: #f4f4f4;
+}
+
+.processtitle {
+  color: var(--primary-color);
+}
+.processimg {
+  filter: grayscale(100%);
+  transition: filter 0.8s ease;
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+}
+.processimg:hover {
+  filter: grayscale(0%);
+}
+.process1 .processcontent:hover ~ .processimg,
+.process2 .processcontent:hover ~ .processimg,
+.process3 .processcontent:hover ~ .processimg,
+.process4 .processcontent:hover ~ .processimg {
+  filter: grayscale(0%);
+}
+
+.title .subheading span {
+  color: #54595f;
+}
+
+@media (max-width: 768px) {
+  .process-page {
+    height: 250%;
+    width: 100%;
+  }
+  .title {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vw;
+  }
+  .title .subheading {
+    display: flex;
+    align-items: center;
+  }
+  .title .subheading span {
+    font-size: 5vw;
+    color: #54595f;
+  }
+  .subheading i {
+    font-size: 5vw;
+  }
+  .title h2 {
+    font-size: 10vw;
+  }
+  .processwrapper {
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+    gap: 4vw;
+    /* align-items: center;; */
+  }
+  .process1,
+  .process3 {
+    height: 25%;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .process2,
+  .process4 {
+    width: 100%;
+    height: 25%;
+    flex-direction: column-reverse;
+  }
+  .processtitle {
+    font-size: 6vw;
+  }
+  .processimg {
+    height: 60%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .processcontent {
+    font-size: 4vw;
+    height: 40%;
+    gap: 1.5vw;
+  }
+}
