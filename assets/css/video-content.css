@@ -67,14 +67,8 @@
   color: #fff;
 }
 
-@media (min-width: 768px) and (max-width: 1366px) {
-  /* Styles for screen widths between 768px and 1300px */
-  .video-text-content .video-text-button {
-    width: 24%;
-  }
-}
 
-@media (max-width: 762px) {
+@media (max-width: 768px) {
   .video-container .video-text-content {
     gap: 3vw;
   }
@@ -91,5 +85,11 @@
 
   .video-text-button a {
     font-size: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1366px) {
+  /* Styles for screen widths between 768px and 1300px */
+  .video-text-content .video-text-button {
+    width: 24%;
   }
 }
