@@ -9,8 +9,10 @@
   width: 100%;
   /* background: red; */
 }
+
 .page3 {
   height: 100%;
+  width: 100%;
 }
 
 .page2 {
@@ -34,6 +36,7 @@
     height: 80%;
   }
 }
+
 @media (max-width: 768px) {
   #footer-page {
     height: 150%;
@@ -46,6 +49,7 @@
   .range-of-products-page {
     height: 140%;
   }
+
   .page3 {
     height: 75%;
   }
