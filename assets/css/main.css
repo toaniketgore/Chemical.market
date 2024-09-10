@@ -20,7 +20,7 @@
 }
 
 #footer-page {
-  height: 75%;
+  min-height: auto;
 }
 
 #contact-home-page {
@@ -39,7 +39,7 @@
 
 @media (max-width: 768px) {
   #footer-page {
-    height: 150%;
+    min-height: auto;
   }
 
   #contact-home-page {
