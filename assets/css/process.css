@@ -242,6 +242,23 @@
     font-size: 3.5vw;
   }
 
+  .processpara {
+    opacity: 0;
+  }
+
+  .processcon1:hover .processpara,
+  .processcon2:hover .processpara,
+  .processcon3:hover .processpara,
+  .processcon4:hover .processpara {
+    opacity: 1;
+  }
+
+  .processtitle {
+    font-size: 2vw;
+    line-height: 2.4vw;
+    text-transform: uppercase;
+  }
+
   /* end animiation our proccess */
 }
 
