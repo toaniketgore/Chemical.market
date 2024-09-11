@@ -5,6 +5,246 @@
   /* margin: 5vw 0; */
 }
 
+
+/* .triangle {
+  width: 0;
+  height: 0;
+  border-left: 140px solid transparent;
+  border-right: 140px solid transparent;
+  border-bottom: 100px solid #FD5A0F; */
+/* Color of the triangle */
+/* display: flex;
+  justify-content: center;
+  align-items: start;
+
+} */
+
+/* .processcon1::before,
+.processcon3::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #FD5A0F;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: all 0.5s ease;
+  z-index: -1;
+
+}
+
+.processcon2::before,
+.processcon4::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #FD5A0F;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(-100%);
+  transition: all 0.5s ease;
+  z-index: -1;
+
+}
+
+.processcon1:hover::before,
+.processcon3:hover::before {
+  transform: translateY(0);
+  z-index: 0;
+
+}
+
+.processcon2:hover::before,
+.processcon4:hover::before {
+  transform: translateY(0);
+  z-index: 0;
+
+}
+
+.processcontent:hover .processtitle {
+  z-index: 999;
+  color: #fff;
+}
+
+.processcon1 .triangle .icon,
+.processcon3 .triangle .icon {
+  margin-top: 1vw;
+}
+
+.processcontent:hover .triangle span i {
+  z-index: 999;
+  position: relative;
+  color: #fff;
+}
+
+
+.processcon1:hover .triangle {
+  border-bottom: 100px solid #fff;
+}
+
+
+
+.reverse-triangle {
+  transform: rotate(180deg);
+}
+
+.triangle i {
+  z-index: 999;
+  color: #fff;
+  font-size: 3.5vw;
+} */
+
+
+/* pasted from chatgpt */
+/* @media only screen and (min-width: 1024px) {
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 9.9vw solid transparent;
+    border-right: 9.9vw solid transparent;
+    border-bottom: 100px solid #FD5A0F;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .processcon1::before,
+  .processcon3::before,
+  .processcon2::before,
+  .processcon4::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #FD5A0F;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: all 0.5s ease;
+    z-index: -1;
+  }
+
+  .processcon2::before,
+  .processcon4::before {
+    transform: translateY(-100%);
+  }
+
+  .processcon1:hover::before,
+  .processcon3:hover::before,
+  .processcon2:hover::before,
+  .processcon4:hover::before {
+    transform: translateY(0);
+    z-index: 0;
+  }
+
+  .processcontent:hover .processtitle,
+  .processcontent:hover .processpara {
+    z-index: 999;
+    color: #fff;
+  }
+
+  .processcontent .triangle .icon {
+    margin-top: 1vw;
+  }
+
+  .processcontent:hover .triangle span i {
+    z-index: 999;
+    position: relative;
+    color: #fff;
+  }
+
+  .processcon1:hover .triangle {
+    border-bottom: 100px solid #fff;
+  }
+
+  .reverse-triangle {
+    transform: rotate(180deg);
+  }
+
+  .triangle i {
+    z-index: 999;
+    color: #fff;
+    font-size: 3.5vw;
+  }
+} */
+
+/* pasted miniefid from chatgpt after final animtion */
+@media only screen and (min-width: 1024px) {
+  .processcontent .triangle .icon {
+    margin-top: 1vw;
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 9.9vw solid transparent;
+    border-right: 9.9vw solid transparent;
+    border-bottom: 100px solid #FD5A0F;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .processcon1::before,
+  .processcon2::before,
+  .processcon3::before,
+  .processcon4::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #FD5A0F;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: all 0.5s ease;
+    z-index: -1;
+  }
+
+  .processcon2::before,
+  .processcon4::before {
+    transform: translateY(-100%);
+  }
+
+  .processcon1:hover::before,
+  .processcon2:hover::before,
+  .processcon3:hover::before,
+  .processcon4:hover::before {
+    transform: translateY(0);
+    z-index: 0;
+  }
+
+  .processcontent:hover .processtitle,
+  .processcontent:hover .processpara {
+    color: #fff;
+    z-index: 999;
+  }
+
+  .processcontent:hover .triangle span i {
+    z-index: 999;
+    color: #fff;
+  }
+
+  .processcon1:hover .triangle {
+    border-bottom: 100px solid #fff;
+  }
+
+  .reverse-triangle {
+    transform: rotate(180deg);
+  }
+
+  .triangle i {
+    position: relative;
+    z-index: 999;
+    color: #fff;
+    font-size: 3.5vw;
+  }
+
+  /* end animiation our proccess */
+}
+
 .process-page .subheading {
   display: flex;
   justify-content: center;
@@ -12,7 +252,7 @@
   gap: 0.2vw;
 }
 
-.process-page .subheading i {
+* .process-page .subheading i {
   font-size: 1.3vw;
 }
 
@@ -54,15 +294,47 @@
   flex-direction: column-reverse;
 }
 
+.processcon2 .triangle span,
+.processcon4 .triangle span {
+  transform: rotate(180deg);
+}
 
+.processconwrapper {
+  /* display: flex;
+  justify-content: left;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+  height: 100%;
+
+}
+
+.processcon1,
+.processcon3 {
+  padding-top: 2.5vw;
+}
+
+.processcon2,
+.processcon4 {
+  padding-bottom: 2.5vw;
+}
 
 .processcontent {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 0 1vw;
+  /* justify-content: center; */
+  justify-content: space-between;
+  align-items: center;
+
+  /* padding: 0 1vw; */
   color: #888888;
+  position: relative;
   height: 50%;
   width: 100%;
   background-color: #f4f4f4;
@@ -73,15 +345,15 @@
 }
 
 .processimg {
-  filter: grayscale(100%);
-  transition: filter 0.8s ease;
+  /* filter: grayscale(100%); */
+  /* transition: filter 0.8s ease; */
   height: 50%;
   width: 100%;
   object-fit: cover;
 }
 
 .processimg:hover {
-  filter: grayscale(0%);
+  /* filter: grayscale(0%); */
 }
 
 .process1 .processcontent:hover~.processimg,
@@ -96,9 +368,7 @@
 }
 
 @media (max-width: 768px) {
-
-  .process1 .triangle,
-  .process3 .triangle {
+  .processcontent .triangle {
     display: none;
   }
 
@@ -166,7 +436,7 @@
     object-position: center;
   }
 
-  .processcontent {
+  .processpara {
     font-size: 4vw;
     height: 40%;
     gap: 1.5vw;
