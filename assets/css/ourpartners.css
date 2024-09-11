@@ -50,10 +50,11 @@
 }
 
 @media (max-width:768px) {
-    .our-partners-container{
+    .our-partners-container {
         height: 20%;
         padding-top: 8vw;
     }
+
     .swiper-slide {
         padding: 0 4px;
     }
@@ -61,8 +62,9 @@
     .our-partners-container h2 {
         margin-bottom: 8vw;
         font-size: 2rem;
-        
+
     }
+
     .swiper-slide img {
         height: 100%;
         width: 100%;
