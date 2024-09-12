@@ -32,9 +32,12 @@
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css">
+
 </head>
 
 <body>
+
     <div id="main">
         <div class="page1">
             <div class="navigation-bar">
@@ -110,11 +113,11 @@
                 <h2>Our <span> Suppliers</span></h2>
                 <!-- Slider main container -->
                 <div class="mySwiper swiper">
-                    <!-- Additional required wrapper -->
+                    <!-- Additional required wrapper -->    
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
-                            <img src="./public/images/chembond logo.jpg" alt="">
+                            <img src="./public/images/logos/1.jpg" alt="">
                         </div>
                         <div class="swiper-slide">
                             <img src="./public/images/bitchem logo.png" alt="">
@@ -175,7 +178,7 @@
                         <i class="ri-arrow-right-double-line"></i>
                     </a>
                 </div>
-                <div class="range-product" data-bg-image="./public/images/selfcarehorizontalimage.jpg">
+                <div class="range-product" data-bg-image="./public/images/22.png">
                     <div class="range-product-head">
                         <h3 class="number">01</h3>
                         <h4 class="product-name">Self Care</h4>
@@ -237,7 +240,7 @@
 
                     <img src="./public/images/foodingredientindiangirl.png" alt="" class="range-product-image">
                 </div>
-                <div class="range-product" data-bg-image="./public/images/plastichorizontalimage.jpg">
+                <div class="range-product" data-bg-image="./public/images/11.png">
                     <div class="range-product-head">
                         <h3 class="number">05</h3>
                         <h4 class="product-name">Petrochemicals <br>& Polymers</h4>
@@ -452,6 +455,8 @@
         </div>
     </div>
 
+
+
     <!-- swiper js cdn -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- owl carousel scripts -->
@@ -469,6 +474,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
         integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- locomotive cdn link -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script> 
+    <script>
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('body'),
+            smooth: true
+        });
+    </script>  -->
     <!-- owl carousel script -->
     <script>
         var owl = $('.owl-carousel');
@@ -501,7 +516,6 @@
         })
 
     </script>
-
     <!-- manual scripts  -->
     <script src="./assets/js/ourpartners.js"></script>
     <script src="./assets/js/togglesidebar.js"></script>

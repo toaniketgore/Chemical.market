@@ -11,6 +11,7 @@
   position: relative;
 }
 
+/* main heading of rang product */
 .range-product-heading {
   width: 100%;
   height: 15%;
@@ -58,17 +59,24 @@
   font-size: 18px;
 }
 
+/* end of range product main heading */
+
 .range-product {
+  background-image: var(--bg-image);
+  background-color: #54595f;
+  background-size: cover;
   position: relative;
   width: 100%;
   height: 15%;
   margin-bottom: 1vw;
   padding: 0 2vw;
   /* background-color: #6b5d5d; */
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 0.8px solid #cccccc50;
+  transition: all 0.5s ease;
 }
 
 .range-product::before {
@@ -78,23 +86,40 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: var(--bg-image); /* Use a CSS variable for flexibility */
-  background-size: cover;
-  background-position: center;
-  opacity: 0.2; /* Adjust this value for desired opacity */
-  z-index: 100; /* Ensure it stays behind the content */
-  transition: opacity 0.3s ease;
+  background-color: #000000a7;
+  opacity: 0.1;
 }
 
-.range-product:hover::before {
+
+
+/* .range-product::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;  */
+/* Adjust this value for desired opacity z-index: 100;
+  Ensure it stays behind the content transition: opacity 0.3s ease; */
+/* } */
+
+/* .range-product:hover::before {
   opacity: 0.8;
 }
 
+
+
+/* product square image */
+
 .range-product-image {
   position: absolute;
-  top: -70%;
+  top: 0;
   border-radius: 0.5rem;
-  left: 10%;
+  right: 0;
   width: fit-content;
   height: 100%;
   opacity: 0;
@@ -103,24 +128,38 @@
   z-index: 999;
 }
 
-.range-product:hover > .range-product-image {
+.range-product:hover>.range-product-image,
+.range-product:hover>.range-product-desc {
   opacity: 1;
   transform: scale(1);
 }
 
-.range-product-head,
-.range-product-desc {
-  transition: all 0.3s ease;
-  /* Smooth fade out */
+.range-product:hover {
+  background-image: none !important;
+  background-color: #54595f;
 }
 
-.range-product:hover .range-product-head,
-.range-product:hover .range-product-desc {
+/* .range-product-head,
+{
+opacity: 1;
+transition: all 0.3s ease;
+/* Smooth fade out */
+/* }  */
+
+.range-product-desc {
   opacity: 0;
-  /* Fades out the text elements */
-  pointer-events: none;
-  /* Disables interaction */
 }
+
+/* .range-product:hover .range-product-head,
+.range-product:hover .range-product-desc, */
+/* { */
+/* opacity: 1; */
+/* Fades out the text elements */
+/* pointer-events: none; */
+/* Disables interaction */
+/* } */
+
+
 
 .range-product-head {
   display: flex;
@@ -142,6 +181,7 @@
 .range-product-head .product-name:hover {
   color: #fff;
 }
+
 .range-product-desc {
   width: 25%;
   font-size: 1.2vw;
