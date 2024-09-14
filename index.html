@@ -64,8 +64,19 @@
                         <img src="./public/images/chemical makret new logo.png" alt="">
                     </div>
                     <div class="nav-links">
-                        <a href="/#">About Us</a>
-                        <a href="/#">Products <i class="ri-arrow-drop-down-line"></i></a>
+                        <a href="javascript:void(0)">About Us</a>
+                        <div class="dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle">Products <i
+                                    class="ri-arrow-drop-down-line"></i></a>
+                            <div class="dropdown-content">
+                                <a href="#">Self Care</a>
+                                <a href="#">Paints & Coatings</a>
+                                <a href="#">Pharmaceuticals</a>
+                                <a href="#">Food Ingredients</a>
+                                <a href="#">Petrochemicals & Polymers</a>
+                            </div>
+                        </div>
+
                         <a href="/#">Solutions</a>
                     </div>
                     <div class="nav-button">
@@ -85,7 +96,15 @@
                 <div class="sidebar" id="sidebar">
                     <div class="sidebar-nav-links">
                         <a href="/#">About Us</a>
-                        <a href="/#">Products <i class="ri-arrow-drop-down-line"></i></a>
+                        <a href="javascript:void(0)" id="sidebar-products-toggle">Products <i
+                                class="ri-arrow-drop-down-line"></i></a>
+                        <div class="sidebar-dropdown-content" id="sidebar-dropdown">
+                            <a href="#">Self Care</a>
+                            <a href="#">Paints & Coatings</a>
+                            <a href="#">Pharmaceuticals</a>
+                            <a href="#">Food Ingredients</a>
+                            <a href="#">Petrochemicals & Polymers</a>
+                        </div>
                         <a href="/#">Solutions</a>
                     </div>
                     <div class="sidebar-btn">
@@ -162,8 +181,8 @@
             <div class="about-us-container">
                 <div class="main-about">
                     <div class="about-image-container">
-                        <img src="./public/images/aboutchemicalstage.png" alt="" class="base-image">
-                        <img src="./public/images/aboutchemicals.png" alt="Chemicals Image" class="animated-image">
+                        <img src="./public/images/chemicalmarket.jpg" alt="" class="base-image">
+                        <!-- <img src="./public/images/aboutchemicals.png" alt="Chemicals Image" class="animated-image"> -->
                     </div>
                     <div class="about-text-container">
                         <div class="container-head">
@@ -328,7 +347,7 @@
                 <div class="process1">
                     <div class="processcontent processcon1">
                         <div class="processconwrapper">
-                            <h3 class="processtitle"> Products Sourcing</h3>
+                            <h3 class="processtitle">Sourcing</h3>
                             <p class="processpara">
                                 Carefully selecting top-quality materials from trusted suppliers worldwide
                             </p>
@@ -539,7 +558,59 @@
     <script src="./assets/js/togglesidebar.js"></script>
     <script src="./assets/js/rangeproducts.js"></script>
     <script src="./assets/js/gsapanimations.js"></script>
+    <!-- <script>   
+        const dropdown = document.querySelector('.dropdown-content');
+        const toggle = document.querySelector('.dropdown-toggle');
 
+        toggle.addEventListener('click', function (event) {
+            event.stopPropagation();
+            dropdown.style.opacity = dropdown.style.opacity === '1' ? '0' : '1';
+        });
+
+        // Handle closing when clicking outside
+        document.addEventListener('click', function (event) {
+            if (!dropdown.contains(event.target) && !toggle.contains(event.target)) {
+                dropdown.style.opacity = '0';
+            }
+        });
+
+        // Handle hover functionality
+        toggle.addEventListener('mouseenter', function () {
+            dropdown.style.opacity = '1';
+        });
+
+        toggle.addEventListener('mouseleave', function () {
+            setTimeout(function () {
+                if (!dropdown.matches(':hover') && dropdown.style.opacity !== '1') {
+                    dropdown.style.opacity = '0';
+                }
+            }, 200);  // Adding a small delay to allow hover on dropdown
+        });
+
+        dropdown.addEventListener('mouseleave', function () {
+            dropdown.style.opacity = '0';
+        });
+
+        dropdown.addEventListener('mouseenter', function () {
+            dropdown.style.opacity = '1';
+        });
+
+    </script> -->
+    <script>
+        const sidebarProductsToggle = document.getElementById('sidebar-products-toggle');
+        const sidebarDropdown = document.getElementById('sidebar-dropdown');
+        const sidebarBtn = document.querySelector(".sidebar-btn")
+        sidebarProductsToggle.addEventListener('click', function () {
+            if (sidebarDropdown.style.display === 'flex') {
+                sidebarDropdown.style.display = 'none';
+                sidebarBtn.style.ZIndex = "0";
+
+            } else {
+                sidebarDropdown.style.display = 'flex';
+            }
+        });
+
+    </script>
 
 </body>
 

@@ -1,25 +1,25 @@
 if (window.innerWidth > 1024) {
-  gsap.from(
-    ".animated-image",
-    {
-      opacity: 0,
-      y: -300,
-      scrollTrigger: {
-        trigger: ".about-image-container",
-        scroller: "body",
-        start: "top 70%",
-        end: "top 30%",
-        markers: false,
-        scrub: true,
-      },
-    },
-    "-=0.5"
-  );
+  // gsap.from(
+  //   ".animated-image",
+  //   {
+  //     opacity: 0,
+  //     y: -300,
+  //     scrollTrigger: {
+  //       trigger: ".about-image-container",
+  //       scroller: "body",
+  //       start: "top 70%",
+  //       end: "top 30%",
+  //       markers: false,
+  //       scrub: true,
+  //     },
+  //   },
+  //   "-=0.5"
+  // );
 
   gsap.from(".contact-container", {
     opacity: 0,
     y: 100,
-    scale:0.5,
+    scale: 0.5,
     duration: 1,
     ease: "power1.out",
     scrollTrigger: ".contact-container",

@@ -79,7 +79,7 @@
   transition: all 0.5s ease;
 }
 
-.range-product::before {
+/* .range-product::before {
   content: "";
   position: absolute;
   top: 0;
@@ -88,27 +88,30 @@
   height: 100%;
   background-color: #000000a7;
   opacity: 0.1;
-}
+} */
 
 
 
-/* .range-product::before {
+.range-product::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: var(--bg-image);
-  background-size: cover;
-  background-position: center;
-  opacity: 0.3;  */
-/* Adjust this value for desired opacity z-index: 100;
+  /* background-image: var(--bg-image); */
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* background-color: #54595f; */
+  background-color: #000000bc;
+  transition: opacity 0.4s ease;
+  opacity: 0;
+  /* Adjust this value for desired opacity z-index: 100;
   Ensure it stays behind the content transition: opacity 0.3s ease; */
-/* } */
+}
 
-/* .range-product:hover::before {
-  opacity: 0.8;
+.range-product:hover::before {
+  opacity: 0.7;
 }
 
 
@@ -117,7 +120,7 @@
 
 .range-product-image {
   position: absolute;
-  top: 0;
+  top: -70%;
   border-radius: 0.5rem;
   right: 0;
   width: fit-content;
@@ -135,8 +138,8 @@
 }
 
 .range-product:hover {
-  background-image: none !important;
-  background-color: #54595f;
+  /* background-image: none !important; */
+  /* background-color: #54595f; */
 }
 
 /* .range-product-head,
