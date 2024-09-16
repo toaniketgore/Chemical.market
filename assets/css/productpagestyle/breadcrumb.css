@@ -1,5 +1,5 @@
 .breadcrumb {
-    height: 50%;
+    height: 35%;
     /* max-height: auto; */
     /* background-color: #FCE2D7; */
     margin-top: 125px;
@@ -52,7 +52,8 @@
     margin: 1vw 0;
     padding: 0 0 0 2vw;
 }
-.breadcrumb-desc p{
+
+.breadcrumb-desc p {
     font-size: 1.4vw;
 
 }

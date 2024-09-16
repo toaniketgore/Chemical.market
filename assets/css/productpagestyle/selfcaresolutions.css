@@ -1,0 +1,31 @@
+.solutions {
+    height: 50%;
+    background-color: #ddd;
+    margin-top: 2vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 3vw;
+}
+
+.solutions-image {
+    height: 200px;
+    width: fit-content;
+}
+
+.hydrolyzed {
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    font-size: 1.5vw;
+}
+
+.hydrolyzed-border {
+    position: absolute;
+    top: 40%;
+    left: 23%;
+    width: 180px;
+    border: 1px solid black;
+    transform: rotate(40deg);
+}
