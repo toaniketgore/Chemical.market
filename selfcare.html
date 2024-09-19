@@ -150,6 +150,9 @@
                 <button data-filter=".cleansers">Deep Cleansers</button>
                 <button data-filter=".oils">Beauty Oils</button>
             </div>
+            <div class="filter-desc">
+                <p class="desc-content"></p>
+            </div>
 
             <!-- Gallery items -->
             <div class="grid">
@@ -176,6 +179,8 @@
                 </div>
 
             </div>
+
+
         </div>
 
         <div class="challenges-container">
@@ -292,7 +297,16 @@
                 }
             });
 
-            // Filter items on button click
+            var descriptions = {
+                'moisturizers': "These ingredients are essential for maintaining skin hydration, improving texture, and enhancing the skin's natural barrier. They also lock in moisture and prevent dryness to give a smooth and supple appearance.",
+                'surfactants': "These chemical compounds are essential for their cleansing and emulsifying properties. They help remove dirt, oil, and impurities from the skin and hair by reducing surface tension, enabling effective cleaning and foaming action",
+                'brighteners': "These agents are used to reduce the appearance of hyperpigmentation, even out skin tone, and brighten the complexion. They work by inhibiting melanin production and promoting a more radiant, uniform skin appearance, making them popular in formulations",
+                'cleansers': "These chemical compounds are essential for their cleansing and emulsifying properties. They help remove dirt, oil, and impurities from the skin and hair by reducing surface tension, enabling effective cleaning and foaming action",
+                'oils': "They provide deep hydration, support skin repair, and deliver essential fatty acids and antioxidants, making them ideal for formulating products that promote healthy, radiant skin and hair while aligning with eco-conscious consumer preferences",
+                'default': '' // For "All" filter, no description
+            };
+
+            // Filter items on button click and update description
             $('.filters').on('click', 'button', function () {
                 var filterValue = $(this).attr('data-filter');
                 $grid.isotope({ filter: filterValue });
@@ -300,6 +314,11 @@
                 // Remove and add active class to buttons
                 $('.filters button').removeClass('filter-active');
                 $(this).addClass('filter-active');
+
+                // Update the description based on the filter
+                var descKey = filterValue.replace('.', ''); // Remove "." from filter class
+                var description = descriptions[descKey] || descriptions['default']; // Get description or default
+                $('.desc-content').text(description);
             });
         });
 
