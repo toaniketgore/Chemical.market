@@ -8,6 +8,11 @@
     z-index: 999;
     /* background-color:#222; */
     /* position: relative; */
+    transition: top 0.3s;
+}
+
+.navigation-bar.hidden {
+    top: -120px;
 }
 
 /* products dropdown css */
