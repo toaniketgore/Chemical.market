@@ -560,44 +560,8 @@
     <script src="./assets/js/togglesidebar.js"></script>
     <script src="./assets/js/rangeproducts.js"></script>
     <script src="./assets/js/gsapanimations.js"></script>
-    <!-- <script>   
-        const dropdown = document.querySelector('.dropdown-content');
-        const toggle = document.querySelector('.dropdown-toggle');
+    <script src="./assets/js/navdropdown.js"></script>
 
-        toggle.addEventListener('click', function (event) {
-            event.stopPropagation();
-            dropdown.style.opacity = dropdown.style.opacity === '1' ? '0' : '1';
-        });
-
-        // Handle closing when clicking outside
-        document.addEventListener('click', function (event) {
-            if (!dropdown.contains(event.target) && !toggle.contains(event.target)) {
-                dropdown.style.opacity = '0';
-            }
-        });
-
-        // Handle hover functionality
-        toggle.addEventListener('mouseenter', function () {
-            dropdown.style.opacity = '1';
-        });
-
-        toggle.addEventListener('mouseleave', function () {
-            setTimeout(function () {
-                if (!dropdown.matches(':hover') && dropdown.style.opacity !== '1') {
-                    dropdown.style.opacity = '0';
-                }
-            }, 200);  // Adding a small delay to allow hover on dropdown
-        });
-
-        dropdown.addEventListener('mouseleave', function () {
-            dropdown.style.opacity = '0';
-        });
-
-        dropdown.addEventListener('mouseenter', function () {
-            dropdown.style.opacity = '1';
-        });
-
-    </script> -->
     <script>
         const sidebarProductsToggle = document.getElementById('sidebar-products-toggle');
         const sidebarDropdown = document.getElementById('sidebar-dropdown');
@@ -613,7 +577,6 @@
         });
 
     </script>
-
 </body>
 
 </html>
