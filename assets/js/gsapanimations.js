@@ -41,6 +41,7 @@ if (window.innerWidth > 1024) {
     },
     "-=0.5"
   );
+
   // .from(
   //   ".navigation-bar",
   //   {
@@ -52,3 +53,14 @@ if (window.innerWidth > 1024) {
   //   "-=0.5"
   // );
 }
+
+
+gsap.from(".contact-info, .map", {
+  opacity: 0,
+  // y: 100,
+  scale: 0,
+  duration: 1,
+  ease: "power1.out",
+  scrollTrigger: ".contactus-container",
+  stagger: 0.2,
+});
