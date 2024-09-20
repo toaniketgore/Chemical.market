@@ -7,7 +7,64 @@
     position: relative;
 }
 
-.solutions img {
-    height: 80%;
-    width: 100%;
+.maincont {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.maincont img {
+    height: 30%;
+    border-radius: 0.5vw;
+    width: 45%;
+}
+
+.maincont .animelem,
+.maincont .animelem2,
+.maincont .animelem3,
+.maincont .animelem4 {
+    width: fit-content;
+    background: linear-gradient(to right, #FD5A0F, #fd5a0fb4);
+    color: #fff;
+    padding: 1vw 2vw;
+    /* border: 0.5px solid #ccc; */
+    border-radius: 0.5vw;
+    position: absolute;
+    left: 4.5%;
+    top: 10%;
+}
+
+.maincont .animelem2 {
+    top: 50%;
+    left: 1%;
+}
+
+.maincont .animelem3 {
+    top: 10%;
+    left: 78%;
+}
+
+.maincont .animelem4 {
+    top: 50%;
+    left: 78%;
+}
+
+
+.maincont .animelem p,
+.maincont .animelem2 p,
+.maincont .animelem3 p,
+.maincont .animelem4 p {
+    font-size: 1.5vw;
+    text-transform: uppercase;
+}
+
+.maincont .champaflower {
+    height: 160px;
+    width: 160px;
+    position: absolute;
+    top: 50%;
+    transform: rotate(320deg);
+    left: 32%;
+    opacity: 0.9;
 }

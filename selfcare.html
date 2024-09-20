@@ -200,15 +200,28 @@
 
         <div class="solutions">
             <h2 class="section-title">We Have <span>Solutions</span></h2>
-            <img src="./public/images/selfcaresolutioncreative.jpg" alt="">
+            <!-- <img src="./public/images/selfcaresolutioncreative.jpg" alt=""> -->
+            <div class="maincont">
+                <div class="animelem animelem1   ">
+                    <p>Emmolients</p>
+                </div>
+                <div class="animelem2 animelem  ">
+                    <p>Hydrolyzed Protein</p>
+                </div>
+                <img src="./public/images/champa.png" alt="" class="champaflower">
+                <!-- <img src="./public/images/leaf.png" alt="" class="leaf"> -->
+                <img src="./public/images/exoticbutter.png" alt="">
+                <div class="animelem3 animelem  ">
+                    <p>Collagen Booster</p>
+                </div>
+                <div class="animelem4 animelem  ">
+                    <p>Texture Enhancer</p>
+                </div>
+
+            </div>
         </div>
 
-        <!-- <div class="solutions">
-            <h2 class="section-title">We Have <span>Solutions</span></h2>
-            <img src="./public/images/abtcrt.jpg" alt="" class="solutions-image">
-            <span class="hydrolyzed">Hydrolyzed Proteins</span>
-            <div class="hydrolyzed-border"></div>
-        </div> -->
+
 
         <!--universal footer with margin top  -->
         <div id="footer-page" style="margin-top:4vw">
@@ -286,6 +299,16 @@
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script> -->
+
+    <!-- gsap cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- scrolltrigger cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script>
 
         document.addEventListener('DOMContentLoaded', function () {
@@ -406,7 +429,60 @@
 
 
     </script>
+    <script>
+        gsap.from(".animelem1 , .animelem2", {
+            opacity: 0,
+            x: -10,
+            scrollTrigger: {
+                trigger: ".maincont",
+                // markers: true,
+                scroller: "body",
+                start: "top 50%",
+                scrub: true,
+                end: "top 20%",
+            }
+        })
+        gsap.from(".animelem3, .animelem4", {
+            opacity: 0,
+            x: 50,
+            scrollTrigger: {
+                trigger: ".maincont",
+                scrub: true,
+                scroller: "body",
+                start: "top 50%",
+                end: "top 20%",
+            }
+        })
 
+        gsap.from(".champaflower", {
+            y: -300,
+            opacity: 0,
+            rotate: 100,
+            scrollTrigger: {
+                trigger: ".maincont",
+                scroller: "body",
+                scrub: true,
+                // markers: true,
+                start: "top 90%",
+                end: "top 20%",
+
+            }
+        })
+       
+        // gsap.fromTo(".champaflower",
+        //     { opacity: 0, y: 600 },
+        //     {
+        //         opacity: 1,
+        //         y: 0,
+        //         scrollTrigger: {
+        //             trigger: ".maincont",
+        //             scroller: "body",
+        //             start: "top 50%",
+        //             end: "top 20%",
+        //         }
+        //     }
+        // );
+    </script>
 </body>
 
 </html>
