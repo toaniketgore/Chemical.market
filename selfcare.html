@@ -168,9 +168,9 @@
                         alt="Deep Cleanser">
                 </div>
                 <div class="grid-item oils"><img src="./public/images/products/Beauty-Oil-2.jpg" alt="Beauty Oil"></div>
-                <!-- <div class="grid-item moisturizers"><img src="./public/images/products/Moisturizers.jpg"
+                <div class="grid-item moisturizers"><img src="./public/images/products/Moisturizers.jpg"
                         alt="Moisturizer">
-                </div> -->
+                </div>
                 <div class="grid-item moisturizers"><img src="./public/images/products/Deep-Cleasner.jpg"
                         alt="Moisturizer">
                 </div>
@@ -285,18 +285,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script> -->
     <script>
-        $(document).ready(function () {
-            // Initialize Isotope
-            var $grid = $('.grid').isotope({
-                itemSelector: '.grid-item',
-                layoutMode: 'fitRows',
-                fitRows: {
-                    gutter: 40 // Optional: to add spacing between rows if needed
-                }
-            });
 
+        document.addEventListener('DOMContentLoaded', function () {
+            var gridItems = document.querySelectorAll('.grid-item');
+            var filterButtons = document.querySelectorAll('.filters button');
             var descriptions = {
                 'moisturizers': "These ingredients are essential for maintaining skin hydration, improving texture, and enhancing the skin's natural barrier. They also lock in moisture and prevent dryness to give a smooth and supple appearance.",
                 'surfactants': "These chemical compounds are essential for their cleansing and emulsifying properties. They help remove dirt, oil, and impurities from the skin and hair by reducing surface tension, enabling effective cleaning and foaming action",
@@ -306,25 +300,112 @@
                 'default': '' // For "All" filter, no description
             };
 
-            // Filter items on button click and update description
-            $('.filters').on('click', 'button', function () {
-                var filterValue = $(this).attr('data-filter');
-                $grid.isotope({ filter: filterValue });
+            // Show all items on page load
+            filterItems('*');
 
-                // Remove and add active class to buttons
-                $('.filters button').removeClass('filter-active');
-                $(this).addClass('filter-active');
+            // Add event listener to filter buttons
+            filterButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    var filterValue = button.getAttribute('data-filter');
 
-                // Update the description based on the filter
-                var descKey = filterValue.replace('.', ''); // Remove "." from filter class
-                var description = descriptions[descKey] || descriptions['default']; // Get description or default
-                $('.desc-content').text(description);
+                    // Remove and add active class to buttons
+                    filterButtons.forEach(function (btn) {
+                        btn.classList.remove('filter-active');
+                    });
+                    button.classList.add('filter-active');
+
+                    // Filter the items based on the selected filter
+                    filterItems(filterValue);
+
+                    // Update the description
+                    var descKey = filterValue.replace('.', ''); // Remove "." from filter class
+                    var description = descriptions[descKey] || descriptions['default'];
+                    document.querySelector('.desc-content').textContent = description;
+                });
             });
+
+            function filterItems(filterValue) {
+                gridItems.forEach(function (item) {
+                    if (filterValue === '*' || item.classList.contains(filterValue.replace('.', ''))) {
+                        item.classList.add('show');
+                        item.style.opacity = '1';
+                    } else {
+                        item.classList.remove('show');
+                        item.style.opacity = '0';
+                    }
+                });
+            }
         });
+
 
     </script>
     <script src="./assets/js/navdropdown.js"></script>
     <script src="./assets/js/headerscrollinghide.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            // Select all filter buttons
+            const filterButtons = document.querySelectorAll('.filters button');
+
+            // Select all grid items
+            const gridItems = document.querySelectorAll('.grid-item');
+
+            // Add 'show' class to all grid items to make them visible initially
+            gridItems.forEach(item => {
+                item.classList.add('show');
+                item.style.display = 'block'; // Ensures all items are displayed initially
+            });
+
+            // Function to handle filtering logic
+            const filterGridItems = (filterValue) => {
+                gridItems.forEach(item => {
+                    if (filterValue === '*') {
+                        // Show all items
+                        item.classList.add('show');
+                        setTimeout(() => {
+                            item.style.display = 'block';
+                        }, 300);
+                    } else {
+                        // Show items matching the filter and hide others
+                        if (item.classList.contains(filterValue.substring(1))) {
+                            item.classList.add('show');
+                            setTimeout(() => {
+                                item.style.display = 'block';
+                            }, 300);
+                        } else {
+                            item.classList.remove('show');
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    }
+                });
+            };
+
+            // Add click event listener to each filter button
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+
+                    // Remove 'filter-active' class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('filter-active'));
+
+                    // Add 'filter-active' class to the clicked button
+                    this.classList.add('filter-active');
+
+                    // Get the filter category from the button's data-filter attribute
+                    const filterValue = this.getAttribute('data-filter');
+
+                    // Call the filter function
+                    filterGridItems(filterValue);
+                });
+            });
+
+            // Initially trigger the 'All' filter (first button active)
+            filterGridItems('*');  // Show all items by default
+        });
+
+
+    </script>
 
 </body>
 
