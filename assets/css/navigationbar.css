@@ -259,7 +259,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60%;
+    /* width: 60%; */
+    width: 46%;
     background: linear-gradient(to right, #fd5a0f, #b14d1f);
     padding: 1vw 2vw;
     border-radius: 12px;
