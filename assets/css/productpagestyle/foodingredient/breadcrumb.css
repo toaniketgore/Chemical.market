@@ -3,23 +3,23 @@
     /* max-height: auto; */
     /* background-color: #FCE2D7; */
     margin-top: 125px;
-    background-image: url("../../../../public/images/foodbanner.png");
-    background-size: cover;
-    padding: 2vw 0 0 4vw;
+    background: linear-gradient(to right, #fbdbce, #feefe7);
+    padding: 0 0 0 4vw;
     position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
-.breadcrumb::before {
-    content: "";
+.breadcrumb .breadcrumb-img {
     height: 100%;
-    width: 100%;
-    /* background-image: url("../../../public/images/aboutchemicals.png"); */
-    background-color: #FDE7DD;
-    /* background-size: cover; */
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.2;
+    width: fit-content;
+    opacity: 0.85;
+    object-fit: cover;
+    margin-right: 2vw;
+}
+
+.breadcrumb-text {
+    padding-top: 2vw;
 }
 
 .breadcrumb-link {

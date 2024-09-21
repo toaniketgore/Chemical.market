@@ -1,26 +1,40 @@
 .breadcrumb {
     height: 35%;
-    /* max-height: auto; */
-    /* background-color: #FCE2D7; */
     margin-top: 125px;
-    background-image: url("../../../../public/images/selfcarebanner.png");
-    background-size: cover;
-    padding: 2vw 0 0 4vw;
+    width: 100%;
+    background: linear-gradient(to right, #fbdbce, #feefe7);
+    padding-left: 4vw;
     position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
+.breadcrumb .breadcrumb-img {
+
+    height: 100%;
+    width: fit-content;
+    opacity: 0.85;
+    object-fit: cover;
+    margin-right: 2vw;
+}
+
+.breadcrumb-text {
+    padding-top: 2vw;
+}
+
+/* 
 .breadcrumb::before {
     content: "";
     height: 100%;
     width: 100%;
-    /* background-image: url("../../../public/images/aboutchemicals.png"); */
     background-color: #FDE7DD;
-    /* background-size: cover; */
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0.2;
-}
+} */
+/* background-size: cover; */
+/* background-image: url("../../../public/images/aboutchemicals.png"); */
 
 .breadcrumb-link {
     text-transform: uppercase;
