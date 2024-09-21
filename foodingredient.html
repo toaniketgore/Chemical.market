@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./public/images/favicon.png">
 
-    <title>Food Ingredients</title>
+    <title>Food & Nutrition | Chemical Market</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <!-- <link rel="stylesheet" href="./assets/css/main.module.css"> -->
     <link rel="stylesheet" href="./assets/css/navigationbar.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <!-- required css for food product page only -->
     <link rel="stylesheet" href="assets/css/productpagestyle/foodingredient/breadcrumb.css">
     <link rel="stylesheet" href="assets/css/productpagestyle/selfcare/productgallery.css">
     <link rel="stylesheet" href="assets/css/productpagestyle/selfcare/selfcaresolutions.css">
@@ -159,20 +160,7 @@
 
         </div>
 
-        <!-- <h3>For These Challenges</h3> -->
-        <!-- <div class="challenges-container">
-            <div class="text-content">
-                <div class="elem">
-                    <h1>Shelf Life</h1>
-                </div>
-                <div class="elem">
-                    <h1>Flavor</h1>
-                </div>
-                <div class="elem">
-                    <h1>Texture</h1>
-                </div>
-            </div>
-        </div> -->
+
 
 
         <div class="solutions">
@@ -268,181 +256,28 @@
             </div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
 
     <script src="./assets/js/navdropdown.js"></script>
     <script src="./assets/js/headerscrollinghide.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-
-            // Select all filter buttons
-            const filterButtons = document.querySelectorAll('.filters button');
-
-            // Select all grid items
-            const gridItems = document.querySelectorAll('.grid-item');
-
-            // Add 'show' class to all grid items to make them visible initially
-            gridItems.forEach(item => {
-                item.classList.add('show');
-                item.style.display = 'block'; // Ensures all items are displayed initially
-            });
-
-            // Function to handle filtering logic
-            const filterGridItems = (filterValue) => {
-                gridItems.forEach(item => {
-                    if (filterValue === '*') {
-                        // Show all items
-                        item.classList.add('show');
-                        setTimeout(() => {
-                            item.style.display = 'block';
-                        }, 300);
-                    } else {
-                        // Show items matching the filter and hide others
-                        if (item.classList.contains(filterValue.substring(1))) {
-                            item.classList.add('show');
-                            setTimeout(() => {
-                                item.style.display = 'block';
-                            }, 300);
-                        } else {
-                            item.classList.remove('show');
-                            setTimeout(() => {
-                                item.style.display = 'none';
-                            }, 300);
-                        }
-                    }
-                });
-            };
-
-            // Add click event listener to each filter button
-            filterButtons.forEach(button => {
-                button.addEventListener('click', function () {
-
-                    // Remove 'filter-active' class from all buttons
-                    filterButtons.forEach(btn => btn.classList.remove('filter-active'));
-
-                    // Add 'filter-active' class to the clicked button
-                    this.classList.add('filter-active');
-
-                    // Get the filter category from the button's data-filter attribute
-                    const filterValue = this.getAttribute('data-filter');
-
-                    // Call the filter function
-                    filterGridItems(filterValue);
-                });
-            });
-
-            // Initially trigger the 'All' filter (first button active)
-            filterGridItems('*');  // Show all items by default
-        });
+    <script src="./assets/js/productpagetabs.js"></script>
+    <script src="./assets/js/foodcategorydescription.js"></script>
 
 
-    </script>
 
 
-    <script>
-
-        document.addEventListener('DOMContentLoaded', function () {
-            var gridItems = document.querySelectorAll('.grid-item');
-            var filterButtons = document.querySelectorAll('.filters button');
-            var descriptions = {
-                'preservatives': "These agents extend the shelf life of products by preventing the growth of bacteria and mold, making it essential in canned foods, sauces, and beverages.",
-                'flavourenhancer': " These enhancers amplify the savory foods, making them more flavorful. It is commonly added to processed foods, snacks, soups, and restaurant dishes.",
-                'stabilizers': "These chemical substances are used to maintain the uniformity and consistency of products by preventing the breakdown of ingredients and ensuring that emulsions and suspensions remain stable over time.",
-                'default': '' // For "All" filter, no description
-            };
-
-            // Show all items on page load
-            filterItems('*');
-
-            // Add event listener to filter buttons
-            filterButtons.forEach(function (button) {
-                button.addEventListener('click', function () {
-                    var filterValue = button.getAttribute('data-filter');
-
-                    // Remove and add active class to buttons
-                    filterButtons.forEach(function (btn) {
-                        btn.classList.remove('filter-active');
-                    });
-                    button.classList.add('filter-active');
-
-                    // Filter the items based on the selected filter
-                    filterItems(filterValue);
-
-                    // Update the description
-                    var descKey = filterValue.replace('.', ''); // Remove "." from filter class
-                    var description = descriptions[descKey] || descriptions['default'];
-                    document.querySelector('.desc-content').textContent = description;
-                });
-            });
-
-            function filterItems(filterValue) {
-                gridItems.forEach(function (item) {
-                    if (filterValue === '*' || item.classList.contains(filterValue.replace('.', ''))) {
-                        item.classList.add('show');
-                        item.style.opacity = '1';
-                    } else {
-                        item.classList.remove('show');
-                        item.style.opacity = '0';
-                    }
-                });
-            }
-        });
-
-
-    </script>
     <!-- gsap cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- scrolltrigger cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
         integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        gsap.from(".animelem , .animelem2", {
-            opacity: 0,
-            x: -100,
-            scrollTrigger: {
-                trigger: ".maincontfood",
-                // markers: true,
-                scroller: "body",
-                start: "top 75%",
-                scrub: true,
-                end: "top 45%",
-            }
-        })
-        gsap.from(".animelem3, .animelem4", {
-            opacity: 0,
-            x: 100,
-            scrollTrigger: {
-                trigger: ".maincontfood",
-                scrub: true,
-                // markers: true,
-                scroller: "body",
-                start: "top 75%",
-                end: "top 45%",
-            }
-        })
 
-
-
-        // gsap.fromTo(".champaflower",
-        //     { opacity: 0, y: 600 },
-        //     {
-        //         opacity: 1,
-        //         y: 0,
-        //         scrollTrigger: {
-        //             trigger: ".maincont",
-        //             scroller: "body",
-        //             start: "top 50%",
-        //             end: "top 20%",
-        //         }
-        //     }
-        // );
-    </script>
-
+    <script src="./assets/js/foodanimgsap.js"></script>
 
 </body>
 

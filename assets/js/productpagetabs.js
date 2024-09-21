@@ -57,3 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initially trigger the 'All' filter (first button active)
   filterGridItems("*"); // Show all items by default
 });
+
+
+
