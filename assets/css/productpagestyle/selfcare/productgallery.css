@@ -53,6 +53,12 @@
     opacity: 1;
 }
 
+.grid-item img {
+    height: 285px;
+    object-fit: cover;
+    width: 285px;
+}
+
 .grid {
     width: 90%;
     /* background-color: red; */
@@ -69,4 +75,3 @@
     margin: 2vw auto;
     text-align: left;
 }
-

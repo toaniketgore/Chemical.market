@@ -11,37 +11,16 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <!-- <link rel="stylesheet" href="./assets/css/main.module.css"> -->
     <link rel="stylesheet" href="./assets/css/navigationbar.css">
-    <link rel="stylesheet" href="./assets/css/video-content.css">
-    <link rel="stylesheet" href="./assets/css/ourpartners.css">
-    <link rel="stylesheet" href="./assets/css/aboutus.css">
-    <link rel="stylesheet" href="./assets/css/ourbestproducts.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
-    <link rel="stylesheet" href="./assets/css/contacthome.css">
-    <link rel="stylesheet" href="./assets/css/rangeofproducts.css">
-    <link rel="stylesheet" href="./assets/css/process.css">
     <link rel="stylesheet" href="assets/css/productpagestyle/foodingredient/breadcrumb.css">
     <link rel="stylesheet" href="assets/css/productpagestyle/selfcare/productgallery.css">
-    <link rel="stylesheet" href="assets/css/productpagestyle/selfcare/challenges.css">
-    <link rel="stylesheet" href="assets/css/productpagestyle/foodingredient/challenges.css">
     <link rel="stylesheet" href="assets/css/productpagestyle/selfcare/selfcaresolutions.css">
     <link rel="stylesheet" href="assets/css/productpagestyle/foodingredient/foodsolutions.css">
 
     <!-- remix icon css -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <!-- swiper js -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <!-- owl carousel css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css">
 
 </head>
 
@@ -169,9 +148,12 @@
                 </div>
                 <div class="grid-item flavourenhancer"><img src="./public/images/potatochips.jpg" alt="flavourenhancer">
                 </div>
+                <div class="grid-item flavourenhancer"><img src="./public/images/potatochips.jpg" alt="flavourenhancer">
+                </div>
 
 
             </div>
+
         </div>
 
         <!-- <h3>For These Challenges</h3> -->
@@ -276,32 +258,74 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            // Initialize Isotope
-            var $grid = $('.grid').isotope({
-                itemSelector: '.grid-item',
-                layoutMode: 'fitRows',
-                fitRows: {
-                    gutter: 40 // Optional: to add spacing between rows if needed
-                }
-            });
 
-            // Filter items on button click
-            $('.filters').on('click', 'button', function () {
-                var filterValue = $(this).attr('data-filter');
-                $grid.isotope({ filter: filterValue });
-
-                // Remove and add active class to buttons
-                $('.filters button').removeClass('filter-active');
-                $(this).addClass('filter-active');
-            });
-        });
-
-    </script>
     <script src="./assets/js/navdropdown.js"></script>
     <script src="./assets/js/headerscrollinghide.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            // Select all filter buttons
+            const filterButtons = document.querySelectorAll('.filters button');
+
+            // Select all grid items
+            const gridItems = document.querySelectorAll('.grid-item');
+
+            // Add 'show' class to all grid items to make them visible initially
+            gridItems.forEach(item => {
+                item.classList.add('show');
+                item.style.display = 'block'; // Ensures all items are displayed initially
+            });
+
+            // Function to handle filtering logic
+            const filterGridItems = (filterValue) => {
+                gridItems.forEach(item => {
+                    if (filterValue === '*') {
+                        // Show all items
+                        item.classList.add('show');
+                        setTimeout(() => {
+                            item.style.display = 'block';
+                        }, 300);
+                    } else {
+                        // Show items matching the filter and hide others
+                        if (item.classList.contains(filterValue.substring(1))) {
+                            item.classList.add('show');
+                            setTimeout(() => {
+                                item.style.display = 'block';
+                            }, 300);
+                        } else {
+                            item.classList.remove('show');
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    }
+                });
+            };
+
+            // Add click event listener to each filter button
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+
+                    // Remove 'filter-active' class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('filter-active'));
+
+                    // Add 'filter-active' class to the clicked button
+                    this.classList.add('filter-active');
+
+                    // Get the filter category from the button's data-filter attribute
+                    const filterValue = this.getAttribute('data-filter');
+
+                    // Call the filter function
+                    filterGridItems(filterValue);
+                });
+            });
+
+            // Initially trigger the 'All' filter (first button active)
+            filterGridItems('*');  // Show all items by default
+        });
+
+
+    </script>
 
 
 </body>
