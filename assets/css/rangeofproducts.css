@@ -70,6 +70,7 @@
   height: 15%;
   margin-bottom: 1vw;
   padding: 0 2vw;
+  z-index: 1;
   /* background-color: #6b5d5d; */
 
   display: flex;
@@ -77,6 +78,11 @@
   align-items: center;
   border: 0.8px solid #cccccc50;
   transition: all 0.5s ease;
+}
+
+.range-product:hover {
+  z-index: 2;
+  /* Bring the hovered product to the front */
 }
 
 /* .range-product::before {
@@ -120,7 +126,7 @@
 
 .range-product-image {
   position: absolute;
-  top: -70%;
+  top: -85%;
   border-radius: 0.5rem;
   right: 0;
   width: fit-content;
