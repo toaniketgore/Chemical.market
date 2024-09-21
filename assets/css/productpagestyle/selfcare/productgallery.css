@@ -4,6 +4,7 @@
     margin: 4vw 0;
     min-height: auto;
     text-align: center;
+    border-bottom: 0.5px solid #ccc;
 }
 
 .section-title {
