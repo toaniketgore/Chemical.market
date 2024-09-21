@@ -131,6 +131,9 @@
                 <button data-filter=".stabilizers">Stabilizers</button>
 
             </div>
+            <div class="filter-desc">
+                <p class="desc-content"></p>
+            </div>
 
             <!-- Gallery items -->
             <div class="grid">
@@ -174,14 +177,24 @@
 
         <div class="solutions">
             <h2 class="section-title">Solutions for<span> Taste Enhancement</span></h2>
-            <img src="./public/images/foodsolutioncreative.jpg" alt="">
+
+            <div class="maincontfood">
+                <div class="animelem">
+                    <p>Natural Acids</p>
+                </div>
+                <img src="./public/images/iccream.jpg" alt="">
+                <div class="animelem2">
+                    <p>Flavour Booster</p>
+                </div>
+                <div class="animelem3">
+                    <p>Thickener</p>
+                </div>
+                <div class="animelem4">
+                    <p>Stabilizers</p>
+                </div>
+            </div>
+            <!-- <img src="./public/images/foodsolutioncreative.jpg" alt=""> -->
         </div>
-        <!-- <div class="solutions">
-            <h2 class="section-title">We Have <span>Solutions</span></h2>
-            <img src="./public/images/abtcrt.jpg" alt="" class="solutions-image">
-            <span class="hydrolyzed">Hydrolyzed Proteins</span>
-            <div class="hydrolyzed-border"></div>
-        </div> -->
 
         <!--universal footer with margin top  -->
         <div id="footer-page" style="margin-top:4vw">
@@ -325,6 +338,109 @@
         });
 
 
+    </script>
+
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var gridItems = document.querySelectorAll('.grid-item');
+            var filterButtons = document.querySelectorAll('.filters button');
+            var descriptions = {
+                'preservatives': "These agents extend the shelf life of products by preventing the growth of bacteria and mold, making it essential in canned foods, sauces, and beverages.",
+                'flavourenhancer': " These enhancers amplify the savory foods, making them more flavorful. It is commonly added to processed foods, snacks, soups, and restaurant dishes.",
+                'stabilizers': "These chemical substances are used to maintain the uniformity and consistency of products by preventing the breakdown of ingredients and ensuring that emulsions and suspensions remain stable over time.",
+                'default': '' // For "All" filter, no description
+            };
+
+            // Show all items on page load
+            filterItems('*');
+
+            // Add event listener to filter buttons
+            filterButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    var filterValue = button.getAttribute('data-filter');
+
+                    // Remove and add active class to buttons
+                    filterButtons.forEach(function (btn) {
+                        btn.classList.remove('filter-active');
+                    });
+                    button.classList.add('filter-active');
+
+                    // Filter the items based on the selected filter
+                    filterItems(filterValue);
+
+                    // Update the description
+                    var descKey = filterValue.replace('.', ''); // Remove "." from filter class
+                    var description = descriptions[descKey] || descriptions['default'];
+                    document.querySelector('.desc-content').textContent = description;
+                });
+            });
+
+            function filterItems(filterValue) {
+                gridItems.forEach(function (item) {
+                    if (filterValue === '*' || item.classList.contains(filterValue.replace('.', ''))) {
+                        item.classList.add('show');
+                        item.style.opacity = '1';
+                    } else {
+                        item.classList.remove('show');
+                        item.style.opacity = '0';
+                    }
+                });
+            }
+        });
+
+
+    </script>
+    <!-- gsap cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- scrolltrigger cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        gsap.from(".animelem , .animelem2", {
+            opacity: 0,
+            x: -100,
+            scrollTrigger: {
+                trigger: ".maincontfood",
+                // markers: true,
+                scroller: "body",
+                start: "top 75%",
+                scrub: true,
+                end: "top 45%",
+            }
+        })
+        gsap.from(".animelem3, .animelem4", {
+            opacity: 0,
+            x: 100,
+            scrollTrigger: {
+                trigger: ".maincontfood",
+                scrub: true,
+                // markers: true,
+                scroller: "body",
+                start: "top 75%",
+                end: "top 45%",
+            }
+        })
+
+
+
+        // gsap.fromTo(".champaflower",
+        //     { opacity: 0, y: 600 },
+        //     {
+        //         opacity: 1,
+        //         y: 0,
+        //         scrollTrigger: {
+        //             trigger: ".maincont",
+        //             scroller: "body",
+        //             start: "top 50%",
+        //             end: "top 20%",
+        //         }
+        //     }
+        // );
     </script>
 
 

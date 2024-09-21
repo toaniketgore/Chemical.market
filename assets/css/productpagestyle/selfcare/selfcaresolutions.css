@@ -7,7 +7,8 @@
     position: relative;
 }
 
-.maincont {
+.maincont,
+.maincontfood {
     position: relative;
     display: flex;
     justify-content: center;
@@ -23,7 +24,11 @@
 .maincont .animelem,
 .maincont .animelem2,
 .maincont .animelem3,
-.maincont .animelem4 {
+.maincont .animelem4,
+.maincontfood .animelem,
+.maincontfood .animelem2,
+.maincontfood .animelem3,
+.maincontfood .animelem4 {
     width: fit-content;
     background: linear-gradient(to right, #FD5A0F, #fd5a0fb4);
     color: #fff;
@@ -54,7 +59,11 @@
 .maincont .animelem p,
 .maincont .animelem2 p,
 .maincont .animelem3 p,
-.maincont .animelem4 p {
+.maincont .animelem4 p,
+.maincontfood .animelem,
+.maincontfood .animelem2,
+.maincontfood .animelem3,
+.maincontfood .animelem4 {
     font-size: 1.5vw;
     text-transform: uppercase;
 }
