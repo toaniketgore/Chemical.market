@@ -1,0 +1,13 @@
+.aboutusmaincontainer {
+    height: 50%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 5vw;
+    letter-spacing: 1.5vw;
+}
+
