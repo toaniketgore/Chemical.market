@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (!dropdownContent.matches(':hover')) {
                 hideDropdown();
             }
-        }, 300); // Adjust the timeout duration if needed
+        }, 400); // Adjust the timeout duration if needed
     });
 
     // Keep dropdown visible when clicking on the trigger
