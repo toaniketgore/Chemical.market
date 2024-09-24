@@ -44,30 +44,34 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20%;
-  background: linear-gradient(to right, #fd5a0f, #b14d1f);
-  padding: 1vw 2vw;
-  border-radius: 8px;
+  width: fit-content;
+  /* background: linear-gradient(to right, #fd5a0f, #b14d1f); */
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #f05526;
+  padding: 0.8vw 1.6vw;
+  border-radius: 1.1vw;
   transition: all 10s ease;
   cursor: pointer;
 }
 
-.video-text-button:hover {
-  background: linear-gradient(to right, #b14d1f, #fd5a0f);
-}
 
 .video-text-button i {
   font-size: 24px;
-  margin-left: 4px;
+  margin-left: 0.4vw;
 }
 
 .video-text-button a {
   text-decoration: none;
-  font-size: 24px;
+  font-size: 1.3vw;
   color: #fff;
 }
 
 
+.video-button{
+  display: flex;
+  align-items: center;
+}
 @media (max-width: 768px) {
   .video-container .video-text-content {
     gap: 3vw;

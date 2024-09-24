@@ -25,6 +25,7 @@
     display: inline-block;
     font-size: 1.5rem;
     line-height: 1.5rem;
+    text-transform: uppercase;
     font-weight: 700;
     color: rgb(84, 89, 95);
 }

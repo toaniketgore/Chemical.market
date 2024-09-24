@@ -274,6 +274,7 @@
 }
 
 .process-page h2 {
+  text-transform: uppercase;
   text-align: center;
   font-size: 3vw;
   color: #5d6167;
