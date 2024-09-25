@@ -46,7 +46,9 @@
     display: flex;
     gap: 1.5vw;
 }
-
+.social-links a{
+    text-decoration: none;
+}
 .footer-container .social-links i {
     cursor: pointer;
     font-size: 40px;
