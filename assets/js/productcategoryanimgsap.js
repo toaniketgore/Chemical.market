@@ -9,7 +9,7 @@ gsap.from(".filter-desc", {
     trigger: ".belowfiltersection",
     start: "top 80%",
     end: "top 50%",
-    markers: true,
+    // markers: true, 
     scrub: true,
   },
 });
