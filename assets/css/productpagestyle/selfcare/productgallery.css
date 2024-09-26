@@ -16,8 +16,21 @@
     margin-bottom: 2vw;
 }
 
+
+
 .section-title span {
     color: var(--primary-color);
+}
+
+.belowfiltersection {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2vw 0;
+}
+
+.filter-desc {
+    width: 50%;
 }
 
 .filters {
@@ -83,13 +96,16 @@
 }
 
 .grid-item img {
-    height: 285px;
+    height: 30vh;
     object-fit: cover;
     width: 285px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 0.5vw;
 }
 
 .grid {
-    width: 90%;
+    width: 50%;
     /* background-color: red; */
     display: flex;
     flex-wrap: wrap;
