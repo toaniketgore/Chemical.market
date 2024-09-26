@@ -23,7 +23,7 @@ gsap.from(".grid-item img", {
     trigger: ".belowfiltersection",
     start: "top 80%",
     end: "top 50%",
-    markers: true,
+    // markers: true,
     scrub: true,
     toggleActions: "restart none none reverse",
   },
