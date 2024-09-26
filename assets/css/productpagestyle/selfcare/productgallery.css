@@ -114,7 +114,8 @@
     width: 50%;
     /* background-color: red; */
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    align-items: center;
     margin: 0 auto;
     gap: 2vw;
     justify-content: center;
