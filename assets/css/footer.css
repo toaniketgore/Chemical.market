@@ -10,6 +10,7 @@
     /* background-color: red; */
     /* justify-content: space-between;
     align-items: center; */
+    padding-left:1.5vw
 
 
 }
@@ -44,15 +45,27 @@
 .footer-container .social-links {
     width: 100%;
     display: flex;
-    gap: 1.5vw;
+    /* gap: 1.5vw; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    align-items: center;
+    gap: 0.5vw;
 }
-.social-links a{
+
+.social-links span {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.social-links a {
     text-decoration: none;
 }
+
 .footer-container .social-links i {
     cursor: pointer;
     font-size: 40px;
-    color: #7a7a7a;
+    /* color: #7a7a7a; */
+    color: #222222c2;
     transition: all ease 0.4s;
 
 }
