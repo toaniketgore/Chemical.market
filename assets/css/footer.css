@@ -1,5 +1,7 @@
 #footer-page {
     border-top: 0.8px solid rgb(224, 224, 224);
+    z-index: 10;
+    position: relative;
 }
 
 .footer-container-wrapper {
