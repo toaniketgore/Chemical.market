@@ -4,13 +4,16 @@
     position: relative;
     width: 100%;
     /* background: linear-gradient(to left, #f37444, #fbc9ad); */
-    background-color: #E4E7E9;
+    /* background-color: #E4E7E9; */
+    background-image: url("../../../../public/images/bgdownloadbrochure.png");
+        background-size: cover;
+    background-repeat: no-repeat;
     margin: 0 auto;
     display: flex;
     /* padding-left: 8.5vw; */
     overflow-x: hidden;
     align-items: center;
-    margin-bottom: 4vw;
+    /* margin-bottom: 4vw; */
 
 }
 
@@ -28,7 +31,7 @@
 
 
 .leftpart .mainhead h2 {
-    font-size: 4.5vw;
+    font-size: 4vw;
     line-height: 5vw;
     text-transform: uppercase;
     /* color: #410b09; */

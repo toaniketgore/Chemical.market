@@ -120,7 +120,8 @@
 }
 
 .filter-desc .desc-content {
-    width: 70%;
-    margin: 2vw auto;
+    width: 100%;
+    margin: 2vw 0;
     text-align: left;
+    padding-right: 2vw;
 }
