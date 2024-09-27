@@ -4,7 +4,7 @@ gsap.from(".bottle", {
   x: 200,
   rotation: 40,
   scrollTrigger: {
-    markers: true,
+    // markers: true,
     trigger: ".rightpart",
     scrub: true,
     start: "top 80%",
