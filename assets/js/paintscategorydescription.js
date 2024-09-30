@@ -2,14 +2,20 @@ document.addEventListener("DOMContentLoaded", function () {
   var gridItems = document.querySelectorAll(".grid-item");
   var filterButtons = document.querySelectorAll(".filters button");
   var descriptions = {
-    preservatives:
-      "Preservatives are agents that extend the shelf life of products by preventing the growth of bacteria and mold, making them essential in canned foods, sauces, and beverages. Examples include Citric Acid.",
+    thickeners:
+      "Thickeners help control the viscosity and flow properties of paints and coatings, ensuring easy application and a smooth finish. Examples include HASE Thickener and Cellulosic Methyl Hydroxyethyl Cellulose (MHEC).",
 
-    flavorEnhancers:
-      "Flavor enhancers amplify the savory taste of foods, making them more flavorful. Commonly added to processed foods, snacks, soups, and restaurant dishes. Examples include Monosodium Glutamate and Phosphoric Acid.",
+    pigments:
+      "Pigments provide color to paints and coatings, allowing for a wide range of hues and shades. They are essential for achieving the desired appearance in coatings. Examples include Rutile Titanium Dioxide and Pigment Paste (Yellow, Black).",
 
-    stabilizers:
-      "Thickeners and stabilizers help maintain the uniformity and consistency of products by preventing the breakdown of ingredients. They ensure that emulsions and suspensions remain stable over time. Examples include Xanthan Gum and Modified Starch.",
+    dispersants:
+      "Dispersants ensure that pigments and fillers in coatings are evenly distributed, preventing agglomeration and improving color consistency and stability. Examples include Dispersing Agent (Ammonium Salt) and Dispersing + Wetting Agent (Sodium Salt).",
+
+    coalescingAgents:
+      "Coalescing agents improve film formation and the overall performance of coatings by ensuring that the paint dries evenly and adheres well to surfaces. An example is RTC-12.",
+
+    binders:
+      "Binders hold the ingredients together in both coatings and construction materials, providing structural integrity. Examples include Styrene Acrylic Emulsion and Hydrocarbon Resin.",
 
     default: "", // For "All" filter, no description
   };
