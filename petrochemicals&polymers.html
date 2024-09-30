@@ -15,9 +15,8 @@
     <!-- required css for food product page only -->
     <link rel="stylesheet" href="assets/css/productpagestyle/foodingredient/breadcrumb.css">
     <link rel="stylesheet" href="assets/css/productpagestyle/selfcare/productgallery.css">
-    <link rel="stylesheet" href="assets/css/productpagestyle/selfcare/selfcaresolutions.css">
-    <link rel="stylesheet" href="assets/css/productpagestyle/foodingredient/foodsolutions.css">
-
+    <link rel="stylesheet" href="assets/css/productpagestyle/selfcare/downloadbrochure.css">
+    <link rel="stylesheet" href="assets/css/productpagestyle/petrochemicals/downloadbrochureoverride.css">
     <!-- remix icon css -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 
@@ -118,8 +117,9 @@
             <img src="./public/images/plasticbottle.png" alt="" class="breadcrumb-img" style="opacity:0.8;">
         </div>
         <div class="breadcrumb-desc">
-            <p>Our product range for food and nutrition provides high-quality ingredients designed to enhance taste,
-                texture, shelf life, and nutritional value across a wide spectrum of food and beverage applications.
+            <p>At <span style="color:var(--primary-color)">Chemical Market</span>, we are one of India's largest
+                importers of high-quality solvents and chemicals,
+                catering to a wide range of industrial applications.
             </p>
         </div>
 
@@ -130,61 +130,71 @@
 
             <div class="filters">
                 <!-- <button data-filter="*" >All</button> -->
-                <button data-filter=".binders" class="filter-active">Binders</button>
-                <button data-filter=".controlled-release-agents">Controlled-Release Agents</button>
-
-            </div>
-            <div class="filter-desc">
-                <p class="desc-content"></p>
-            </div>
-
-            <!-- Gallery items -->
-            <div class="grid">
-                <div class="grid-item binders"><img src="./public/images/indiankidcandy.jpg" alt="preservatives">
-                </div>
-                <div class="grid-item binders"><img src="./public/images/potatochips.jpg" alt="flavourenhancer">
-                </div>
-                <div class="grid-item binders"><img src="./public/images/cookies.png" alt="stabilizers">
-                </div>
-                <div class="grid-item binders"><img src="./public/images/potatochips.jpg" alt="flavourenhancer">
-                </div>
-                <div class="grid-item stabilizers"><img src="./public/images/cookies.png" alt="stabilizers">
-                </div>
-                <div class="grid-item preservatives"><img src="./public/images/indiankidcandy.jpg" alt="preservatives">
-                </div>
-                <div class="grid-item flavourenhancer"><img src="./public/images/potatochips.jpg" alt="flavourenhancer">
-                </div>
-                <div class="grid-item flavourenhancer"><img src="./public/images/potatochips.jpg" alt="flavourenhancer">
-                </div>
+                <button data-filter=".solvents">Solvents</button>
+                <button data-filter=".cleaningAgents">Cleaning Agents</button>
+                <button data-filter=".plasticPolymers" class="filter-active">Plastic Polymers</button>
 
 
             </div>
+            <div class="belowfiltersection">
+                <div class="filter-desc">
+                    <p class="desc-content"></p>
+                </div>
 
+                <!-- Gallery items -->
+                <div class="grid">
+
+                    <!-- Solvents -->
+                    <div class="grid-item solvents"><img
+                            src="./public/images/products/paintsandcoatings/thickeners/Thickeners5.jpg"
+                            alt="Skin Brightener"></div>
+                    <div class="grid-item solvents"><img
+                            src="./public/images/products/paintsandcoatings/thickeners/Thickeners7.jpg"
+                            alt="Skin Brightener"></div>
+
+                    <!-- Cleaning Agents -->
+                    <div class="grid-item cleaningAgents"><img
+                            src="./public/images/products/petrochemicals/CleaningAgents/closeup-waitress-disinfecting-tables-outdoor-cafe.jpg"
+                            alt="Emulsifiers"></div>
+                    <div class="grid-item cleaningAgents"><img
+                            src="./public/images/products/petrochemicals/CleaningAgents/spray-bottles-set-with-sponge.jpg "
+                            alt="Emulsifiers"></div>
+
+                    <!-- Plastic Polymers -->
+                    <div class="grid-item plasticPolymers"><img
+                            src="./public/images/products/petrochemicals/PlasticPolymers/logistic-warehouse-with-blurry-boxes_23-2149214311.jpg"
+                            alt="Emulsifiers"></div>
+                    <div class="grid-item plasticPolymers"><img
+                            src="./public/images/products/petrochemicals/PlasticPolymers/stack-plastic-containers-with-red-bow-it_1182900-104579.jpg "
+                            alt="Emulsifiers"></div>
+
+
+
+
+                </div>
+            </div>
         </div>
 
 
 
 
-        <!-- <div class="solutions">
-            <h2 class="section-title">Solutions for<span> Taste Enhancement</span></h2>
+        <section class="downloadbrochure">
 
-            <div class="maincontfood">
-                <div class="animelem">
-                    <p>Natural Acids</p>
+            <div class="leftpart">
+                <div class="mainhead    ">
+                    <h2>Want to Know More ?</h2>
                 </div>
-                <img src="./public/images/iccream.jpg" alt="">
-                <div class="animelem2">
-                    <p>Flavour Booster</p>
+                <div class="downloadcontainer">
+                    <a href="https://drive.google.com/file/d/1Oxu8lmWB3iA8mszA-ZAWhwJy_Am9JlVg/view?usp=sharing"
+                        target="_blank" class="downloadbtn">Download Brochure</a>
+                    <i class="ri-download-line"></i>
                 </div>
-                <div class="animelem3">
-                    <p>Thickener</p>
-                </div>
-                <div class="animelem4">
-                    <p>Stabilizers</p>
-                </div>
+            </div>
+            <!-- <div class="rightpart">
+                <img src="./public/images/stagecosmetics.png" alt="" class="stage">
+                <img src="./public/images/bottlescosmetic.png" alt="" class="bottle">
             </div> -->
-        <!-- <img src="./public/images/foodsolutioncreative.jpg" alt=""> -->
-        <!-- </div> -->
+        </section>
 
         <!--universal footer with margin top  -->
         <div id="footer-page">
@@ -268,7 +278,7 @@
     <script src="./assets/js/navdropdown.js"></script>
     <script src="./assets/js/headerscrollinghide.js"></script>
     <script src="./assets/js/productpagetabs.js"></script>
-    <script src="./assets/js/foodcategorydescription.js"></script>
+    <script src="./assets/js/petrochemicalscategorydescription.js"></script>
 
 
 
