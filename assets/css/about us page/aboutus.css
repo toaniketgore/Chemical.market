@@ -245,9 +245,6 @@
     position: relative
 }
 
-
-
-
 .awardcards:hover {
     animation-play-state: paused;
     /* Pause the animation on hover */
@@ -255,6 +252,11 @@
 
 .awardcards::-webkit-scrollbar {
     display: none;
+}
+
+.awardcards {
+    scrollbar-width: none;
+    /* Hide scrollbar in Firefox */
 }
 
 .award {
