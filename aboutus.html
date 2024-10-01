@@ -11,11 +11,16 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/navigationbar.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/ourpartners.css">
     <link rel="stylesheet" href="./assets/css/about us page/aboutus.css">
 
     <!-- required css for contact page only -->
     <link rel="stylesheet" href="./assets/css/contact us page/contactus.css">
 
+
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- remix icon css -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 
@@ -160,6 +165,7 @@
             <h3 class="heading">
                 We are revolutionising the construction ecosystem and scaling rapidly!
             </h3>
+
             <div class="numbersgrid">
                 <div class="elem">
                     <h3 class="number" data-target="2.5">0</h3>
@@ -178,6 +184,55 @@
         <div class="values">
             <h3 class="heading">Values</h3>
             <img src="./public/images/our-values.jpg" alt="">
+        </div>
+
+        <div class="our-partners-container">
+            <h2>Key<span> Suppliers</span></h2>
+            <div class="subheading">Digitally connecting key customers and suppliers - On-Time, Every Time!</div>
+            <!-- Slider main container -->
+            <div class="mySwiper swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./public/images/logos/1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/logos/2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/logos/3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/logos/4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/logos/5.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/logos/6.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/logos/7.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/logos/8.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/logos/9.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/logos/10.jpg" alt="">
+                    </div>
+
+                </div>
+                <!-- If we need pagination -->
+                <!--   <div class="swiper-pagination"></div> -->
+
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+            </div>
         </div>
     </div>
 
@@ -302,6 +357,49 @@
                 });
             });
         });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            // Optional parameters
+            slidesPerView: 3,
+            spaceBetween: 0,
+            centeredSlides: true,
+            speed: 4000,
+            autoplay: {
+                delay: 0,
+            },
+            loop: true,
+            allowTouchMove: true,
+            disableOnInteraction: true,
+            // Breakpoints,
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                },
+            },
+            // pagination: {
+            //     el: ".swiper-pagination",
+            //     clickable: true,
+            // },
+            // navigation: {
+            //     nextEl: '.swiper-button-next',
+            //     prevEl: '.swiper-button-prev',
+            // },
+        });
+
+        // If we need pagination
+        // Navigation arrows
     </script>
 </body>
 

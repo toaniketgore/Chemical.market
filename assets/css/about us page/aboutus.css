@@ -153,12 +153,14 @@
     color: #4B5058;
 }
 
-.values{
+.values {
     display: flex;
-    justify-content: center;;
+    justify-content: center;
+    ;
     flex-direction: column;
-    gap:2vw;
+    gap: 2vw;
 }
+
 .values .heading {
     font-size: 2vw;
     font-weight: 400;
@@ -169,4 +171,26 @@
     width: 60%;
     margin: 0 auto;
     height: 200px;
+}
+
+
+/* key supplieers override */
+
+.our-partners-container {
+    margin: 2vh 0;
+    margin: 5vh auto 0 auto;
+    width: 90%;
+}
+
+.our-partners-container h2 {
+    font-weight: 500;
+    font-size: 2vw;
+    text-transform: capitalize;
+    margin-bottom: 1vw;
+}
+
+.our-partners-container .subheading {
+    text-align: center;
+    font-size: 1.2vw;
+    margin-bottom: 5vh;
 }
