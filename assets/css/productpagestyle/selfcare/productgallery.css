@@ -125,3 +125,26 @@
     text-align: left;
     padding-right: 2vw;
 }
+
+
+/* firefox styling */
+
+/* Custom thumb styling for Firefox */
+.filters::-moz-scrollbar {
+    height: 7px;
+    /* Adjust scrollbar height (thickness) */
+}
+
+.filters::-moz-scrollbar-thumb {
+    background-color: #000;
+    /* Scrollbar thumb color */
+    border-radius: 10px;
+    /* Make the scrollbar thumb rounded */
+    border: 2px solid #fff;
+    /* Optional: Adds a border around the thumb */
+}
+
+.filters::-moz-scrollbar-track {
+    background-color: #f0f0f0;
+    /* Background color of the scrollbar track */
+}
