@@ -40,7 +40,6 @@
 </head>
 
 <body>
-
     <div id="main">
         <div class="page1">
             <div class="navigation-bar">
@@ -116,20 +115,38 @@
                     </div>
                 </div>
             </div>
-            <div class="video-container">
+
+            <section class="container">
+                <div class="slider-wrapper">
+                    <div class="slider" id="slider">
+                        <img src="./public/images/industrial-building.jpg" alt="" id="slide-1">
+                        <img src="./public/images/petroleum-gas-container-ship-oil-refinery-background-energy-nautical-transportation.jpg"
+                            alt="" id="slide-2">
+                        <img src="./public/images/transport-logistics-concept.jpg" alt="" id="slide-3">
+
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slide-1" data-slide="0"></a>
+                        <a href="#slide-2" data-slide="1"></a>
+                        <a href="#slide-3" data-slide="2"></a>
+                        <!-- <a href="#slide-4" data-slide="3"></a> -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- <div class="video-container">
                 <video src="./public/videos/mainvideocompressed.mp4" autoplay muted loop></video>
                 <div id="video-overlay">
                     <div class="video-text-content">
-                        <h2>WHERE CHEMISTRY MEETS INNOVATION</h2>
-                        <!-- <div class="video-text-button">
+                        <h2>WHERE CHEMISTRY MEETS INNOVATION</h2> -->
+            <!-- <div class="video-text-button">
                             <a href="#rangeproductsscroll" class="video-button">
                                 <span>Explore Products</span>
                                 <i class="ri-arrow-right-line"></i>
                             </a>
                         </div> -->
-                    </div>
-                </div>
-            </div>
+            <!-- </div> -->
+            <!-- </div> -->
         </div>
         <div class="page2">
             <div class="our-partners-container">
@@ -505,7 +522,54 @@
         <script src="./assets/js/navdropdown.js"></script>
         <script src="./assets/js/headerscrollinghide.js"></script>
         <script src="./assets/js/sidebar.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const slider = document.getElementById('slider');
+                const slides = slider.getElementsByTagName('img');
+                const navDots = document.querySelectorAll('.slider-nav a');
+                let currentIndex = 0;
+                let autoSlideInterval;
 
+                // Function to change the slide
+                function changeSlide(index) {
+                    slider.scrollTo({
+                        left: slides[index].offsetLeft,
+                        behavior: 'smooth',
+                    });
+                    updateActiveDot(index);
+                    currentIndex = index;
+                }
+
+                // Function to update active dot
+                function updateActiveDot(index) {
+                    navDots.forEach(dot => dot.classList.remove('active'));
+                    navDots[index].classList.add('active');
+                }
+
+                // Auto sliding function
+                function startAutoSlide() {
+                    autoSlideInterval = setInterval(() => {
+                        currentIndex = (currentIndex + 1) % slides.length;
+                        changeSlide(currentIndex);
+                    }, 3000); // Slide every 3 seconds
+                }
+
+                // Event listener for dots
+                navDots.forEach((dot, index) => {
+                    dot.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        clearInterval(autoSlideInterval); // Stop auto sliding when clicked
+                        changeSlide(index);
+                        startAutoSlide(); // Restart auto slide after click
+                    });
+                });
+
+                // Start auto slide on page load
+                startAutoSlide();
+            });
+
+
+        </script>
 
 
 
