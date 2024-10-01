@@ -248,7 +248,51 @@
     </div>
 
     <script src="./assets/js/navdropdown.js"></script>
-    <script src="./assets/js/animatenumbers.js"></script>
+    <!-- <script src="./assets/js/animatenumbers.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            gsap.registerPlugin(ScrollTrigger);
+
+            const counters = document.querySelectorAll('.number');
+            const duration = 2000; // Total animation time in milliseconds
+
+            counters.forEach(counter => {
+                const target = parseFloat(counter.getAttribute('data-target')); // Handle floating-point numbers
+                const isFloat = target % 1 !== 0; // Check if it's a floating-point number
+
+                // GSAP Animation Trigger
+                gsap.fromTo(counter, { innerText: 0 }, {
+                    innerText: target,
+                    duration: duration / 1000, // Convert milliseconds to seconds for GSAP
+                    ease: "power1.out",
+                    snap: { innerText: isFloat ? 0.1 : 1 }, // Snap to nearest tenth for floats, nearest whole for integers
+                    scrollTrigger: {
+                        trigger: counter, // The element that triggers the animation
+                        start: "top 80%", // Trigger when the top of the counter hits 80% of the viewport height
+                        onEnter: () => {
+                            gsap.to(counter, {
+                                innerText: target,
+                                duration: duration / 1000,
+                                ease: "power1.out",
+                                snap: { innerText: isFloat ? 0.1 : 1 },
+                                onUpdate: () => {
+                                    // Update counter based on whether it's a float or integer
+                                    counter.innerText = isFloat ? parseFloat(counter.innerText).toFixed(1) : Math.ceil(counter.innerText);
+                                }
+                            });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
