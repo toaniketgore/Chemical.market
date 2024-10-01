@@ -17,8 +17,6 @@
   width: 50%;
   border-right: 0.8px solid rgb(224, 224, 224);
   height: 100%;
-  /* padding-right: 1vw; */
-  /* background-image: url("../../public/images/dot-grid.png"); */
   background-size: cover;
   display: flex;
   align-items: center;
