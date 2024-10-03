@@ -24,6 +24,7 @@
     width: 80%;
     margin: 0 auto;
     padding: 2vw 0;
+    gap:2vw; /*added gap between description and product images*/
 }
 
 .filter-desc {
