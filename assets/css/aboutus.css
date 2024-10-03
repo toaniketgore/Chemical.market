@@ -84,6 +84,11 @@
   padding-top: 2vw;
 }
 
+.readmoreabout {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
 @media (max-width: 1300px) {
   .animated-image {
     top: 8%;
