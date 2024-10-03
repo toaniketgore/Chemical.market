@@ -150,6 +150,19 @@
     font-weight: 500;
 }
 
+.numbersgrid .elem .number::after {
+    content: "+"
+}
+
+.ournumbers .office {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5vw;
+}
+.ournumbers .office i{
+    color:var(--primary-color)
+}
+
 .numbersgrid .elem .numberDesc {
     font-size: 1.3vw;
     color: #4B5058;
@@ -165,22 +178,22 @@
 
 .values .heading {
     font-size: 2vw;
-    font-weight: 400;
+    color: #5D6167;
+    font-weight: 500;
     text-align: center;
 }
 
 .values img {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
-    height: 200px;
+    height: 218px;
 }
 
 
 /* key supplieers override */
 
 .our-partners-container {
-    margin: 2vh 0;
-    margin: 5vh auto 0 auto;
+    margin: 5vh auto;
     width: 90%;
 }
 
