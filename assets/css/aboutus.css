@@ -53,13 +53,14 @@
 
 .main-about .about-text-container .container-head i {
   color: var(--primary-color);
-  font-size: 20px;
+  font-size: 2vw;
 }
 
 .main-about .about-text-container .container-head span {
-  font-size: 20px;
+  font-size: 2vw;
+
   color: #7a7a7a;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .main-about .about-text-container .about-content h3 {

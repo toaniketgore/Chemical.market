@@ -73,7 +73,6 @@
   padding: 0 2vw;
   z-index: 1;
   /* background-color: #6b5d5d; */
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -91,9 +90,11 @@
   /* background: linear-gradient(45deg, black, transparent); */
   padding: 0.5vw;
   font-size: 1.2vw;
+  background-color: #000000a2;
+  border-radius: 0.5vw;
   color: #fff;
   /* Move the description down initially */
-  transition: all 0.5s ease;
+  transition: display 1s ease;
   width: 50%;
 }
 
