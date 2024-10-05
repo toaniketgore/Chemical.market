@@ -146,7 +146,6 @@
   100% {
     opacity: 1;
     transform: translateY(0);
-    /* Drop into place */
   }
 }
 
