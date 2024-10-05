@@ -14,6 +14,7 @@
 
 }
 
+
 .whoweare h1 {
     color: #000;
     white-space: nowrap;
@@ -159,8 +160,9 @@
     font-weight: 500;
     font-size: 1.5vw;
 }
-.ournumbers .office i{
-    color:var(--primary-color)
+
+.ournumbers .office i {
+    color: var(--primary-color)
 }
 
 .numbersgrid .elem .numberDesc {

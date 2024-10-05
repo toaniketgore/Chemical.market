@@ -132,30 +132,62 @@
   opacity: 1;
 }
 
-#slide-1 {
+.container #slider {
   position: relative;
 }
 
-.slider>img:nth-child(1)::after {
+@keyframes dropDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+    /* Start off-screen */
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    /* Drop into place */
+  }
+}
+
+.slider:nth-child(1)::after {
   content: "Join us on our journey to reshape the  future of \A chemical commerce";
+  height: 28%;
+  width: 35%;
   position: absolute;
-  /* background: linear-gradient(135deg, rgba(243, 116, 68, 0.3), rgba(251, 201, 173, 0.2), rgba(254, 244, 238, 0.2)); */
-  /* bottom: 10%; */
-  padding: 1vw 2vw;
-  top: 9%;
-  /* Adjust the position */
-  left: 5%;
+  top: 8%;
+  left: 2%;
+  background: linear-gradient(to top, #000000ca, #000000b3);
+  color: #fff;
+  border-radius: 0.5vw;
+  font-size: 2.5vw;
+  text-transform: uppercase;
+  padding: 2vw;
+  animation: dropDown 1s ease-out 1s forwards;
+}
+
+
+
+/* .slider>img:nth-child(1)::after {
+  content: "Join us on our journey to reshape the  future of \A chemical commerce";
+  position: absolute; */
+/* background: linear-gradient(135deg, rgba(243, 116, 68, 0.3), rgba(251, 201, 173, 0.2), rgba(254, 244, 238, 0.2)); */
+/* bottom: 10%; */
+/* padding: 1vw 2vw;
+  top: 9%; */
+/* Adjust the position */
+/* left: 5%;
   width: 39%;
   color: #000;
   font-weight: 600;
   font-size: 2.8vw;
-  text-transform: uppercase;
-  /* Adjust font size */
-  /* background-color: rgba(0, 0, 0, 0.5); */
-  /* Optional: Add background for better visibility */
-  border-radius: 5px;
+  text-transform: uppercase; */
+/* Adjust font size */
+/* background-color: rgba(0, 0, 0, 0.5); */
+/* Optional: Add background for better visibility */
+/* border-radius: 5px;
   white-space: pre-line;
-}
+} */
 
 
 @media (max-width: 768px) {
