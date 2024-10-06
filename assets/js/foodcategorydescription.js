@@ -3,13 +3,13 @@ document.addEventListener("DOMContentLoaded", function () {
   var filterButtons = document.querySelectorAll(".filters button");
   var descriptions = {
     preservatives:
-      "Preservatives are agents that extend the shelf life of products by preventing the growth of bacteria and mold, making them essential in canned foods, sauces, and beverages. Examples include Citric Acid.",
+      "These agents extend the shelf life of products by preventing the growth of bacteria and mold, making it essential in canned foods, sauces, and beverages.",
 
     flavorEnhancers:
-      "Flavor enhancers amplify the savory taste of foods, making them more flavorful. Commonly added to processed foods, snacks, soups, and restaurant dishes. Examples include Monosodium Glutamate and Phosphoric Acid.",
+      "These enhancers amplify the savory foods, making them more flavorful. It is commonly added to processed foods, snacks, soups, and restaurant dishes.",
 
     stabilizers:
-      "Thickeners and stabilizers help maintain the uniformity and consistency of products by preventing the breakdown of ingredients. They ensure that emulsions and suspensions remain stable over time. Examples include Xanthan Gum and Modified Starch.",
+      "These chemical substances are used to maintain the uniformity and consistency of products by preventing the breakdown of ingredients and ensuring that emulsions and suspensions remain stable over time.",
 
     default: "", // For "All" filter, no description
   };
