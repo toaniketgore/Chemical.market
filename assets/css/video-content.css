@@ -155,7 +155,7 @@
   top: 8%;
   left: 2%;
   /* margin: auto 0; */
-/* background: linear-gradient(to top, #000000, #00000085); */
+/* background: linear-gradient(to top,  ); */
 /* color: #fff; */
 /* border-radius: 0.5vw; */
 /* font-size: 3.5vw; */
@@ -177,9 +177,9 @@
   left: 2%;
   height: 56%;
   width: 40%;
-  background: url("../../public/images/banner3\ \(1\)-01.png") no-repeat center
+  background: url("../../public/images/white-text.jpg") no-repeat center
     center;
-  filter: invert(100%) brightness(2) contrast(2);
+  /* filter: invert(100%) brightness(2) contrast(2); */
   background-size: contain;
   border-radius: 0.5vw;
   opacity: 0; /* Start invisible */
