@@ -3,28 +3,28 @@ document.addEventListener("DOMContentLoaded", function () {
   var filterButtons = document.querySelectorAll(".filters button");
   var descriptions = {
     hydrolyzedProteins:
-      "These proteins are used to strengthen and repair damaged hair and skin by providing essential amino acids that enhance moisture retention and improve overall texture. Their ability to penetrate and nourish at a cellular level makes them a key ingredient in formulations aimed at restoring vitality and resilience.",
+      "These proteins strengthen and repair hair and skin by delivering essential amino acids,enhancing moisture retention, and improving texture. Their deep nourishment restores vitality and resilience.",
 
     beautyPeptides:
-      "These peptides are used to stimulate collagen production, enhance skin elasticity, and reduce the appearance of fine lines and wrinkles. Their ability to target specific skin concerns at a cellular level makes them essential in formulations designed to promote a youthful, radiant complexion.",
+      "These peptides boost collagen, improve skin elasticity, and reduce fine lines, making them essential for promoting a youthful, radiant complexion.",
 
     moisturizers:
       "These ingredients are essential for maintaining skin hydration, improving texture, and enhancing the skin's natural barrier. They also lock in moisture and prevent dryness to give a smooth and supple appearance.",
 
     surfactants:
-      "These chemical compounds are essential for their cleansing and emulsifying properties. They help remove dirt, oil, and impurities from the skin and hair by reducing surface tension, enabling effective cleaning and foaming action.",
+      "These compounds are essential for their cleansing and emulsifying properties, helping to remove dirt, oil, and impurities from skin and hair by reducing surface tension for effective cleaning and foaming action.",
 
     brighteners:
-      "These agents are used to reduce the appearance of hyperpigmentation, even out skin tone, and brighten the complexion. They work by inhibiting melanin production and promoting a more radiant, uniform skin appearance, making them popular in formulations.",
+      "These agents reduce hyperpigmentation, even skin tone, and brighten the complexion by inhibiting melanin production, making them key in formulations for a radiant, uniform look.",
 
     inflammatory:
-      "These ingredients are crucial for soothing irritated skin, reducing redness, and calming inflammation.",
+      "These ingredients are crucial for soothing irritated skin, reducing redness, and calming inflammation..",
 
     conditioningAgents:
-      "These agents are used to improve the texture and manageability of hair and skin. They enhance moisture retention, smoothness, and overall softness, making them essential for formulations aimed at nourishing and revitalizing hair and healthy skin.",
+      "These agents enhance the texture and manageability of hair and skin by improving moisture retention, smoothness, and softness, making them essential for nourishing and revitalizing formulations.",
 
     emollients:
-      "These cosmetic preparations soften the skin by providing deep hydration and creating a protective barrier to prevent moisture loss.",
+      "These cosmetic preparations soften the skin by providing deep hydration and creating a protective barrier to prevent moisture loss..",
 
     exoticButters:
       "These butters are valued for their rich, nourishing properties. They provide intense hydration, improve skin elasticity, and offer a luxurious texture, making them ideal for enhancing the sensory appeal of skincare and haircare products.",
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "They ensure consistent texture and performance in products such as creams and lotions, preventing separation and enhancing the overall effectiveness and application of the products.",
 
     beautyOils:
-      "They provide deep hydration, support skin repair, and deliver essential fatty acids and antioxidants, making them ideal for formulating products that promote healthy, radiant skin and hair.",
+      "They provide hydration, skin repair, and essential nutrients, ideal for products that promote radiant skin and hair while appealing to eco-conscious consumers.",
 
     default: "", // For "All" filter, no description
   };

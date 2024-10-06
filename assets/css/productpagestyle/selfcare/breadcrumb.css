@@ -37,15 +37,14 @@
 /* background-image: url("../../../public/images/aboutchemicals.png"); */
 
 .breadcrumb-link {
-    text-transform: uppercase;
-    color: #000;
+    text-transform: capitalize;
 
 }
 
 .breadcrumb-link a {
     text-decoration: none;
     color: #000;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
 }
 
 .breadcrumb-link i {
