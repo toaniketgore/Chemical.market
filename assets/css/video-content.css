@@ -55,7 +55,6 @@
   cursor: pointer;
 }
 
-
 .video-text-button i {
   font-size: 24px;
   margin-left: 0.4vw;
@@ -67,12 +66,10 @@
   color: #fff;
 }
 
-
 .video-button {
   display: flex;
   align-items: center;
 }
-
 
 .container {
   height: 100%;
@@ -96,7 +93,6 @@
   /* box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25); */
   height: 100%;
   width: 100%;
-  ;
 }
 
 .slider::-webkit-scrollbar {
@@ -136,35 +132,61 @@
   position: relative;
 }
 
-@keyframes dropDown {
+@keyframes smoothFoldOpen {
   0% {
     opacity: 0;
-    transform: translateY(-100%);
-    /* Start off-screen */
+    transform: scaleY(0);
+    transform-origin: top;
   }
 
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: scaleY(1);
+    transform-origin: top;
   }
 }
 
+/*
 .slider:nth-child(1)::after {
-  content: "Join us on our journey to reshape the  future of \A chemical commerce";
-  height: 28%;
-  width: 35%;
+  content: "Join us on our journey to reshape the future of \A chemical commerce";
+  height: 56%;
+  width: 40%;
   position: absolute;
   top: 8%;
   left: 2%;
-  background: linear-gradient(to top, #000000ca, #000000b3);
-  color: #fff;
-  border-radius: 0.5vw;
-  font-size: 2.5vw;
-  text-transform: uppercase;
-  padding: 2vw;
-  animation: dropDown 1s ease-out 1s forwards;
+  /* margin: auto 0; */
+/* background: linear-gradient(to top, #000000, #00000085); */
+/* color: #fff; */
+/* border-radius: 0.5vw; */
+/* font-size: 3.5vw; */
+/* display: flex; */
+/* align-items: center; */
+/* text-transform: uppercase; */
+/* padding: 2vw; */
+/* opacity: 0; /* Start invisible */
+/* transform: scaleY(0); /* Start folded */
+/* transform-origin: top; /* Fold/unfold from the top */
+/* animation: smoothFoldOpen 1.5s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
+*/
 
+.slider:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  top: 8%;
+  left: 2%;
+  height: 56%;
+  width: 40%;
+  background: url("../../public/images/banner3\ \(1\)-01.png") no-repeat center
+    center;
+  filter: invert(100%) brightness(2) contrast(2);
+  background-size: contain;
+  border-radius: 0.5vw;
+  opacity: 0; /* Start invisible */
+  transform: scaleY(0); /* Start folded */
+  transform-origin: top; /* Fold/unfold from the top */
+  animation: smoothFoldOpen 1.5s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
 
 
 /* .slider>img:nth-child(1)::after {
@@ -188,7 +210,6 @@
   white-space: pre-line;
 } */
 
-
 @media (max-width: 768px) {
   .video-container .video-text-content {
     gap: 3vw;
@@ -210,7 +231,6 @@
 }
 
 @media (min-width: 768px) and (max-width: 1366px) {
-
   /* Styles for screen widths between 768px and 1300px */
   .video-text-content .video-text-button {
     width: 24%;
