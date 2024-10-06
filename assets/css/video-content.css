@@ -185,9 +185,8 @@
   opacity: 0; /* Start invisible */
   transform: scaleY(0); /* Start folded */
   transform-origin: top; /* Fold/unfold from the top */
-  animation: smoothFoldOpen 1.5s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  animation: smoothFoldOpen 2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
-
 
 /* .slider>img:nth-child(1)::after {
   content: "Join us on our journey to reshape the  future of \A chemical commerce";
