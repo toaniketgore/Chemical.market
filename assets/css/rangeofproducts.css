@@ -23,6 +23,7 @@
 
 .range-product-heading .subheading {
   display: flex;
+  align-items: center;
   gap: 1vw;
 }
 
