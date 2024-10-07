@@ -137,114 +137,66 @@
 </div>
 
 
+<div class="formcontainer">
+    <h2 class="section-title">We would Love to<span style="color:var(--primary-color)"> hear from you</span></h2>
+    <form class=" mx-auto mb-3" style="width:60%">
+        <div class="grid md:grid-cols-2 md:gap-6">
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="text" name="firstname" id="firstname"
+                    class="block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300    focus:ring-0  peer"
+                    placeholder=" " required="" onfocus="this.style.borderBottomColor = 'orangered';"
+                    onblur="this.style.borderBottomColor = '#ccc';" required placholder=" ">
+                <label for="firstname"
+                    class="peer-focus:font-medium absolute text-xl text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:text-orange-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First
+                    name</label>
+            </div>
 
-
-<!-- <form class="max-w-md mx-auto">
-    <div class="grid md:grid-cols-2 md:gap-6">
-        <div class="relative z-0 w-full mb-5 group">
-            <input type="text" name="floating_first_name" id="floating_first_name"
-                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                placeholder=" " required />
-            <label for="floating_first_name"
-                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First
-                name</label>
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="text" name="floating_last_name" id="floating_last_name"
+                    class="block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300    focus:ring-0  peer"
+                    placeholder=" " required="" onfocus="this.style.borderBottomColor = 'orangered';"
+                    onblur="this.style.borderBottomColor = '#ccc';" required placholder=" ">
+                <label for="floating_last_name"
+                    class="peer-focus:font-medium absolute text-xl text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:text-orange-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last
+                    name</label>
+            </div>
         </div>
         <div class="relative z-0 w-full mb-5 group">
-            <input type="text" name="floating_last_name" id="floating_last_name"
-                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                placeholder=" " required />
-            <label for="floating_last_name"
-                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last
-                name</label>
-        </div>
-    </div>
-    <div class="relative z-0 w-full mb-5 group">
-        <input type="text" name="floating_address" id="floating_address"
-            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-            placeholder=" " required />
-        <label for="floating_address"
-            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
-            Your organization name</label>
-    </div>
-    <div class="relative z-0 w-full mb-5 group">
-        <input type="email" name="floating_email" id="floating_email"
-            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-            placeholder=" " required />
-        <label for="floating_email"
-            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
-            address</label>
-    </div>
-    <div class="relative z-0 w-full mb-5 group">
-        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone"
-            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-            placeholder=" " required />
-        <label for="floating_phone"
-            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your
-            contact number</label>
-    </div>
-    <button type="submit" 
-    class="flex items-center justify-center text-white bg-orange-500 hover:bg-[#e04a22] focus:ring-4 focus:outline-none focus:ring-[#f05526]/50 font-medium rounded-xl text-sm px-8 py-3">
-GET IN TOUCH
-</button>
-
-
-</form> -->
-
-
-<form class=" mx-auto mb-3" style="width:80%">
-    <div class="grid md:grid-cols-2 md:gap-6">
-        <div class="relative z-0 w-full mb-5 group">
-            <input type="text" name="firstname" id="firstname"
+            <input type="text" name="floating_address" id="floating_address"
                 class="block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300    focus:ring-0  peer"
                 placeholder=" " required="" onfocus="this.style.borderBottomColor = 'orangered';"
                 onblur="this.style.borderBottomColor = '#ccc';" required placholder=" ">
-            <label for="firstname"
-                class="peer-focus:font-medium absolute text-xl text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:text-orange-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First
-                name</label>
+            <label for="floating_address"
+                class="peer-focus:font-medium absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Your organization name</label>
         </div>
-
         <div class="relative z-0 w-full mb-5 group">
-            <input type="text" name="floating_last_name" id="floating_last_name"
+            <input type="email" name="floating_email" id="floating_email"
                 class="block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300    focus:ring-0  peer"
                 placeholder=" " required="" onfocus="this.style.borderBottomColor = 'orangered';"
                 onblur="this.style.borderBottomColor = '#ccc';" required placholder=" ">
-            <label for="floating_last_name"
-                class="peer-focus:font-medium absolute text-xl text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:text-orange-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last
-                name</label>
+            <label for="floating_email"
+                class="peer-focus:font-medium absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
+                address</label>
         </div>
-    </div>
-    <div class="relative z-0 w-full mb-5 group">
-        <input type="text" name="floating_address" id="floating_address"
-        class="block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300    focus:ring-0  peer"
-        placeholder=" " required="" onfocus="this.style.borderBottomColor = 'orangered';"
-        onblur="this.style.borderBottomColor = '#ccc';" required placholder=" ">
-        <label for="floating_address"
-            class="peer-focus:font-medium absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
-            Your organization name</label>
-    </div>
-    <div class="relative z-0 w-full mb-5 group">
-        <input type="email" name="floating_email" id="floating_email"
-        class="block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300    focus:ring-0  peer"
-        placeholder=" " required="" onfocus="this.style.borderBottomColor = 'orangered';"
-        onblur="this.style.borderBottomColor = '#ccc';" required placholder=" ">
-        <label for="floating_email"
-            class="peer-focus:font-medium absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
-            address</label>
-    </div>
-    <div class="relative z-0 w-full mb-5 group">
-        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone"
-        class="block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300    focus:ring-0  peer"
-        placeholder=" " required="" onfocus="this.style.borderBottomColor = 'orangered';"
-        onblur="this.style.borderBottomColor = '#ccc';" required placholder=" ">
-        <label for="floating_phone"
-            class="peer-focus:font-medium absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your
-            contact number</label>
-    </div>
-    <button type="submit"
-        class="flex items-center justify-center text-white bg-orange-500 hover:bg-[#e04a22] focus:ring-4 focus:outline-none focus:ring-[#f05526]/50 font-medium rounded-xl text-xl px-8 py-3">
-        GET IN TOUCH
-    </button>
-</form>
+        <div class="relative z-0 w-full mb-5 group">
+            <input type="tel" name="floating_phone" id="floating_phone"
+                class="block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300    focus:ring-0  peer"
+                placeholder=" " required="" onfocus="this.style.borderBottomColor = 'orangered';"
+                onblur="this.style.borderBottomColor = '#ccc';" required placholder=" ">
+            <label for="floating_phone"
+                class="peer-focus:font-medium absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your
+                contact number</label>
+        </div>
+        <button type="submit"
+            class=" mx-auto flex items-center justify-center text-white bg-orange-500 hover:bg-[#e04a22] focus:ring-4 focus:outline-none focus:ring-[#f05526]/50 font-medium rounded-xl text-xl px-8 py-3">
+            GET IN TOUCH
+        </button>
+    </form>
+</div>
+
+
+
 
 
 <div id="footer-page">
@@ -332,7 +284,56 @@ GET IN TOUCH
 <script src="./assets/js/navdropdown.js"></script>
 <script src="./assets/js/headerscrollinghide.js"></script>
 <script src="./assets/js/contactanimgsap.jsx"></script>
+<script>
+    document.querySelector('form').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent form submission to the server
 
+        // Get all input fields
+        const firstName = document.getElementById('firstname').value.trim();
+        const lastName = document.getElementById('floating_last_name').value.trim();
+        const address = document.getElementById('floating_address').value.trim();
+        const email = document.getElementById('floating_email').value.trim();
+        const phone = document.getElementById('floating_phone').value.trim();
+
+        // Check if all fields are filled
+        if (firstName && lastName && address && email && phone) {
+            // Show popup
+            const popup = document.createElement('div');
+            popup.textContent = "Thank you for reaching out to us!";
+            popup.style.position = "fixed";
+            popup.style.left = "50%";
+            popup.style.top = "50%";
+            popup.style.transform = "translate(-50%, -50%)";
+            popup.style.padding = "15px 25px";
+            popup.style.backgroundColor = "#333";
+            popup.style.color = "#fff";
+            popup.style.borderRadius = "10px";
+            popup.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)";
+            popup.style.zIndex = "1000";
+            popup.style.opacity = "0";
+            popup.style.transition = "opacity 0.3s ease-in-out";
+
+            document.body.appendChild(popup);
+
+            // Fade in the popup
+            setTimeout(() => {
+                popup.style.opacity = "1";
+            }, 100);
+
+            // Remove the popup after 3 seconds
+            setTimeout(() => {
+                popup.style.opacity = "0";
+                setTimeout(() => popup.remove(), 3000); // Wait for the fade-out to finish before removing
+            }, 3000);
+
+            // Clear the form
+            document.querySelector('form').reset();
+        } else {
+            alert('Please fill in all fields before submitting.');
+        }
+    });
+
+</script>
 </body>
 
 </html>
