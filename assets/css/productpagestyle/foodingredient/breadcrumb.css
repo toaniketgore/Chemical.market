@@ -1,58 +1,56 @@
 .breadcrumb {
-    height: 35%;
-    /* max-height: auto; */
-    /* background-color: #FCE2D7; */
-    margin-top: 100px;
-    background: linear-gradient(to right, #fbdbce, #feefe7);
-    padding: 0 0 0 4vw;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
+  height: 35%;
+  /* max-height: auto; */
+  /* background-color: #FCE2D7; */
+  margin-top: 100px;
+  background: linear-gradient(to right, #fbdbce, #feefe7);
+  padding: 0 0 0 4vw;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
 .breadcrumb .breadcrumb-img {
-    height: 100%;
-    width: fit-content;
-    opacity: 0.85;
-    object-fit: cover;
-    margin-right: 2vw;
+  height: 100%;
+  width: fit-content;
+  opacity: 0.85;
+  object-fit: cover;
+  margin-right: 2vw;
 }
 
 .breadcrumb-text {
-    padding-top: 2vw;
+  padding-top: 2vw;
 }
 
 .breadcrumb-link {
-    color: #000;
-
+  color: #000;
 }
 
 .breadcrumb-link a {
-    text-decoration: none;
-    color: #000;
-    font-size: 1.4vw;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.4vw;
 }
 
 .breadcrumb-link i {
-    font-size: 1.5vw;
+  font-size: 1.5vw;
 }
 
 .breadcrumb-product-title {
-    color: #000;
-    font-size: 5vw;
-    position: absolute;
-    top: 33%;
-    font-weight: 400;
-    left: 3.5%;
+  color: #000;
+  font-size: 5vw;
+  position: absolute;
+  top: 33%;
+  font-weight: 400;
+  left: 3.5%;
 }
 
 .breadcrumb-desc {
-    width: 90%;
-    margin: 1vw 0;
-    padding: 0 0 0 2vw;
+  width: 90%;
+  margin: 1vw 0;
+  padding: 0 0 0 2vw;
 }
 
 .breadcrumb-desc p {
-    font-size: 1.5vw;
-
+  font-size: 1.4vw;
 }
