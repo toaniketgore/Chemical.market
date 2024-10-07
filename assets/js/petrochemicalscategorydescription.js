@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     plasticPolymers:
       "These are used to manufacture durable pipes, fittings, and profiles for infrastructure and construction projects. It is also utilized in producing cable insulation, containers, and coatings.",
+    rawmaterials:
+      "They transform chemicals into essential products like fuels, plastics, and synthetic fibers, serving as the foundation for various industrial and consumer goods.",
 
     default: "", // For "All" filter, no description
   };

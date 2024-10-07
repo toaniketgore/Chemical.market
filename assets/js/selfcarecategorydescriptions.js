@@ -34,6 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     beautyOils:
       "They provide hydration, skin repair, and essential nutrients, ideal for products that promote radiant skin and hair while appealing to eco-conscious consumers.",
+    polymers:
+      "These substances enhance texture, stability, and performance by improving viscosity, creating film-forming properties, and enabling controlled release of active ingredients for better application and effectiveness.",
 
     default: "", // For "All" filter, no description
   };
