@@ -139,7 +139,35 @@
 
 <div class="formcontainer">
     <h2 class="section-title">We would Love to<span style="color:var(--primary-color)"> hear from you</span></h2>
+
+
+
     <form class=" mx-auto mb-3" style="width:60%">
+        <h4 class="wantto">I want to </h4>
+
+        <div class="flex wrapper">
+
+            <div class="flex items-center">
+                <input id="supply" type="radio" value="" name="supply"
+                    class="w-4 h-4 text-orange-600 bg-gray-orange border-orange-300 focus:ring-orange-500 focus:ring-2 ">
+                <label for="supply" class="ms-2  font-medium text-gray-600 ">Supply To
+                    Chemical.Market</label>
+            </div>
+            <div class="flex items-center">
+                <input id="buyfrom" type="radio" value="" name="buyfrom"
+                    class="w-4 h-4 text-orange-600 bg-gray-orange border-orange-300 focus:ring-orange-500 focus:ring-2 ">
+                <label for="buyfrom" class="ms-2  font-medium text-gray-600 dark:text-gray-300">Buy From
+                    Chemical.Market</label>
+            </div>
+            <div class="flex items-center">
+                <input checked id="otherquery" type="radio" value="" name="otherquery"
+                    class="w-4 h-4 text-orange-600 bg-orange-100 border-orange-300 focus:ring-orange-500 focus:ring-2 ">
+                <label for="otherquery" class="ms-2  font-medium text-gray-600 dark:text-gray-300">Other
+                    Query</label>
+            </div>
+        </div>
+
+
         <div class="grid md:grid-cols-2 md:gap-6">
             <div class="relative z-0 w-full mb-5 group">
                 <input type="text" name="firstname" id="firstname"
