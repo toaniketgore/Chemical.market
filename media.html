@@ -21,8 +21,10 @@
 
 <body>
 
-    <div class="navigation-bar">
-        <!-- <div class="top-bar">
+    <div id="main">
+
+        <div class="navigation-bar">
+            <!-- <div class="top-bar">
             <div class="icon-container phone">
                 <i class="ri-phone-fill"></i>
                 <span class="topbar-text">+918045574255</span>
@@ -36,145 +38,172 @@
                 <span class="topbar-text">Wagle Estate, Thane(W)</span>
             </div>
         </div> -->
-        <nav>
-            <div class="nav-logo">
-                <a href="index.html">
-                    <img src="./public/images/chemical makret new logo.png" alt="">
-                </a>
-            </div>
-            <div class="nav-links">
-                <a href="aboutus.html">About Us</a>
-                <div class="dropdown">
-                    <a href="aboutus.html" class="dropdown-toggle">Products <i class="ri-arrow-drop-down-line"></i></a>
-                    <div class="dropdown-content">
-                        <a href="selfcare.html">Personal Care</a>
-                        <a href="paints&coatings.html">Paints & Coatings</a>
-                        <a href="pharmaceuticals.html">Pharmaceuticals</a>
-                        <a href="foodingredient.html">Food & Nutrition</a>
-                        <a href="petrochemicals&polymers.html">Petrochemicals & Polymers</a>
-                    </div>
+            <nav>
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="./public/images/chemical makret new logo.png" alt="">
+                    </a>
                 </div>
+                <div class="nav-links">
+                    <a href="aboutus.html">About Us</a>
+                    <div class="dropdown">
+                        <a href="aboutus.html" class="dropdown-toggle">Products <i
+                                class="ri-arrow-drop-down-line"></i></a>
+                        <div class="dropdown-content">
+                            <a href="selfcare.html">Personal Care</a>
+                            <a href="paints&coatings.html">Paints & Coatings</a>
+                            <a href="pharmaceuticals.html">Pharmaceuticals</a>
+                            <a href="foodingredient.html">Food & Nutrition</a>
+                            <a href="petrochemicals&polymers.html">Petrochemicals & Polymers</a>
+                        </div>
+                    </div>
 
-                <a href="media.html">Media</a>
-            </div>
-            <div class="nav-button">
-                <a href="contactus.html" class="contact-button">
+                    <a href="media.html">Media</a>
+                </div>
+                <div class="nav-button">
+                    <a href="contactus.html" class="contact-button">
+                        <i class="ri-phone-line"></i>
+                        <span>Contact Us</span>
+                    </a>
+
+                </div>
+                <a href="javascript:void(0)" class="menu-icon" id="menu-icon" onclick="toggleSidebar()">
+                    <i class="ri-menu-fill"></i>
+                </a>
+                <a href="javascript:void(0)" class="close-icon" id="close-icon" onclick="toggleSidebar()">
+                    <i class="ri-close-line"></i>
+                </a>
+            </nav>
+            <div class="sidebar" id="sidebar">
+                <div class="sidebar-nav-links">
+                    <a href="/#">About Us</a>
+                    <a href="javascript:void(0)" id="sidebar-products-toggle">Products <i
+                            class="ri-arrow-drop-down-line"></i></a>
+                    <div class="sidebar-dropdown-content" id="sidebar-dropdown">
+                        <a href="#">Personal Care</a>
+                        <a href="#">Paints & Coatings</a>
+                        <a href="#">Pharmaceuticals</a>
+                        <a href="#">Food Ingredients</a>
+                        <a href="#">Petrochemicals & Polymers</a>
+                    </div>
+                    <a href="/#">Solutions</a>
+                </div>
+                <div class="sidebar-btn">
+                    <a href="#" class="sidebar-contact-button"></a>
                     <i class="ri-phone-line"></i>
                     <span>Contact Us</span>
-                </a>
-
-            </div>
-            <a href="javascript:void(0)" class="menu-icon" id="menu-icon" onclick="toggleSidebar()">
-                <i class="ri-menu-fill"></i>
-            </a>
-            <a href="javascript:void(0)" class="close-icon" id="close-icon" onclick="toggleSidebar()">
-                <i class="ri-close-line"></i>
-            </a>
-        </nav>
-        <div class="sidebar" id="sidebar">
-            <div class="sidebar-nav-links">
-                <a href="/#">About Us</a>
-                <a href="javascript:void(0)" id="sidebar-products-toggle">Products <i
-                        class="ri-arrow-drop-down-line"></i></a>
-                <div class="sidebar-dropdown-content" id="sidebar-dropdown">
-                    <a href="#">Personal Care</a>
-                    <a href="#">Paints & Coatings</a>
-                    <a href="#">Pharmaceuticals</a>
-                    <a href="#">Food Ingredients</a>
-                    <a href="#">Petrochemicals & Polymers</a>
-                </div>
-                <a href="/#">Solutions</a>
-            </div>
-            <div class="sidebar-btn">
-                <a href="#" class="sidebar-contact-button"></a>
-                <i class="ri-phone-line"></i>
-                <span>Contact Us</span>
-                </a>
-            </div>
-        </div>
-    </div>
-
-
-    
-
-
-
-    <div id="footer-page">
-        <div class="footer-container-wrapper">
-            <div class="footer-container" style="gap:1vw;">
-                <h2 class="footer-container-head">
-                    About <span>Us</span>
-                </h2>
-                <span class="footer-container-content">Hella Chemical Market Pvt Ltd</span>
-                <div class="social-links">
-                    <span>Follow Us On</span>
-                    <a href="https://www.linkedin.com/company/chemical-market/">
-                        <i class="ri-linkedin-box-fill"></i>
                     </a>
-                    <!-- <i class="ri-twitter-fill"></i>
-                <i class="ri-instagram-fill"></i> -->
-                </div>
-            </div>
-            <div class="footer-container">
-                <h2 class="footer-container-head ">Get<span> In Touch</span></h2>
-                <span class="footer-address footer-container-content">Infra Market House,<br>
-                    Olethia Business Spaces,<br> Road No -16Z, <br>Opposite Ashar IT park,<br> Wagle Estate,
-                    Thane (W),<br>
-                    Maharashtra - 400604</span>
-            </div>
-            <div class="footer-container">
-                <h2 class="footer-container-head ">
-                    Our <span>Products</span>
-                </h2>
-                <div class="product-link">
-                    <i class="ri-arrow-right-s-line"></i>
-                    <a href="#">Pharmaceuticals</a>
-                </div>
-                <div class="product-link">
-                    <i class="ri-arrow-right-s-line"></i>
-                    <a href="#">Paints & Coatings</a>
-                </div>
-                <div class="product-link">
-                    <i class="ri-arrow-right-s-line"></i>
-                    <a href="#">Food Ingredients</a>
-                </div>
-                <div class="product-link">
-                    <i class="ri-arrow-right-s-line"></i>
-                    <a href="#">Cosmetics</a>
-                </div>
-                <div class="product-link">
-                    <i class="ri-arrow-right-s-line"></i>
-                    <a href="#">Petrochemicals & Polymers</a>
-                </div>
-            </div>
-            <div class="footer-container">
-                <h2 class="footer-container-head">
-                    Explore Our<span> Gallery</span>
-                </h2>
-                <div class="footer-gallery">
-                    <a href="media.html"> <img src="./public/images/chemexop.jpeg" alt=""></a>
-                    <a href="media.html"> <img src="./public/images/chemxpo23.jpeg" alt=""></a>
-                    <a href="media.html"> <img src="./public/images/chemexpo.jpg" alt=""></a>
-                    <!-- <img src="./public/images/surfactant.jpg" alt=""> -->
-                    <!-- <img src="./public/images/juicesoda.jpg" alt=""> -->
-                    <!-- <img src="./public/images/sweetner.jpg" alt=""> -->
-                    <!-- <img src="./public/images/thickener.jpg" alt="">
-                    <img src="./public/images/pharma&neutraceuticals image.jfif" alt=""> -->
-                </div>
-                <div class="mail-link">
-                    <i class="ri-send-plane-fill"></i>
-                    <a href="#">support@chemical.market</a>
-                </div>
-                <div class="phone-link">
-                    <i class="ri-phone-fill"></i>
-                    <a href="#">+91 80455-74255</a>
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
-            <p> &copy; 2024 <span>Hella Chemical Market Private Limited. </span>All rights reserved</p>
+
+
+        <section class="mediacontainer">
+            <div class="title-container">
+
+                <div class="title">
+                    <div class="line">
+                        <h3>Chem</h3>
+                    </div>
+                    <div class="line line2">
+                        <h3>expo 2024 </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="blur-background"></div>
+            <div class="gallery">
+                <div class="leftpart">
+                    <img src="https://placehold.jp/350x350.png" alt="">
+                    <img src="https://placehold.jp/350x350.png" alt="">
+                </div>
+                <div class="rightpart">
+                    <img src="https://placehold.jp/350x350.png" alt="">
+                    <img src="https://placehold.jp/350x350.png" alt="">
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <div id="footer-page">
+            <div class="footer-container-wrapper">
+                <div class="footer-container" style="gap:1vw;">
+                    <h2 class="footer-container-head">
+                        About <span>Us</span>
+                    </h2>
+                    <span class="footer-container-content">Hella Chemical Market Pvt Ltd</span>
+                    <div class="social-links">
+                        <span>Follow Us On</span>
+                        <a href="https://www.linkedin.com/company/chemical-market/">
+                            <i class="ri-linkedin-box-fill"></i>
+                        </a>
+                        <!-- <i class="ri-twitter-fill"></i>
+                <i class="ri-instagram-fill"></i> -->
+                    </div>
+                </div>
+                <div class="footer-container">
+                    <h2 class="footer-container-head ">Get<span> In Touch</span></h2>
+                    <span class="footer-address footer-container-content">Infra Market House,<br>
+                        Olethia Business Spaces,<br> Road No -16Z, <br>Opposite Ashar IT park,<br> Wagle Estate,
+                        Thane (W),<br>
+                        Maharashtra - 400604</span>
+                </div>
+                <div class="footer-container">
+                    <h2 class="footer-container-head ">
+                        Our <span>Products</span>
+                    </h2>
+                    <div class="product-link">
+                        <i class="ri-arrow-right-s-line"></i>
+                        <a href="#">Pharmaceuticals</a>
+                    </div>
+                    <div class="product-link">
+                        <i class="ri-arrow-right-s-line"></i>
+                        <a href="#">Paints & Coatings</a>
+                    </div>
+                    <div class="product-link">
+                        <i class="ri-arrow-right-s-line"></i>
+                        <a href="#">Food Ingredients</a>
+                    </div>
+                    <div class="product-link">
+                        <i class="ri-arrow-right-s-line"></i>
+                        <a href="#">Cosmetics</a>
+                    </div>
+                    <div class="product-link">
+                        <i class="ri-arrow-right-s-line"></i>
+                        <a href="#">Petrochemicals & Polymers</a>
+                    </div>
+                </div>
+                <div class="footer-container">
+                    <h2 class="footer-container-head">
+                        Explore Our<span> Gallery</span>
+                    </h2>
+                    <div class="footer-gallery">
+                        <a href="media.html"> <img src="./public/images/chemexop.jpeg" alt=""></a>
+                        <a href="media.html"> <img src="./public/images/chemxpo23.jpeg" alt=""></a>
+                        <a href="media.html"> <img src="./public/images/chemexpo.jpg" alt=""></a>
+                        <!-- <img src="./public/images/surfactant.jpg" alt=""> -->
+                        <!-- <img src="./public/images/juicesoda.jpg" alt=""> -->
+                        <!-- <img src="./public/images/sweetner.jpg" alt=""> -->
+                        <!-- <img src="./public/images/thickener.jpg" alt="">
+                    <img src="./public/images/pharma&neutraceuticals image.jfif" alt=""> -->
+                    </div>
+                    <div class="mail-link">
+                        <i class="ri-send-plane-fill"></i>
+                        <a href="#">support@chemical.market</a>
+                    </div>
+                    <div class="phone-link">
+                        <i class="ri-phone-fill"></i>
+                        <a href="#">+91 80455-74255</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p> &copy; 2024 <span>Hella Chemical Market Private Limited. </span>All rights reserved</p>
+            </div>
         </div>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -183,6 +212,31 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
+        const tl = gsap.timeline();
+        tl.from(".title .line", {
+            y: 150,             // Smaller vertical movement to make it less of a shift
+            opacity: 0,        // Fade in from invisible
+            stagger: 0.4,
+            duration:1,
+            ease: "power3.out",
+        });
+        tl.from(".blur-background", {
+            opacity: 0,
+            scale: 0.5,
+        })
+        tl.from(".gallery .leftpart img", {
+            x: "-100%",
+            opacity: 0,
+            ease: "elastic.out(1, 0.3)",
+            duration:1
+        })
+        tl.from(".gallery .rightpart img", {
+            x: "100%",
+            ease: "elastic.out(1, 0.3)",
+            opacity: 0,
+            duration:1.5
+        })
+
 
     </script>
     <script src="./assets/js/navdropdown.js"></script>
