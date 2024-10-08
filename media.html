@@ -113,12 +113,12 @@
             <div class="blur-background"></div>
             <div class="gallery">
                 <div class="leftpart">
-                    <img src="https://placehold.jp/350x350.png" alt="">
-                    <img src="https://placehold.jp/350x350.png" alt="">
+                    <img src="./public/images/eventimage1.jpg" alt="">
+                    <img src="./public/images/chemexpo.jpg" alt="">
                 </div>
                 <div class="rightpart">
-                    <img src="https://placehold.jp/350x350.png" alt="">
-                    <img src="https://placehold.jp/350x350.png" alt="">
+                    <img src="./public/images/chemexop.jpeg" alt="">
+                    <img src="./public/images/eventimage1.jpg" alt="">
                 </div>
             </div>
 
@@ -217,7 +217,7 @@
             y: 150,             // Smaller vertical movement to make it less of a shift
             opacity: 0,        // Fade in from invisible
             stagger: 0.4,
-            duration:1,
+            duration: 1,
             ease: "power3.out",
         });
         tl.from(".blur-background", {
@@ -227,15 +227,17 @@
         tl.from(".gallery .leftpart img", {
             x: "-100%",
             opacity: 0,
-            ease: "elastic.out(1, 0.3)",
-            duration:1
-        })
+            scale: 0.2,
+            ease: "slow(0.7,0.7,false)",
+            duration: 1
+        }, "a")
         tl.from(".gallery .rightpart img", {
             x: "100%",
-            ease: "elastic.out(1, 0.3)",
+            ease: "slow(0.7,0.7,false)",
             opacity: 0,
-            duration:1.5
-        })
+            scale: 0.2,
+            duration: 1.5
+        }, "a")
 
 
     </script>

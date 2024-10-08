@@ -33,7 +33,7 @@
   width: 100%;
   display: flex;
   width: 90%;
-  gap: 10vw;
+  gap: 5vw;
   margin: 4vh auto;
   overflow: hidden;
 }
@@ -55,21 +55,41 @@
   flex-direction: column;
 }
 
+@keyframes morphShape {
+  0% {
+    transform: scale(1) skew(0deg); /* Start with the original shape */
+  }
+  25% {
+    transform: scale(1.1) skew(5deg, 5deg); /* Slightly distort */
+  }
+  50% {
+    transform: scale(0.9) skew(-5deg, -5deg); /* Distort in the other direction */
+  }
+  75% {
+    transform: scale(1.05) skew(10deg, 0deg); /* Skew horizontally */
+  }
+  100% {
+    transform: scale(1) skew(0deg); /* Return to original shape */
+  }
+}
+
 .blur-background {
   position: absolute;
-  top: 5%;
-  left: 0;
-  width: 150px;
-  height: 150px;
+  top: 50%;
+  right: 50%;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   background: linear-gradient(
     90deg,
     rgb(253, 90, 15) 0%,
     rgb(253, 90, 15) 100%
   );
+  /* transform:translate(50%, -50%); */
   filter: blur(45px); /* Adjust for more or less blur */
   z-index: -1;
-  opacity: 0.8; /* Optional for slight transparency */
+  opacity: 0.7; /* Optional for slight transparency */
+  animation: morphShape 5s infinite ease-in-out;
 }
 
 .gallery .leftpart img,
