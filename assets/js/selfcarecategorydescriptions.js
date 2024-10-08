@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "These agents enhance the texture and manageability of hair and skin by improving moisture retention, smoothness, and softness, making them essential for nourishing and revitalizing formulations.",
 
     emollients:
-      "These cosmetic preparations soften the skin by providing deep hydration and creating a protective barrier to prevent moisture loss..",
+      "These cosmetic preparations soften the skin by providing deep hydration and creating a protective barrier to prevent moisture loss.",
 
     exoticButters:
       "These butters are valued for their rich, nourishing properties. They provide intense hydration, improve skin elasticity, and offer a luxurious texture, making them ideal for enhancing the sensory appeal of skincare and haircare products.",
