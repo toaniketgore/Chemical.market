@@ -1,89 +1,85 @@
 .downloadbrochure {
-    /* height: 40%; */
-    min-height: 30%;
-    position: relative;
-    width: 100%;
-    /* background: linear-gradient(to left, #f37444, #fbc9ad); */
-    /* background-color: #E4E7E9; */
-    background-image: url("../../../../public/images/downloadbrochurebackgrounds/bgdownloadbrochure.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    display: flex;
-    /* padding-left: 8.5vw; */
-    overflow-x: hidden;
-    align-items: center;
-    margin: 5vh 0;
+  /* height: 40%; */
+  min-height: 30%;
+  position: relative;
+  width: 100%;
+  /* background: linear-gradient(to left, #f37444, #fbc9ad); */
+  /* background-color: #E4E7E9; */
+  /* background-image: url("../../../../public/images/downloadbrochurebackgrounds/bgdownloadbrochure.png"); */
+  background-image: url("../../../../public/images/downloadbrochurebackgrounds/newoption2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  display: flex;
+  /* padding-left: 8.5vw; */
+  overflow-x: hidden;
+  align-items: center;
+  margin: 12vh 0 0 0;
 }
 
 .leftpart {
-    /* width: 60%; */
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center;  */
-    justify-content: center;
-    align-items: center;
-    gap: 2vw;
+  /* width: 60%; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;  */
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
 }
 
-
 .leftpart .mainhead h2 {
-    font-size: 4vw;
-    line-height: 5vw;
-    text-transform: uppercase;
-    /* color: #410b09; */
-    color: #000;
-    font-weight: 600;
-
+  font-size: 4vw;
+  line-height: 5vw;
+  text-transform: uppercase;
+  /* color: #410b09; */
+  color: #000;
+  font-weight: 600;
 }
 
 .leftpart .downloadcontainer {
-    /* background-color: #fde6d7; */
-    background-color: var(--primary-color);
-    border: none;
-    border-radius: 0.5vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: fit-content;
-    padding: 0.8vw 1.3vw;
+  /* background-color: #fde6d7; */
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: fit-content;
+  padding: 0.8vw 1.3vw;
 }
 
-
-
 .leftpart .downloadcontainer .downloadbtn {
-    text-decoration: none;
-    font-size: 1.2vw;
-    color: #fff;
-
+  text-decoration: none;
+  font-size: 1.2vw;
+  color: #fff;
 }
 
 .leftpart .downloadcontainer i {
-    font-size: 1.7vw;
-    color: #fff;
-    margin-left: 0.3vw;
+  font-size: 1.7vw;
+  color: #fff;
+  margin-left: 0.3vw;
 }
 
 .rightpart {
-    position: relative;
-    width: 40%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
+  position: relative;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .rightpart .stage {
-    position: absolute;
-    height: 100%;
-    width: fit-content;
-    bottom: 0;
+  position: absolute;
+  height: 100%;
+  width: fit-content;
+  bottom: 0;
 }
 
 .rightpart .bottle {
-    z-index: 999;
-    position: absolute;
-    height: 100%;
-    width: fit-content
+  z-index: 999;
+  position: absolute;
+  height: 100%;
+  width: fit-content;
 }
