@@ -103,10 +103,15 @@
 
                 <div class="title">
                     <div class="line">
-                        <h3>Chem</h3>
+                        <h3>events</h3>
                     </div>
                     <div class="line line2">
-                        <h3>expo 2024 </h3>
+                        <h3>Chem expo
+                            <span>2</span>
+                            <span>0</span>
+                            <span>2</span>
+                            <span>4</span>
+                        </h3>
                     </div>
                 </div>
             </div>
@@ -220,23 +225,32 @@
             duration: 1,
             ease: "power3.out",
         });
-        tl.from(".blur-background", {
+        tl.from(".title .line2 span", {
+            y: 150,
             opacity: 0,
-            scale: 0.5,
-        })
+            stagger: 0.4,
+            duration: 1,
+            ease: "power3.out",
+        }, "a")
+
         tl.from(".gallery .leftpart img", {
             x: "-100%",
             opacity: 0,
             scale: 0.2,
             ease: "slow(0.7,0.7,false)",
-            duration: 1
+            duration: 0.5
         }, "a")
         tl.from(".gallery .rightpart img", {
             x: "100%",
             ease: "slow(0.7,0.7,false)",
             opacity: 0,
             scale: 0.2,
-            duration: 1.5
+            duration: 1
+        }, "a")
+        tl.from(".blur-background", {
+            opacity: 0,
+            duration: 1,
+            ease: "power3.out",
         }, "a")
 
 
