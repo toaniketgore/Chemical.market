@@ -15,7 +15,8 @@
 .contact-container {
   height: 100%;
   width: 80%;
-  background-color: #FAF9F6;
+  /* background-color: #FAF9F6; */
+  background: linear-gradient(to bottom, #f37344, #fbc9ad);
   margin: auto;
   margin-bottom: 3vw;
   display: flex;
@@ -31,7 +32,6 @@
   object-fit: cover;
 } */
 
-
 .contact-text-container .contact-icon {
   display: flex;
   align-items: center;
@@ -39,12 +39,49 @@
   height: 5vw;
   width: 5vw;
   border-radius: 50%;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
+  background-color: #fbc9ad;
 }
 
 .contact-text-container .contact-icon i {
   font-size: 45px;
-  color: #fff;
+  /* color: #fff; */
+  color: #e13715;
+  animation: ringing 1s ease-in-out infinite;
+}
+
+@keyframes ringing {
+  0%,
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+  2%,
+  18% {
+    transform: rotate(-15deg) scale(1.2);
+  }
+  4%,
+  16% {
+    transform: rotate(15deg) scale(1.2);
+  }
+  6%,
+  14% {
+    transform: rotate(-15deg) scale(1.2);
+  }
+  8%,
+  12% {
+    transform: rotate(15deg) scale(1.2);
+  }
+  10% {
+    transform: rotate(-15deg) scale(1.1);
+  }
+  20%,
+  98% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.contact-text-container .contact-icon i {
+  animation: ringing 3s ease-in-out infinite;
 }
 
 .contact-container .contact-text-container {
@@ -60,20 +97,57 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1vw;
+  gap: 1.5vw;
 }
 
 .contact-container .contact-text-container .contact-info h3 {
   font-size: 2rem;
   line-height: 2.3rem;
   text-transform: uppercase;
-  color: #7a7a7a;
-
+  /* color: #7a7a7a; */
+  /* color: #410b09; */
+  color: #222;
+}
+.contact-container .contact-text-container .contact-info h4 {
+  font-size:2vw;
+  color: #222222da;
+  background-color: #fbc9ad;
+  border-radius: 0.5vw;
+  border: none;
+  cursor: pointer;
+  padding: 0.5vw 1vw;
+  position: relative;
+  overflow: hidden;
+  z-index: 1; /* Ensures text stays above the ::after element */
+  font-weight: 600;
 }
 
-.contact-container .contact-text-container .contact-info h4 {
-  font-size: 2rem;
-  color: var(--primary-color);
+.contact-container .contact-text-container .contact-info h4 a {
+  text-decoration: none;
+  color: #222222da;
+}
+
+.contact-container .contact-text-container .contact-info h4::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary-color); /* Orange background on hover */
+  position: absolute;
+  top: 0; /* Fix position from top */
+  left: 0;
+  z-index: -1; /* Ensure background stays behind the text */
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(120%);
+}
+
+.contact-container .contact-text-container .contact-info h4:hover::after {
+  transform: translateY(0%); /* Background slides into view */
+}
+
+.contact-container .contact-text-container .contact-info h4:hover a {
+  color: #ffffff; /* Ensure text is white on hover */
+  z-index: 1; /* Keep text on top during hover */
+  font-weight: 400;
 }
 
 @media (max-width: 768px) {
