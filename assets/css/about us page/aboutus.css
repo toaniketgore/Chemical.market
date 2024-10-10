@@ -46,10 +46,11 @@
     margin: auto;
     align-items: center;
     display: flex;
+    justify-content: center;
 }
 
 .ourStrengths .part1 {
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     gap: 0.8vw;
