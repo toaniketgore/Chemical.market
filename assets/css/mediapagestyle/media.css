@@ -10,12 +10,12 @@
 }
 
 .mediacontainer .title .line h3 {
-  font-size: 5.5vw;
+  font-size: 3.5vw;
   text-transform: uppercase;
   font-weight: 600;
   color: #42484cd4;
   position: relative;
-  line-height: 6vw;
+  line-height: 4vw;
 }
 .mediacontainer .title .line2 {
   overflow: hidden;
