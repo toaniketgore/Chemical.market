@@ -25,7 +25,8 @@
 }
 
 #contact-home-page {
-  height: 35%;
+  height: 50%;
+  /* background-color: black; */
 }
 
 .range-of-products-page {
@@ -37,9 +38,6 @@
     min-height: auto;
   }
 
-  #contact-home-page {
-    height: 35%;
-  }
 
   .range-of-products-page {
     /* height: 140%; */
@@ -47,7 +45,8 @@
   }
 
   .page3 {
-    height: 75%;
+    /* height: 75%; */
+    min-height: auto;
   }
   #main .page2 {
     height: auto;
