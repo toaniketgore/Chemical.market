@@ -137,4 +137,8 @@
   .animated-image {
     left: 0%;
   }
+  .main-about .about-text-container .container-head i,
+  .main-about .about-text-container .container-head span {
+    font-size: 6vw;
+  }
 }

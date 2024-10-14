@@ -32,7 +32,6 @@
   height: 180%;
 }
 
-
 @media (max-width: 768px) {
   #footer-page {
     min-height: auto;
@@ -43,10 +42,14 @@
   }
 
   .range-of-products-page {
-    height: 140%;
+    /* height: 140%; */
+    min-height: 170%;
   }
 
   .page3 {
     height: 75%;
+  }
+  #main .page2 {
+    height: auto;
   }
 }
