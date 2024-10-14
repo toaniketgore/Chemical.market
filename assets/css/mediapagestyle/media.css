@@ -29,6 +29,8 @@
 
 .mediacontainer .title-container {
   overflow: hidden;
+  overflow: hidden;
+  overflow: hidden;
 }
 .mediacontainer .title span {
   color: var(--primary-color);
