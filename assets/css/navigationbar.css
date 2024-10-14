@@ -290,7 +290,7 @@ nav {
 /* MEDIA QUERIES FOR MOBILE */
 @media (max-width: 768px) {
     .navigation-bar {
-        height: 100px;
+        height: 67px;
     }
 
     .navigation-bar .menu-icon {
