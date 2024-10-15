@@ -5,7 +5,7 @@
 }
 
 .section-title {
-  color: #000;
+  color: var(--dark-grey);
   font-size: 3.2vw;
   text-align: center;
   font-weight: 600;

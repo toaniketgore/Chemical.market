@@ -16,7 +16,7 @@
 
 
 .whoweare h1 {
-    color: #000;
+    color: var(--dark-grey);
     white-space: nowrap;
     font-size: 4.5vw;
     font-weight: 600;
