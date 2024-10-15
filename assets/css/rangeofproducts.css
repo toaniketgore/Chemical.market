@@ -28,14 +28,14 @@
 }
 
 .subheading i {
-  font-size: 2vw;
+  font-size: 2.5vw;
   color: var(--primary-color);
   display: flex;
   justify-content: center;
 }
 
 .subheading h3 {
-  font-size: 2vw;
+  font-size: 2.5vw;
   color: #fff;
   text-transform: uppercase;
 }
