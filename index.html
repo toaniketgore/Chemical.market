@@ -370,59 +370,60 @@
             </section>
         </div>
 
-        <div id="contact-home-page">
-            <!-- <img src="./public/images/contacthomecreative.jpg" alt=""> -->
+        <!-- <div id="contact-home-page">
             <div class="contact-container">
                 <div class="contact-text-container">
                     <div class="contact-icon">
-                        <!-- <i class="ri-phone-line"></i> -->
                         <i class="ri-phone-fill"></i>
                     </div>
                     <div class="contact-info">
                         <h3>For more information contact</h3>
                         <h4><a href="tel:+918045574255">+91 80455-74255</a></h4>
                     </div>
-
                 </div>
-                <!-- <img src="./public/images/contactperson.jpg" alt=""> -->
-
-                <!-- </div> -->
             </div>
-
-        </div>
+        </div> -->
         <div id="contact-rewamp">
             <h3 class="contact-heading">Stay Connected with <span>Chemical Market</span></h3>
             <span class="contact-subheading">For inquiries or support, reach out to us anytime.</span>
             <div class="partswrapper">
-
-                <div class="mail">
-                    <i class="ri-mail-line"></i>
-                    <h4>contact@chemical.market</h4>
-                </div>
-                <div class="contact">
-                    <i class="ri-phone-line"></i>
-                    <h4>+91 80455-74255</h4>
-                </div>
+                <a href="mailto:support@chemical.market">
+                    <div class="mail">
+                        <i class="ri-mail-line"></i>
+                        <h4>support@chemical.market</h4>
+                    </div>
+                </a>
+                <a href="tel:+918045574255">
+                    <div class="contact">
+                        <i class="ri-phone-line"></i>
+                        <h4>+91 80455-74255</h4>
+                    </div>
+                </a>
             </div>
         </div>
         <style>
             #contact-rewamp {
                 height: 40%;
-                width: 100%;
-                position: relative;
+                width: 90%;
+                position: relaive;
+                box-shadow: 0 15px 58px 0 rgba(66, 72, 76, 0.22), 0 5px 14px 0 rgba(66, 72, 76, 0.18);
                 overflow: hidden;
+                border-radius: 1.5vw;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                border: 1px solid black;
+
                 padding: 2vw 4vw;
+                margin: 4vh auto;
+                ;
             }
 
             #contact-rewamp .contact-heading {
                 font-weight: 600;
                 font-size: 1.8vw;
                 text-transform: uppercase;
+                color: #42484C;
 
             }
 
@@ -432,6 +433,10 @@
                 color: #7a7a7a;
             }
 
+            .partswrapper a {
+                text-decoration: none;
+            }
+
             #contact-rewamp .contact-heading span {
                 color: var(--primary-color);
             }
@@ -439,36 +444,78 @@
             #contact-rewamp .partswrapper {
                 width: 80%;
                 display: flex;
-                margin-top: 2.5vw;
+                margin-top: 3.5vw;
                 justify-content: space-around;
-               
+
             }
 
             #contact-rewamp .partswrapper .mail i,
             #contact-rewamp .partswrapper .contact i {
-                font-size: 2vw;
-                color: var(--primary-color);
-                
+                font-size: 1.7vw;
+                /* color: var(--primary-color); */
+                color: #fff;
+                ;
+
             }
 
             #contact-rewamp .partswrapper .mail h4,
             #contact-rewamp .partswrapper .contact h4 {
-                font-size: 1.6vw;
-                font-weight: 500;
-                color:#7A7A7A;
+                font-size: 1.3vw;
+                font-weight: 400;
+                /* color: #42484cc6; */
+                color: #fff;
                 display: flex;
-                align-items: center;    
+                align-items: center;
 
             }
 
             #contact-rewamp .partswrapper .mail,
             #contact-rewamp .partswrapper .contact {
                 display: flex;
-                gap: 0.5vw;
+                gap: 0.4vw;
                 align-items: center;
-                padding:1vw;
-                border-radius: 4vw;
-                border: 1px solid black;
+                padding: 1vw;
+                border-radius: 2vw;
+                cursor: pointer;
+                /* border: 0.8px solid #42484ca2; */
+                background-color: #fd5a0fd2;
+            }
+
+            #contact-rewamp .partswrapper .mail,
+            #contact-rewamp .partswrapper .contact {
+                position: relative;
+                overflow: hidden;
+            }
+
+            #contact-rewamp .partswrapper .mail::before,
+            #contact-rewamp .partswrapper .contact::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 0;
+                background-color: #FD5A0F;
+                transition: all 0.3s ease;
+                z-index: -1;
+            }
+
+            #contact-rewamp .partswrapper .mail:hover::before,
+            #contact-rewamp .partswrapper .contact:hover::before {
+                height: 100%;
+            }
+
+            #contact-rewamp .partswrapper .mail:hover,
+            #contact-rewamp .partswrapper .contact:hover {
+                border-color: #FD5A0F;
+            }
+
+            #contact-rewamp .partswrapper .mail:hover i,
+            #contact-rewamp .partswrapper .contact:hover i,
+            #contact-rewamp .partswrapper .mail:hover h4,
+            #contact-rewamp .partswrapper .contact:hover h4 {
+                color: #FFFFFF;
+                transition: all 0.3s ease;
             }
         </style>
 
