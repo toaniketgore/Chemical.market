@@ -60,7 +60,8 @@
     transform: rotate(-15deg) scale(1.2);
   }
   4%,
-  16% {
+  
+  16% {36
     transform: rotate(15deg) scale(1.2);
   }
   6%,
