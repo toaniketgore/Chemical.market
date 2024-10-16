@@ -40,6 +40,7 @@
 <body>
     <div id="main">
         <div class="page1">
+            <!-- navigation bar  -->
             <div class="navigation-bar">
 
                 <nav>
@@ -78,7 +79,7 @@
                         <i class="ri-close-line"></i>
                     </a>
                 </nav>
-                <!-- <div class="sidebar" id="sidebar">
+                <div class="sidebar" id="sidebar">
 
                     <div class="sidebar-nav-links">
                         <a href="/#">About Us</a>
@@ -99,11 +100,11 @@
                         <span>Contact Us</span>
                         </a>
                     </div>
-                </div> -->
-               
+                </div>
+
 
             </div>
-
+            <!-- main carousel banner -->
             <section class="container">
                 <div class="slider-wrapper">
                     <div class="slider" id="slider">
@@ -122,6 +123,7 @@
             </section>
 
             <!-- below section is of main video banner taking full screen height once the video ready will replace with carousel banenr -->
+
             <!-- <div class="video-container">
                 <video src="./public/videos/mainvideocompressed.mp4" autoplay muted loop></video>
                 <div id="video-overlay">
@@ -136,6 +138,7 @@
             <!-- </div> -->
             <!-- </div> -->
         </div>
+        <!-- this page contains about us and our suppliers -->
         <div class="page2">
             <div class="about-us-container">
                 <div class="main-about">
@@ -212,6 +215,7 @@
             </div>
 
         </div>
+        <!-- this page contains range of products -->
         <div class="range-of-products-page" id="rangeproductsscroll">
             <div class="rangeproductwrapper">
 
@@ -221,10 +225,7 @@
                         <h3>industries we served</h3>
 
                     </div>
-                    <!-- <a href="" class="viewallbtn">
-                        <span>view all</span>
-                        <i class="ri-arrow-right-double-line"></i>
-                    </a> -->
+
                 </div>
 
                 <div class="range-product" data-bg-image="./public/images/rangeproduct/personalcarehorizontal.jpg">
@@ -318,6 +319,7 @@
             </div>
 
         </div>
+        <!-- range of products page3-->
         <div class="page3">
             <section class="products-container">
                 <h2>
@@ -359,6 +361,7 @@
             </section>
         </div>
 
+        <!-- contact us section-->
         <div id="contact-rewamp">
             <div class="leftwrapper">
                 <!-- <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
@@ -478,6 +481,7 @@
 
         <!-- swiper js cdn -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
         <!-- owl carousel scripts -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
             integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -485,17 +489,19 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
             integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
         <!-- gsap cdn -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
             integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
         <!-- scrolltrigger cdn -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
             integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-        <!-- owl carousel script -->
+
+        <!-- owl carousel script (this script won't run if you moved to any another directory) -->
         <script>
             var owl = $('.owl-carousel');
             owl.owlCarousel({
@@ -527,6 +533,7 @@
             })
 
         </script>
+
         <!-- manual scripts  -->
         <script src="./assets/js/ourpartners.js"></script>
         <script src="./assets/js/togglesidebar.js"></script>
@@ -535,54 +542,7 @@
         <script src="./assets/js/navdropdown.js"></script>
         <script src="./assets/js/headerscrollinghide.js"></script>
         <script src="./assets/js/sidebar.js"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const slider = document.getElementById('slider');
-                const slides = slider.getElementsByTagName('img');
-                const navDots = document.querySelectorAll('.slider-nav a');
-                let currentIndex = 0;
-                let autoSlideInterval;
-
-                // Function to change the slide
-                function changeSlide(index) {
-                    slider.scrollTo({
-                        left: slides[index].offsetLeft,
-                        behavior: 'smooth',
-                    });
-                    updateActiveDot(index);
-                    currentIndex = index;
-                }
-
-                // Function to update active dot
-                function updateActiveDot(index) {
-                    navDots.forEach(dot => dot.classList.remove('active'));
-                    navDots[index].classList.add('active');
-                }
-
-                // Auto sliding function
-                function startAutoSlide() {
-                    autoSlideInterval = setInterval(() => {
-                        currentIndex = (currentIndex + 1) % slides.length;
-                        changeSlide(currentIndex);
-                    }, 3000); // Slide every 3 seconds
-                }
-
-                // Event listener for dots
-                navDots.forEach((dot, index) => {
-                    dot.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        clearInterval(autoSlideInterval); // Stop auto sliding when clicked
-                        changeSlide(index);
-                        startAutoSlide(); // Restart auto slide after click
-                    });
-                });
-
-                // Start auto slide on page load
-                startAutoSlide();
-            });
-
-
-        </script>
+        <script src="./assets/js/maincarousel.js"></script>
 
 
 
