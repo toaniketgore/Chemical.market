@@ -38,30 +38,37 @@
 }
 
 .gallery {
-  height: 100vh;
+  height: 50%;
   width: 100%;
   display: flex;
-  width: 90%;
-  gap: 5vw;
+  gap: 3vw;
+  align-items: center;
   margin: 4vh auto;
+  padding: 0 4vw;
+  overflow: hidden;
 }
-
+.gallery img {
+  height: 100%;
+  width: 30%;
+  object-fit: cover;
+}
+/* 
 .gallery .leftpart {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4vh; */
+/* flex-direction: column; */
+/* } */
+/* .gallery .rightpart {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4vh;
   flex-direction: column;
-}
-.gallery .rightpart {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4vh;
-  flex-direction: column;
-}
+} */
 
 @keyframes morphShape {
   0% {
@@ -83,8 +90,8 @@
 
 .blur-background {
   position: absolute;
-  top: 50%;
-  left: 45%;
+  top: 20%;
+  left: 50%;
   width: 300px;
   height: 300px;
   border-radius: 50%;
