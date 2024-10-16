@@ -247,7 +247,7 @@ nav {
   width: 40%;
   /* background: linear-gradient(to right, #fd5a0f, #b14d1f); */
   /* background-color:var(--primary-color); */
-  background-color: #f05526;
+  background-color: var(--primary-color);
   padding: 0.8vw 1vw;
   text-transform: uppercase;
   border-radius: 1.1vw;

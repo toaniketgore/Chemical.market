@@ -98,7 +98,7 @@
   border-radius: 2vw;
   cursor: pointer;
   /* border: 0.8px solid #42484ca2; */
-  background-color: #fd5a0fd2;
+  background-color: var(--primary-color);
 }
 
 #contact-rewamp .partswrapper .mail,
@@ -140,7 +140,7 @@
 
 #contact-rewamp .iconwrapper i {
   font-size: 3vw;
-  color: #fd5a0f;
+  color: var(--primary-color);
   background-color: #fff;
   border-radius: 50%;
   width: 6vw;
