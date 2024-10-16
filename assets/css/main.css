@@ -1,8 +1,9 @@
 :root {
-  --primary-color: #fd5a0f;
+  /* --primary-color: #fd5a0f; */
+  --primary-color: #f05323;
   --border-color: rgb(224, 224, 224);
-  --dark-grey: #42484c;
-  /* Example primary color */
+  /* --dark-grey: #42484c; */
+  --seconday-color: #41474b;
 }
 
 .page1 {
