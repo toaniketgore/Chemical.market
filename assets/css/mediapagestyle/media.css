@@ -13,7 +13,7 @@
   font-size: 3.5vw;
   text-transform: uppercase;
   font-weight: 600;
-  color: #42484cd4;
+  color: var(--dark-grey);
   position: relative;
   line-height: 4vw;
 }
@@ -21,10 +21,11 @@
   overflow: hidden;
 }
 .mediacontainer .title .line2 span {
-  letter-spacing: -1vw;
+  letter-spacing: -0.5vw;
 }
 .mediacontainer .title .line2 h3 {
   color: var(--primary-color);
+  font-size: 2.5vw;
 }
 
 .mediacontainer .title-container {
@@ -105,4 +106,5 @@
   height: 50%;
   object-fit: cover;
   border-radius: 1vw;
+  object-position: top;
 }
