@@ -11,6 +11,7 @@
   align-items: center;
   padding: 0 4vw;
   margin: 4vh auto;
+  margin-bottom: 10vh;
   position: relative;
   background-image: url("../../public/images/newcontacthomebg.png");
 }
