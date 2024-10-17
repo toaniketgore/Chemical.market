@@ -309,3 +309,58 @@
   padding: 1.5vw;
   font-size: 1vw;
 }
+
+@media (max-width: 768px) {
+  .whoweare h1 {
+    font-size: 7vw;
+  }
+  .whoweare .whoweareDesc {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .aboutusmaincontainer .whoweareimg {
+    height: 220px;
+  }
+
+  /* our strength mobile */
+  .aboutusmaincontainer .ourStrengths {
+    flex-direction: column;
+    padding: 8vw 4vw;
+    gap:5vw;
+  }
+  .ourStrengths .part1 {
+    gap: 3vw;
+    width: 100%;
+  }
+  .ourStrengths .part2 {
+    width: 100%;
+  }
+  .part2 img {
+    object-fit: contain;
+    height: 100%;
+  }
+  .subheading i {
+    font-size: 6vw;
+  }
+  .subheading span {
+    font-size: 5vw;
+    font-weight: 500;
+  }
+  .ourStrengths .heading {
+    font-size: 7vw;
+    line-height: 9vw;
+    text-transform: uppercase;
+  }
+  .pointers{
+    gap:4vw;
+  }
+  .point{
+    width:100%;
+  }
+  .point i {
+    font-size: 7vw;
+  }
+  .point .pointText {
+    font-size: 16px;
+  }
+}
