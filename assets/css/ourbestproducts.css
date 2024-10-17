@@ -34,7 +34,7 @@
   margin-bottom: 4vw;
   text-transform: uppercase;
   font-size: 2.5rem;
-  color: #54595f;
+  color: var(--dark-grey);
   /* margin-bottom: 0; */
   text-align: center;
 }

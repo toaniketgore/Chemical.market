@@ -28,7 +28,8 @@
   line-height: 1.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  color: rgb(84, 89, 95);
+  /* color: rgb(84, 89, 95); */
+  color: var(--dark-grey);
 }
 
 .footer-container .footer-container-head span {

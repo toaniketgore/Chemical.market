@@ -39,7 +39,7 @@
 .our-partners-container h2 {
   margin-bottom: 2vw;
   text-transform: uppercase;
-  color: #5d6167;
+  color: var(--dark-grey);
   text-align: center;
   font-size: 2.5rem;
 }
