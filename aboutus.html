@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/navigationbar.css">
+    <link rel="stylesheet" href="./assets/css/sidebar.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/ourpartners.css">
     <link rel="stylesheet" href="./assets/css/about us page/aboutus.css">
@@ -73,9 +74,42 @@
                 </a>
 
             </div>
-           
+
         </nav>
-       
+        <nav id="sidebar">
+            <ul>
+                <li class="logo">
+                    <a href="index.html">
+                        <img src="./public/images/chemical makret new logo.png" alt="Chemical Market Logo">
+                    </a>
+                </li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">Products <i class="ri-arrow-down-s-line"></i></a>
+                    <ul class="submenu">
+                        <li><a href="selfcare.html">Personal Care</a></li>
+                        <li><a href="paints&coatings.html">Paints & Coatings</a></li>
+                        <li><a href="pharmaceuticals.html">Pharmaceuticals</a></li>
+                        <li><a href="foodingredient.html">Food & Nutrition</a></li>
+                        <li><a href="petrochemicals&polymers.html">Petrochemicals & Polymers</a></li>
+                    </ul>
+                </li>
+                <li><a href="media.html">Media</a></li>
+                <li class="contact-button">
+                    <a href="contactus.html">
+                        <i class="ri-phone-line"></i>
+                        <span>Contact Us</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
     </div>
 
     <div class="aboutusmaincontainer">
@@ -140,7 +174,7 @@
 
         <div class="ournumbers">
             <h3 class="heading">
-                Leading the Charge in <span style="color:#FD5A0F">Chemical Market</span> Evolution
+                Driving Growth Through Innovation
             </h3>
 
             <div class="numbersgrid">
@@ -333,6 +367,7 @@
     </div>
 
     <script src="./assets/js/navdropdown.js"></script>
+    <script src="./assets/js/sidebar.js"></script>
     <!-- <script src="./assets/js/animatenumbers.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="

@@ -1,0 +1,104 @@
+#sidebar {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  height: 100%;
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: left 0.3s ease-in-out;
+  overflow-y: auto;
+}
+
+#sidebar.active {
+  left: 0;
+}
+
+#sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#sidebar li {
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+#sidebar a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#sidebar .submenu {
+  display: none;
+  padding-left: 15px;
+}
+
+#sidebar .submenu li {
+  border-bottom: none;
+  padding: 5px 0;
+}
+
+#sidebar .logo {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 2px solid #eee;
+}
+
+#sidebar .logo img {
+  max-width: 80%;
+  height: auto;
+}
+
+#sidebar .contact-button a {
+  background-color: var(--primary-color);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sidebar .contact-button i {
+  margin-right: 10px;
+}
+
+#hamburger {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  transition: opacity 0.3s ease;
+}
+
+#hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+#sidebar .dropdown > a .ri-arrow-down-s-line {
+  font-size: 1.2em;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    display: block;
+  }
+
+  #hamburger {
+    display: block;
+  }
+}

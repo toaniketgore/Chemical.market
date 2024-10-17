@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./public/images/favicon.png">
 
-    <title>Chemical Market</title>
+    <title>Chemical.Market</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/navigationbar.css">
+    <link rel="stylesheet" href="./assets/css/sidebar.css">
     <link rel="stylesheet" href="./assets/css/video-content.css">
     <link rel="stylesheet" href="./assets/css/ourpartners.css">
     <link rel="stylesheet" href="./assets/css/aboutus.css">
@@ -36,6 +37,7 @@
 
 
 </head>
+
 
 <body>
     <div id="main">
@@ -73,10 +75,45 @@
 
                     </div>
                 </nav>
-               
+
 
 
             </div>
+
+            <nav id="sidebar">
+                <ul>
+                    <li class="logo">
+                        <a href="index.html">
+                            <img src="./public/images/chemical makret new logo.png" alt="Chemical Market Logo">
+                        </a>
+                    </li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)">Products <i class="ri-arrow-down-s-line"></i></a>
+                        <ul class="submenu">
+                            <li><a href="selfcare.html">Personal Care</a></li>
+                            <li><a href="paints&coatings.html">Paints & Coatings</a></li>
+                            <li><a href="pharmaceuticals.html">Pharmaceuticals</a></li>
+                            <li><a href="foodingredient.html">Food & Nutrition</a></li>
+                            <li><a href="petrochemicals&polymers.html">Petrochemicals & Polymers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="media.html">Media</a></li>
+                    <li class="contact-button">
+                        <a href="contactus.html">
+                            <i class="ri-phone-line"></i>
+                            <span>Contact Us</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
             <!-- main carousel banner -->
             <section class="container">
                 <div class="slider-wrapper">
@@ -126,10 +163,10 @@
                             <span>ABOUT US</span>
                         </div>
                         <div class="about-content">
-                            <h3>At <span>Chemical Market</span>, we strive to be
+                            <h3>At <span>Chemical.Market</span>, we strive to be
                                 enablers of progress
                             </h3>
-                            <p>At Chemical Market, we are transforming how industries source and procure chemicals by
+                            <p>At Chemical.Market, we are transforming how industries source and procure chemicals by
                                 offering a smarter, more integrated approach. As a leading B2B platform, we specialize
                                 in connecting businesses across diverse sectors with reliable and high-quality raw
                                 material. <a href="aboutus.html" class="readmoreabout">Read More</a>
@@ -348,7 +385,7 @@
                 </div>
             </div>
             <div class="rightwrapper">
-                <h3 class="contact-heading">Stay Connected with <span>Chemical Market</span></h3>
+                <h3 class="contact-heading">Stay Connected with <span>Chemical.Market</span></h3>
                 <span class="contact-subheading">For inquiries or support, reach out to us anytime.</span>
                 <div class="partswrapper">
                     <a href="mailto:support@chemical.market">
@@ -508,6 +545,7 @@
         <script src="./assets/js/headerscrollinghide.js"></script>
         <script src="./assets/js/sidebar.js"></script>
         <script src="./assets/js/maincarousel.js"></script>
+        <script src="./assets/js/sidebar.js"></script>
 
 
 
