@@ -6,10 +6,8 @@
   top: 0;
   left: 0;
   z-index: 999;
-  /* background-color:#222; */
-  /* position: relative; */
-  border-bottom: 0.8px solid var(--border-color);
-  transition: top 0.3s;
+  transition: top 0.5s;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .navigation-bar.hidden {
@@ -26,8 +24,6 @@
   display: none;
   position: absolute;
   margin-top: 1.1vw;
-  /* top: 100%; */
-  /* bottom:0; */
   background-color: #fff;
   min-width: 12vw;
   top: 100%;
@@ -53,138 +49,11 @@
   display: block;
 }
 
-/* sidebar dropdown */
-
-.sidebar-dropdown-content {
-  display: none;
-  flex-direction: column;
-  margin-top: 10px;
-}
-
-.sidebar-nav-links a {
-  cursor: pointer;
-}
-
-.sidebar-open .sidebar-dropdown-content {
-  display: flex;
-}
-
-.navigation-bar .top-bar {
-  height: 25%;
-  width: 100%;
-  /* background-color: #Fff; */
-}
-
-.top-bar {
-  display: flex;
-  background-color: #fff;
-  justify-content: center;
-  align-items: center;
-  gap: 2vw;
-  border-bottom: 1px solid #ccc;
-}
-
-.top-bar i {
-  font-size: 18px !important;
-  color: var(--primary-color);
-}
-
-.top-bar span {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 30.08px;
-  color: rgb(122, 122, 122);
-}
-
-.sidebar {
-  display: none;
-}
-
-.close-icon {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  #close-icon {
-    display: none;
-    font-size: 30px;
-    color: #000;
-  }
-
-  .sidebar {
-    transition: all 0.5s ease;
-    height: 100vh;
-    /* overflow-y: auto; */
-    /* min-height: auto; */
-    background-color: #fff;
-    display: block;
-    width: 70%;
-    padding: 4vw 2vw;
-    position: absolute;
-    left: -100%;
-  }
-
-  .sidebar .sidebar-nav-links {
-    /* background-color: red; */
-    display: flex;
-    flex-direction: column;
-    height: 38%;
-    gap: 5vw;
-  }
-
-  .sidebar .sidebar-nav-links a {
-    transition: all ease 0.3s;
-    display: flex;
-    align-items: center;
-    padding: 4vw 0;
-    justify-content: center;
-    width: 100%;
-    font-size: 5vw;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #7a7a7a;
-    border: 0.8px solid var(--border-color);
-  }
-
-  .sidebar .sidebar-nav-links a:hover {
-    background-color: var(--primary-color);
-    color: #fff;
-  }
-
-  .sidebar .sidebar-nav-links a i {
-    font-size: 10vw;
-  }
-
-  .sidebar-btn {
-    display: flex;
-    justify-content: center;
-    gap: 2vw;
-    text-transform: uppercase;
-    align-items: center;
-    padding: 4vw 2vw;
-    text-align: center;
-    color: #fff;
-    font-size: 5vw;
-    position: relative;
-    /* z-index: -1; */
-    background-color: var(--primary-color);
-  }
-
-  .sidebar-btn i {
-    font-size: 7vw;
-  }
-
-  .sidebar .open {
-    left: 0;
-    /* When open, the sidebar will be fully visible */
-  }
-}
-
 nav {
   padding: 0 2vw;
   width: 100%;
-  display: flex;
   height: 100%;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 100;
@@ -206,10 +75,6 @@ nav {
   width: calc(100% - 66%);
 }
 
-.nav-links a i {
-  font-size: 35px;
-}
-
 .nav-links a {
   display: flex;
   text-transform: uppercase;
@@ -220,7 +85,10 @@ nav {
   line-height: 30.08px;
   color: #7a7a7a;
   text-decoration: none;
-  /* color: rgb(253, 90, 15); */
+}
+
+.nav-links a i {
+  font-size: 35px;
 }
 
 .nav-links a:hover {
@@ -229,12 +97,10 @@ nav {
 
 .nav-button {
   width: 33%;
-  text-align: center;
   display: flex;
   justify-content: flex-end;
   padding-right: 2vw;
 }
-
 .nav-button a {
   text-decoration: none;
 }
@@ -243,10 +109,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* width: 60%; */
   width: 40%;
-  /* background: linear-gradient(to right, #fd5a0f, #b14d1f); */
-  /* background-color:var(--primary-color); */
   background-color: var(--primary-color);
   padding: 0.8vw 1vw;
   text-transform: uppercase;
@@ -275,20 +138,6 @@ nav {
     height: 67px;
   }
 
-  .navigation-bar .menu-icon {
-    display: block;
-    margin-right: 1vw;
-  }
-
-  .navigation-bar .top-bar {
-    height: 30%;
-  }
-
-  .top-bar .phone,
-  .top-bar .address {
-    display: none;
-  }
-
   .nav-links,
   .nav-button {
     display: none;
@@ -296,18 +145,12 @@ nav {
 
   .nav-logo {
     width: 70%;
+    height: 100%;
   }
 
-  .navigation-bar a {
-    text-decoration: none;
-  }
-
-  .menu-icon i {
-    font-size: 30px;
-    color: #000;
-    text-decoration: none;
-  }
   .nav-logo img {
-    width: 60%;
+    width: 65%;
+    height: 100%;
+    object-fit: contain;
   }
 }
