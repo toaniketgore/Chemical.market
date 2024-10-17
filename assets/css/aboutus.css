@@ -130,16 +130,19 @@
     gap: 4vw;
   }
 
-  .main-about .about-text-container .about-content h3 {
-    font-size: 25px;
-    line-height: 33px;
-  }
-
   .animated-image {
     left: 0%;
   }
   .main-about .about-text-container .container-head i,
   .main-about .about-text-container .container-head span {
     font-size: 6vw;
+  }
+  .main-about .about-text-container .about-content p {
+    font-size: 17px;
+    line-height: 26px;
+  }
+  .main-about .about-text-container .about-content h3 {
+    font-size: 26px;
+    line-height: 30px;
   }
 }
