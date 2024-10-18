@@ -12,9 +12,10 @@
 }
 
 .section-title {
-  color: #000;
+  color: var(--dark-grey);
   font-size: 2.5vw;
   text-align: center;
+  text-transform: uppercase;
   font-weight: 600;
 }
 
@@ -48,12 +49,10 @@
 
 .contact-info {
   width: 50%;
-  /* background-color: #ddd; */
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* gap: 10vw; */
   align-items: start;
   gap: 1vw;
 }
@@ -65,9 +64,7 @@
 }
 
 .address {
-  display: flex;
   gap: 0.5vw;
-  padding: 0 3vw;
 }
 
 .address i,
@@ -105,7 +102,9 @@
 .formcontainer {
   padding: 4vh 0;
   margin-bottom: 8vh;
+  width: 100%;
 }
+
 .formcontainer .section-title {
   margin-bottom: 2vw;
   font-weight: 600;
@@ -114,14 +113,208 @@
 .formcontainer form {
   padding: 4vw;
   box-shadow: 0px 8px 16px #0000001a;
+  width: 60%;
 }
 
-.formcontainer form .wrapper {
-  width: 100%;
-  gap: 3vw;
-  margin-bottom: 1vw;
+.contact-form {
+  width: 90%;
+  padding: 4vw;
+  box-shadow: 0px 8px 16px #0000001a;
+  margin: 0 auto;
 }
-.formcontainer .wantto {
+
+.wantto {
   font-size: 1.3vw;
   margin-bottom: 0.8vw;
+}
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vw;
+  margin-bottom: 2vw;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
+
+.radio-item input[type="radio"] {
+  width: 1vw;
+  height: 1vw;
+  accent-color: var(--primary-color);
+}
+
+.radio-item label {
+  font-size: 1vw;
+  color: #4a5568;
+}
+
+.form-row {
+  display: flex;
+  gap: 2vw;
+  margin-bottom: 1vw;
+}
+
+.form-group {
+  flex: 1;
+  margin-bottom: 1vw;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.2vw;
+  color: #4a5568;
+  margin-bottom: 0.5vw;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 1vw;
+  font-size: 1vw;
+  border: 1px solid #cbd5e0;
+  border-radius: 0.25vw;
+}
+
+/* The following property is likely causing the blue color on input focus */
+.form-group input:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: var(--primary-color); /* Change border color to blue */
+  box-shadow: 0 0 0 1px var(--primary-color); /* Add a blue box shadow */
+}
+
+.file-help {
+  font-size: 0.9vw;
+  color: #718096;
+  margin-top: 0.3vw;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 1vw;
+  background-color: #f05526;
+  color: white;
+  font-size: 1.2vw;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  border-radius: 0.5vw;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #e04a22;
+}
+
+@media (min-width: 769px) {
+  .form-group input {
+    background-color: #f3f4f6;
+    border-radius: 0.5vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactus-container {
+    margin-top: 80px;
+  }
+
+  .contactus-container .section-title {
+    font-size: 6.5vw;
+  }
+
+  .section-subtitle {
+    font-size: 4vw;
+  }
+
+  .sectionwrapper {
+    flex-direction: column;
+    height: 90%;
+  }
+
+  .sectionwrapper .contact-info {
+    justify-content: center;
+    padding: 4vw 2vw;
+  }
+
+  .map,
+  .contact-info {
+    width: 100%;
+    height: 50%;
+  }
+
+  .address i,
+  .mailcontact .mail i,
+  .mailcontact .contactno i {
+    font-size: 26px;
+  }
+
+  .address p,
+  .mailcontact .mail p,
+  .mailcontact .contactno p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .address,
+  .mailcontact .mail,
+  .mailcontact .contactno {
+    align-items: center;
+    gap: 3vw;
+  }
+
+  .border {
+    display: none;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 20px;
+  }
+  .formcontainer form {
+    width: 95%;
+  }
+  .wantto {
+    font-size: 18px;
+  }
+
+  .radio-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .radio-item input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--primary-color);
+  }
+
+  .radio-item label {
+    font-size: 16px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .form-group label {
+    font-size: 16px;
+  }
+
+  .form-group input {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .file-help {
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    font-size: 18px;
+    padding: 12px;
+  }
 }

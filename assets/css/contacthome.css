@@ -165,9 +165,7 @@
 #contact-rewamp .iconwrapper a {
   text-decoration: none;
 }
-#contact-rewamp .iconwrapper i:hover {
-  box-shadow: 0 0 30px rgba(253, 90, 15, 0.5);
-}
+
 #contact-rewamp .arrow {
   position: absolute;
   top: 10%;

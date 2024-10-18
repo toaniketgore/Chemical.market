@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./assets/css/navigationbar.css">
     <link rel="stylesheet" href="./assets/css/sidebar.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+
     <!-- required css for contact page only -->
     <link rel="stylesheet" href="./assets/css/contact us page/contactus.css">
 
@@ -23,20 +23,7 @@
 </head>
 
 <div class="navigation-bar">
-    <!-- <div class="top-bar">
-        <div class="icon-container phone">
-            <i class="ri-phone-fill"></i>
-            <span class="topbar-text">+918045574255</span>
-        </div>
-        <div class="icon-container mail">
-            <i class="ri-mail-fill"></i>
-            <span class="topbar-text">contact@chemical.market</span>
-        </div>
-        <div class="icon-container address">
-            <i class="ri-map-pin-2-fill"></i>
-            <span class="topbar-text">Wagle Estate, Thane(W)</span>
-        </div>
-    </div> -->
+
     <nav>
         <div class="nav-logo">
             <a href="index.html">
@@ -147,134 +134,64 @@
 
 
 <div class="formcontainer">
-    <h2 class="section-title">We would Love to<span style="color:var(--primary-color)"> hear from you</span></h2>
+    <h2 class="section-title">We would Love to<span> hear from you</span></h2>
 
-
-
-    <form class=" mx-auto mb-3" style="width:60%">
+    <!-- Original desktop form -->
+    <form class="contact-form ">
         <h4 class="wantto">I want to </h4>
 
-        <div class="flex wrapper">
-
-            <div class="flex items-center">
-                <input id="supply" type="radio" value="" name="wantto"
-                    class="w-4 h-4 text-orange-600 bg-gray-orange border-orange-300 focus:ring-orange-500 focus:ring-2 ">
-                <label for="supply" class="ms-2  font-medium text-gray-600 ">Supply to
-                    Chemical.Market</label>
+        <div class="radio-group">
+            <div class="radio-item">
+                <input id="supply" type="radio" name="wantto" value="supply">
+                <label for="supply">Supply to Chemical.Market</label>
             </div>
-            <div class="flex items-center">
-                <input id="buyfrom" type="radio" value="" name="wantto"
-                    class="w-4 h-4 text-orange-600 bg-gray-orange border-orange-300 focus:ring-orange-500 focus:ring-2 ">
-                <label for="buyfrom" class="ms-2  font-medium text-gray-600 dark:text-gray-300">Buy from
-                    Chemical.Market</label>
+            <div class="radio-item">
+                <input id="buyfrom" type="radio" name="wantto" value="buy">
+                <label for="buyfrom">Buy from Chemical.Market</label>
             </div>
-            <div class="flex items-center">
-                <input checked id="otherquery" type="radio" value="" name="wantto"
-                    class="w-4 h-4 text-orange-600 bg-orange-100 border-orange-300 focus:ring-orange-500 focus:ring-2 ">
-                <label for="otherquery" class="ms-2  font-medium text-gray-600 dark:text-gray-300">Other
-                    Query</label>
+            <div class="radio-item">
+                <input id="otherquery" type="radio" name="wantto" value="other" checked>
+                <label for="otherquery">Other Query</label>
             </div>
         </div>
 
-
-        <div class="grid md:grid-cols-2 md:gap-6">
-            <div>
-                <label for="first_name" class="block mb-2 text-xl  text-gray-500 dark:text-white">First
-                    name</label>
-                <input type="text" id="first_name"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500  block w-full py-4 "
-                    placeholder="John" required />
+        <div class="form-row">
+            <div class="form-group">
+                <label for="first_name">First name</label>
+                <input type="text" id="first_name" placeholder="John" required>
             </div>
-            <div>
-                <label for="first_name" class="block mb-2 text-xl  text-gray-500 dark:text-white">Last
-                    name</label>
-                <input type="text" id="first_name"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full py-4"
-                    placeholder="Doe" required />
+            <div class="form-group">
+                <label for="last_name">Last name</label>
+                <input type="text" id="last_name" placeholder="Doe" required>
             </div>
-            <!-- <div class="relative z-0 w-full mb-5 group">
-                <input type="text" name="firstname" id="firstname"
-                    class="block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300    focus:ring-0  peer"
-                    placeholder=" " required="" onfocus="this.style.borderBottomColor = 'orangered';"
-                    onblur="this.style.borderBottomColor = '#ccc';" required placholder=" ">
-                <label for="firstname"
-                    class="peer-focus:font-medium absolute text-xl text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:text-orange-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First
-                    name</label>
-            </div> -->
-
-            <!-- <div class="relative z-0 w-full mb-5 group">
-                <input type="text" name="floating_last_name" id="floating_last_name"
-                    class="block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300    focus:ring-0  peer"
-                    placeholder=" " required="" onfocus="this.style.borderBottomColor = 'orangered';"
-                    onblur="this.style.borderBottomColor = '#ccc';" required placholder=" ">
-                <label for="floating_last_name"
-                    class="peer-focus:font-medium absolute text-xl text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:text-orange-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last
-                    name</label>
-            </div> -->
         </div>
-        <div>
-            <label for="first_name" class="block mb-2 mt-2 text-xl  text-gray-500 dark:text-white">Your organization
-                name</label>
-            <input type="text" id="first_name"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full py-4"
-                placeholder="eg: Infra Market" required />
+
+        <div class="form-group">
+            <label for="organization_name">Your organization name</label>
+            <input type="text" id="organization_name" placeholder="eg: Infra Market" required>
         </div>
-        <div>
-            <label for="first_name" class="block mb-2 mt-2 text-xl  text-gray-500 dark:text-white">Email address</label>
-            <input type="text" id="first_name"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full py-4"
-                placeholder="john@gmail.com" required />
+
+        <div class="form-group">
+            <label for="email_address">Email address</label>
+            <input type="email" id="email_address" placeholder="john@gmail.com" required>
         </div>
-        <div>
-            <label for="first_name" class="block mb-2 mt-2 text-xl  text-gray-500 dark:text-white">Contact
-                number</label>
-            <input type="text" id="first_name"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full py-4"
-                placeholder="+91 9999999999" required />
+
+        <div class="form-group">
+            <label for="contact_number">Contact number</label>
+            <input type="tel" id="contact_number" placeholder="+91 9999999999" required>
         </div>
-        <!-- <div class="relative z-0 w-full mb-5 group">
-            <input type="text" name="floating_address" id="floating_address"
-                class="block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300    focus:ring-0  peer"
-                placeholder=" " required="" onfocus="this.style.borderBottomColor = 'orangered';"
-                onblur="this.style.borderBottomColor = '#ccc';" required placholder=" ">
-            <label for="floating_address"
-                class="peer-focus:font-medium absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
-                Your organization name</label>
-        </div> -->
-        <!-- <div class="relative z-0 w-full mb-5 group">
-            <input type="email" name="floating_email" id="floating_email"
-                class="block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300    focus:ring-0  peer"
-                placeholder=" " required="" onfocus="this.style.borderBottomColor = 'orangered';"
-                onblur="this.style.borderBottomColor = '#ccc';" required placholder=" ">
-            <label for="floating_email"
-                class="peer-focus:font-medium absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
-                address</label>
-        </div> -->
-        <!-- <div class="relative z-0 w-full mb-5 group">
-            <input type="telname=" floating_phone" id="floating_phone"
-                class="block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300    focus:ring-0  peer"
-                placeholder=" " required="" onfocus="this.style.borderBottomColor = 'orangered';"
-                onblur="this.style.borderBottomColor = '#ccc';" required placholder=" ">
-            <label for="floating_phone"
-                class="peer-focus:font-medium absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your
-                contact number</label>
-        </div> -->
 
+        <div class="form-group">
+            <label for="file_input">Upload file</label>
+            <input type="file" id="file_input" required>
+            <p class="file-help">Upto 2 MB</p>
+        </div>
 
-        <label class="block mb-2 mt-2 text-xl   text-gray-500 " for="file_input">Upload file</label>
-        <input type="file" name="floating_file" id="file_input"
-            class="block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300    focus:ring-0  peer"
-            placeholder=" " required="" onfocus="this.style.borderBottomColor = 'orangered';"
-            onblur="this.style.borderBottomColor = '#ccc';" required placholder=" ">
-
-        <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">Upto 2 MB</p>
-
-        <button type="submit"
-            class=" mx-auto flex items-center justify-center text-white bg-orange-500 hover:bg-[#e04a22] focus:ring-4 focus:outline-none focus:ring-[#f05526]/50 font-medium rounded-xl text-xl px-8 py-3">
-            GET IN TOUCH
-        </button>
+        <button type="submit" class="submit-btn">GET IN TOUCH</button>
     </form>
+
 </div>
+
 
 
 
@@ -365,7 +282,7 @@
 <script src="./assets/js/navdropdown.js"></script>
 <script src="./assets/js/sidebar.js"></script>
 <script src="./assets/js/headerscrollinghide.js"></script>
-<script src="./assets/js/contactanimgsap.jsx"></script>
+<script src="./assets/js/contactanimgsap.js"></script>
 <script>
     document.querySelector('form').addEventListener('submit', function (event) {
         event.preventDefault(); // Prevent form submission to the server
@@ -414,7 +331,6 @@
             alert('Please fill in all fields before submitting.');
         }
     });
-
 </script>
 </body>
 
