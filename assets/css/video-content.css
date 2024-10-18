@@ -100,6 +100,7 @@
 }
 
 .slider img {
+  object-position: left 20%;
   flex: 1 0 100%;
   scroll-snap-align: start;
   object-fit: cover;
@@ -177,8 +178,8 @@
   left: 2%;
   height: 56%;
   width: 40%;
-  background: url("../../public/images/carouselcopynewdarker.jpg") no-repeat center
-    center;
+  background: url("../../public/images/carouselcopynewdarker.jpg") no-repeat
+    center center;
   /* filter: invert(100%) brightness(2) contrast(2); */
   background-size: contain;
   border-radius: 0.5vw;
@@ -227,7 +228,7 @@
   .video-text-button a {
     font-size: 20px;
   }
-  .container{
+  .container {
     margin-top: 67px;
   }
 }
