@@ -85,6 +85,7 @@
 .mailcontact .contactno {
   display: flex;
   gap: 1vw;
+  align-items: center;
 }
 
 .mailcontact {
@@ -124,8 +125,9 @@
 }
 
 .wantto {
-  font-size: 1.3vw;
+  font-size: 1.5vw;
   margin-bottom: 0.8vw;
+  font-weight: 500;
 }
 
 .radio-group {
@@ -148,7 +150,7 @@
 }
 
 .radio-item label {
-  font-size: 1vw;
+  font-size: 1.2vw;
   color: #4a5568;
 }
 
@@ -208,7 +210,9 @@
 .submit-btn:hover {
   background-color: #e04a22;
 }
-
+.address p {
+  text-transform: capitalize;
+}
 @media (min-width: 769px) {
   .form-group input {
     background-color: #f3f4f6;
@@ -316,5 +320,9 @@
   .submit-btn {
     font-size: 18px;
     padding: 12px;
+  }
+  .formcontainer .section-title {
+    font-size: 7vw;
+    line-height: 10vw;
   }
 }
