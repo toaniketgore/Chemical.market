@@ -326,7 +326,7 @@
   .aboutusmaincontainer .ourStrengths {
     flex-direction: column;
     padding: 8vw 4vw;
-    gap:5vw;
+    gap: 5vw;
   }
   .ourStrengths .part1 {
     gap: 3vw;
@@ -351,16 +351,54 @@
     line-height: 9vw;
     text-transform: uppercase;
   }
-  .pointers{
-    gap:4vw;
+  .pointers {
+    gap: 4vw;
   }
-  .point{
-    width:100%;
+  .point {
+    width: 100%;
   }
   .point i {
     font-size: 7vw;
   }
   .point .pointText {
     font-size: 16px;
+  }
+
+  /* numbers section on mobile */
+  .ournumbers .heading {
+    font-size: 5vw;
+  }
+  .numbersgrid {
+    flex-direction: column;
+    gap: 8vw;
+  }
+  .numbersgrid .elem .number {
+    font-size: 10vw;
+  }
+  .numbersgrid .elem .numberDesc {
+    font-size: 6vw;
+  }
+  .ournumbers .office {
+    font-size: 5vw;
+    margin-top: 4vw;
+  }
+  .ournumbers .office {
+    font-size: 4vw;
+  }
+  .values {
+    margin-top: 4vh;
+  }
+  .values .heading {
+    font-size: 7vw;
+  }
+  .values img {
+    width: 90%;
+    height: 100%;
+  }
+  .our-partners-container h2 {
+    font-size: 7vw;
+  }
+  .our-partners-container {
+    padding: 2vh 0;
   }
 }
