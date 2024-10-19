@@ -197,6 +197,8 @@
 
 
 
+
+
 <div id="footer-page">
     <div class="footer-container-wrapper">
         <div class="footer-container" style="gap:1vw;">
@@ -278,19 +280,22 @@
 <script src="./assets/js/sidebar.js"></script>
 <script src="./assets/js/headerscrollinghide.js"></script>
 <script src="./assets/js/contactanimgsap.js"></script>
+
+</script>
 <script>
-    document.querySelector('form').addEventListener('submit', function (event) {
+    document.querySelector('.contact-form').addEventListener('submit', function (event) {
         event.preventDefault(); // Prevent form submission to the server
 
         // Get all input fields
-        const firstName = document.getElementById('firstname').value.trim();
-        const lastName = document.getElementById('floating_last_name').value.trim();
-        const address = document.getElementById('floating_address').value.trim();
-        const email = document.getElementById('floating_email').value.trim();
-        const phone = document.getElementById('floating_phone').value.trim();
+        const firstName = document.getElementById('first_name').value.trim();
+        const lastName = document.getElementById('last_name').value.trim();
+        const organizationName = document.getElementById('organization_name').value.trim();
+        const email = document.getElementById('email_address').value.trim();
+        const phone = document.getElementById('contact_number').value.trim();
+        const fileInput = document.getElementById('file_input');
 
         // Check if all fields are filled
-        if (firstName && lastName && address && email && phone) {
+        if (firstName && lastName && organizationName && email && phone && fileInput.files.length > 0) {
             // Show popup
             const popup = document.createElement('div');
             popup.textContent = "Thank you for reaching out to us!";
@@ -317,11 +322,11 @@
             // Remove the popup after 3 seconds
             setTimeout(() => {
                 popup.style.opacity = "0";
-                setTimeout(() => popup.remove(), 3000); // Wait for the fade-out to finish before removing
+                setTimeout(() => popup.remove(), 300); // Wait for the fade-out to finish before removing
             }, 3000);
 
             // Clear the form
-            document.querySelector('form').reset();
+            this.reset();
         } else {
             alert('Please fill in all fields before submitting.');
         }
