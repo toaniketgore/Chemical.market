@@ -111,3 +111,37 @@
   border-radius: 1vw;
   object-position: top;
 }
+
+@media (max-width: 768px) {
+  .mediacontainer {
+    margin-top: 70px;
+    overflow-x: hidden;
+  }
+  .mediacontainer .title .line h3 {
+    font-size: 6vw;
+  }
+  .mediacontainer .title .line2 h3 {
+    line-height: 8vw;
+    padding-top: 1vh;
+  }
+  .gallery {
+    height: 100%;
+    width: 90%;
+    flex-direction: column;
+    align-items: start;
+    padding: 0;
+    gap: 5vh;
+    margin: 2vh auto 0 auto;
+  }
+  .gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .blur-background {
+    /* display: none; */
+    height: 150px;
+    width: 150px;
+    top: 0%;
+  }
+}
