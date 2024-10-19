@@ -11,14 +11,13 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/navigationbar.css">
     <link rel="stylesheet" href="./assets/css/sidebar.css">
-    <link rel="stylesheet" href="./assets/css/video-content.css">
-    <link rel="stylesheet" href="./assets/css/ourpartners.css">
-    <link rel="stylesheet" href="./assets/css/aboutus.css">
-    <link rel="stylesheet" href="./assets/css/ourbestproducts.css">
+    <link rel="stylesheet" href="./assets/css/homepage/video-content.css">
+    <link rel="stylesheet" href="./assets/css/homepage/ourpartners.css">
+    <link rel="stylesheet" href="./assets/css/homepage/aboutus.css">
+    <link rel="stylesheet" href="./assets/css/homepage/ourbestproducts.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
-    <link rel="stylesheet" href="./assets/css/contacthome.css">
-    <link rel="stylesheet" href="./assets/css/rangeofproducts.css">
-    <link rel="stylesheet" href="./assets/css/process.css">
+    <link rel="stylesheet" href="./assets/css/homepage/contacthome.css">
+    <link rel="stylesheet" href="./assets/css/homepage/rangeofproducts.css">
 
     <!-- remix icon css -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
@@ -118,17 +117,17 @@
             <section class="container">
                 <div class="slider-wrapper">
                     <div class="slider" id="slider">
-                        <img src="./public/images/carouselbanners/newbannerchangeom1.png" alt="" id="slide-2">
-                        <img src="./public/images/carouselbanners/newomobanner2.png" alt="" id="slide-1">
-                        <img src="./public/images/carouselbanners/newbanner2remove.png" alt="" id="slide-3">
+                        <img src="./public/images/Homepage/CarouselBanners/carouselbanner1.png" alt="" id="slide-2">
+                        <img src="./public/images/Homepage/CarouselBanners/carouselbanner2.png" alt="" id="slide-1">
+                        <img src="./public/images/Homepage/CarouselBanners/carouselbanner3.png" alt="" id="slide-3">
                     </div>
                     <script>
                         function updateImageSource() {
                             const slide2 = document.getElementById('slide-2');
                             if (window.innerWidth <= 768) {
-                                slide2.src = './public/images/carouselbanners/mobilebanner1.jpg';
+                                slide2.src = './public/images/Homepage/CarouselBanners/carouselmobilebanner1.png';
                             } else {
-                                slide2.src = './public/images/carouselbanners/newbannerchangeom1.png';
+                                slide2.src = './public/images/Homepage/CarouselBanners/carouselbanner1.png';
                             }
                         }
 
@@ -195,34 +194,34 @@
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
-                            <img src="./public/images/ourpartnerslogo/1.png" alt="">
+                            <img src="./public/images/Homepage/OurSuppliersLogos/1.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="./public/images/ourpartnerslogo/2.png" alt="">
+                            <img src="./public/images/Homepage/OurSuppliersLogos/2.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="./public/images/ourpartnerslogo/3.png" alt="">
+                            <img src="./public/images/Homepage/OurSuppliersLogos/3.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="./public/images/ourpartnerslogo/4.png" alt="">
+                            <img src="./public/images/Homepage/OurSuppliersLogos/4.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="./public/images/ourpartnerslogo/5.png" alt="">
+                            <img src="./public/images/Homepage/OurSuppliersLogos/5.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="./public/images/ourpartnerslogo/6.png" alt="">
+                            <img src="./public/images/Homepage/OurSuppliersLogos/6.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="./public/images/ourpartnerslogo/7.png" alt="">
+                            <img src="./public/images/Homepage/OurSuppliersLogos/7.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="./public/images/ourpartnerslogo/8.png" alt="">
+                            <img src="./public/images/Homepage/OurSuppliersLogos/8.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="./public/images/ourpartnerslogo/9.png" alt="">
+                            <img src="./public/images/Homepage/OurSuppliersLogos/9.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="./public/images/ourpartnerslogo/Untitled-1.png" alt="">
+                            <img src="./public/images/Homepage/OurSuppliersLogos/10.png" alt="">
                         </div>
 
                     </div>
@@ -249,7 +248,8 @@
 
                 </div>
 
-                <div class="range-product" data-bg-image="./public/images/rangeproduct/personalcarenew.jpg">
+                <div class="range-product"
+                    data-bg-image="./public/images/Homepage/VerticalsBackgrounds/personalCareVerticalBg.jpg">
                     <div class="range-product-head">
                         <!-- <h3 class="number">01</h3> -->
                         <h4 class="product-name">Personal Care</h4>
@@ -265,7 +265,8 @@
                     <!-- <img src="./public/images/cosmeticresized.png" alt="" class="range-product-image"> -->
 
                 </div>
-                <div class="range-product" data-bg-image="./public/images/rangeproduct/paintsandcoatingshorizontal.jpg">
+                <div class="range-product"
+                    data-bg-image="./public/images/Homepage/VerticalsBackgrounds/paintsAndCoatingsVerticalBg.jpg">
                     <div class="range-product-head">
                         <!-- <h3 class="number">02</h3> -->
                         <h4 class="product-name">Paints and Coatings</h4>
@@ -283,7 +284,7 @@
                     <img src="./public/images/painting&coatingimage.jpg" alt="" class="range-product-image"> -->
                 </div>
                 <div class="range-product"
-                    data-bg-image="./public/images/rangeproduct/pharmaceuticalshorizontalimage.jpg">
+                    data-bg-image="./public/images/Homepage/VerticalsBackgrounds/pharmaceuticalsVerticalBg.jpg">
                     <div class="range-product-head">
                         <!-- <h3 class="number">03</h3> -->
                         <h4 class="product-name">Pharmaceuticals</h4>
@@ -302,7 +303,8 @@
                     <!-- <img src="./public/images/pharmaceuticalsimage.jpg" alt="" class="range-product-image"> -->
 
                 </div>
-                <div class="range-product" data-bg-image="./public/images/rangeproduct/foodingredienthorizontal.jpg">
+                <div class="range-product"
+                    data-bg-image="./public/images/Homepage/VerticalsBackgrounds/foodingredientsVerticalBg.jpg">
                     <div class="range-product-head">
                         <!-- <h3 class="number">04</h3> -->
                         <h4 class="product-name">Food Ingredients</h4>
@@ -320,7 +322,8 @@
 
                     <!-- <img src="./public/images/foodingredientindiangirl.png" alt="" class="range-product-image"> -->
                 </div>
-                <div class="range-product" data-bg-image="./public/images/petronewbghorizontal.jpg">
+                <div class="range-product"
+                    data-bg-image="./public/images/Homepage/VerticalsBackgrounds/petrochemicalsVerticalBg.jpg">
                     <div class="range-product-head">
                         <!-- <h3 class="number">05</h3> -->
                         <h4 class="product-name">Petrochemicals & Polymers</h4>
@@ -348,31 +351,31 @@
                 </h2>
                 <div class="owl-carousel owl-theme ">
                     <div class="item">
-                        <img src="./public/images/exoticbutter.jpg" alt="">
+                        <img src="./public/images/Homepage/RangeofProducts/exoticbutter.jpg" alt="">
                         <div id="overlay">
                             <span>Exotic Butter</span>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="./public/images/sweetner.jpg" alt="">
+                        <img src="./public/images/Homepage/RangeofProducts/sweetner.jpg" alt="">
                         <div id="overlay">
                             <span>Sweetner</span>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="./public/images/surfactant.jpg" alt="">
+                        <img src="./public/images/Homepage/RangeofProducts/surfactant.jpg" alt="">
                         <div id="overlay">
                             <span>Surfactant</span>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="./public/images/juicesoda.jpg" alt="">
+                        <img src="./public/images/Homepage/RangeofProducts/juicesoda.jpg" alt="">
                         <div id="overlay">
                             <span>Flavour Enhancer</span>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="./public/images/thickener.jpg" alt="">
+                        <img src="./public/images/Homepage/RangeofProducts/thickener.jpg" alt="">
                         <div id="overlay">
                             <span>Thickener</span>
                         </div>
@@ -465,9 +468,12 @@
                         Explore Our<span> Gallery</span>
                     </h2>
                     <div class="footer-gallery">
-                        <a href="media.html"> <img src="./public/images/chemexop.jpeg" alt=""></a>
-                        <a href="media.html"> <img src="./public/images/footerimg2.jpg" alt=""></a>
-                        <a href="media.html"> <img src="./public/images/footerimg3.jpg" alt=""></a>
+                        <a href="media.html"> <img src="./public/images/Homepage/FooterGallery/footerGalleryImage1.jpeg"
+                                alt=""></a>
+                        <a href="media.html"> <img src="./public/images/Homepage/FooterGallery/footerGalleryImage2.jpg"
+                                alt=""></a>
+                        <a href="media.html"> <img src="./public/images/Homepage/FooterGallery/footerGalleryImage3.jpg"
+                                alt=""></a>
                     </div>
                     <div class="mail-link">
                         <i class="ri-send-plane-fill"></i>
