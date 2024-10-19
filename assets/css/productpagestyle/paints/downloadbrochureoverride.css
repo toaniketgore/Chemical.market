@@ -1,3 +1,10 @@
-.downloadbrochure{
-    background-image: url("../../../../public/images/downloadbrochurebackgrounds/paintsbrochurebg.png");
+.downloadbrochure {
+  background-image: url("../../../../public/images/downloadbrochurebackgrounds/paintsbrochurebg.png");
+}
+
+@media (max-width: 768px) {
+  .downloadbrochure {
+    background-image: none;
+    background-color: #e4e7e9;
+  }
 }

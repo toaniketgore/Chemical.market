@@ -1,6 +1,6 @@
 .downloadbrochure {
   /* height: 40%; */
-  min-height: 30%;
+  height: 30%;
   position: relative;
   width: 100%;
   /* background: linear-gradient(to left, #f37444, #fbc9ad); */
@@ -82,4 +82,29 @@
   position: absolute;
   height: 100%;
   width: fit-content;
+}
+
+@media (max-width: 768px) {
+  /* download brochure mobile*/
+  .downloadbrochure {
+    margin: 2vh 0;
+    height: 20%;
+    background-image: none;
+    background-color: #e4e7e9;
+  }
+  .leftpart .mainhead h2 {
+    font-size: 7vw;
+  }
+  .leftpart .downloadcontainer .downloadbtn,
+  .leftpart .downloadcontainer i {
+    font-size: 4vw;
+  }
+  .leftpart {
+    gap: 5vw;
+  }
+  .leftpart .downloadcontainer {
+    border-radius: 1vw;
+    padding: 2vw 4vw;
+  }
+
 }

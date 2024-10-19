@@ -72,32 +72,33 @@
 
 @media (max-width: 768px) {
   .breadcrumb {
-    height: 20%;
+    height: 15%;
     width: 100%;
+    margin-top: 67px;
   }
   .breadcrumb-text {
-    width: 50%;
+    min-width: 70%;
   }
   .breadcrumb-link a {
-    font-size: 2vw;
+    font-size: 12px;
   }
   .breadcrumb-link i {
-    font-size: 2vw;
-
-    
+    font-size: 14px;
   }
   .breadcrumb-desc {
     width: 100%;
     padding: 2vw;
   }
   .breadcrumb-desc p {
-    font-size: 3vw;
+    font-size: 14px;
   }
   .breadcrumb-product-title {
     color: #000;
-    font-size: 6vw;
+    font-size: 17.5px;
+    white-space: nowrap;
     position: relative;
     top: 10%;
+    left: 0;
     font-weight: 400;
     /* left: 3.5%; */
     width: 100%;
