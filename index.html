@@ -121,9 +121,20 @@
                         <img src="./public/images/carouselbanners/newbannerchangeom1.png" alt="" id="slide-2">
                         <img src="./public/images/carouselbanners/newomobanner2.png" alt="" id="slide-1">
                         <img src="./public/images/carouselbanners/newbanner2remove.png" alt="" id="slide-3">
-
-
                     </div>
+                    <script>
+                        function updateImageSource() {
+                            const slide2 = document.getElementById('slide-2');
+                            if (window.innerWidth <= 768) {
+                                slide2.src = './public/images/carouselbanners/mobilebanner1.jpg';
+                            } else {
+                                slide2.src = './public/images/carouselbanners/newbannerchangeom1.png';
+                            }
+                        }
+
+                        window.addEventListener('resize', updateImageSource);
+                        window.addEventListener('load', updateImageSource);
+                    </script>
                     <div class="slider-nav">
                         <a href="#slide-1" data-slide="0"></a>
                         <a href="#slide-2" data-slide="1"></a>

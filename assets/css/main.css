@@ -37,6 +37,10 @@
 }
 
 @media (max-width: 768px) {
+  .page1 {
+    height: 40% !important;
+  }
+
   #footer-page {
     min-height: auto;
   }
