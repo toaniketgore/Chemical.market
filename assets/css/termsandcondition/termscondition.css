@@ -35,7 +35,6 @@
 
 @media (max-width: 768px) {
   .mainContainer {
-   
     margin-top: 67px;
     padding: 2vw 4vw;
   }
@@ -48,8 +47,8 @@
     font-weight: 500;
     margin-bottom: 1vh;
   }
-  
-.termWrapper .heading i {
+
+  .termWrapper .heading i {
     font-size: 20px;
     color: var(--primary-color);
   }
@@ -57,6 +56,4 @@
     font-size: 14px;
     line-height: 20px;
   }
-  
-  
 }
