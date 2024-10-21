@@ -16,17 +16,30 @@ dropdownToggle.addEventListener("click", function (e) {
 let lastScrollTop = 0;
 let isScrolling;
 
-window.addEventListener(
-  "scroll",
-  function () {
+window.addEventListener("scroll", function() {
     hamburger.style.opacity = "0";
     clearTimeout(isScrolling);
 
-    isScrolling = setTimeout(function () {
-      hamburger.style.opacity = "1";
-    }, 250);
+    isScrolling = setTimeout(function() {
+        hamburger.style.opacity = "1";
+    }, 100); // Reduced timeout for quicker reappearance
 
-    lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  },
-  false
-);
+}, false);
+
+// Add this to handle initial scroll state
+let initialScroll;
+window.addEventListener("touchstart", function() {
+    initialScroll = window.pageYOffset;
+});
+
+window.addEventListener("touchmove", function() {
+    if (window.pageYOffset != initialScroll) {
+        hamburger.style.opacity = "0";
+    }
+});
+
+window.addEventListener("touchend", function() {
+    setTimeout(function() {
+        hamburger.style.opacity = "1";
+    }, 100);
+});
