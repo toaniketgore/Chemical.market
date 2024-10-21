@@ -4,6 +4,7 @@
   font-family: "poppins";
   position: relative;
   box-sizing: border-box;
+  padding-bottom: 8vw;
 }
 .mediacontainer .title {
   padding: 5vw 0 0 4vw;
